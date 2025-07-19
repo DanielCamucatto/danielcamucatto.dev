@@ -8,7 +8,14 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     watch: {
+      // Força o uso de polling, que é crucial para o Docker em muitos sistemas.
       usePolling: true,
+      // Não tente usar eventos do sistema de arquivos nativos.
+      useFsEvents: false,
+      // Intervalo de verificação para arquivos de texto (em milissegundos).
+      interval: 500,
+      // Intervalo de verificação para arquivos binários.
+      binaryInterval: 1000,
     },
   },
 })

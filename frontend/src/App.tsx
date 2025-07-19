@@ -1,44 +1,44 @@
-
 import './App.css';
+import { useEffect, useRef } from 'react';
+import { Header, Navigation, Footer, About, Experience, Projects } from './components';
 
 function App() {
+  const highlightRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      if (highlightRef.current) {
+        highlightRef.current.style.background = `
+          radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)
+        `;
+      }
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
-    <div className="container">
-      <div className="left-column">
-        <header>
-          <h1>Daniel Santana Camuçatto</h1>
-          <h2>Desenvolvedor Full Stack</h2>
-          <p>Sou apaixonado por tecnologia, e ideias disruptivas.</p>
-        </header>
-        <nav>
-          <ul>
-            <li><a href="#about">SOBRE</a></li>
-            <li><a href="#experience">EXPERIÊNCIA</a></li>
-            <li><a href="#projects">PROJETOS</a></li>
-          </ul>
-        </nav>
-        <footer>
-          {/* Adicionar ícones de redes sociais aqui */}
-        </footer>
-      </div>
-      <div className="right-column">
-        <section id="about">
-          <h2>Sobre</h2>
-          <p>
-            Sou um desenvolvedor full stack com vasta experiência na criação de aplicações web robustas e escaláveis. Minha paixão por tecnologia me impulsiona a buscar constantemente novas soluções e aprimorar minhas habilidades. Tenho um forte interesse em arquiteturas de software, desenvolvimento de APIs e na criação de interfaces de usuário intuitivas e eficientes.
-          </p>
-          <p>
-            No meu tempo livre, gosto de explorar novas tecnologias, contribuir para projetos de código aberto e compartilhar meu conhecimento com a comunidade de desenvolvimento.
-          </p>
-        </section>
-        <section id="experience">
-          <h2>Experiência</h2>
-          {/* Adicionar experiências profissionais aqui */}
-        </section>
-        <section id="projects">
-          <h2>Projetos</h2>
-          {/* Adicionar projetos aqui */}
-        </section>
+    <div className="relative z-10 min-h-screen bg-slate-900 text-slate-100">
+      <div
+        ref={highlightRef}
+        className="fixed inset-0 pointer-events-none z-0 transition-all duration-200"
+        aria-hidden
+      />
+      <div className="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div className="lg:flex lg:justify-between lg:gap-4">
+          <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+            <Header />
+            <Navigation />
+            <Footer />
+          </div>
+          <div className="pt-24 lg:w-1/2 lg:py-24">
+            <About />
+            <Experience />
+            <Projects />
+          </div>
+        </div>
       </div>
     </div>
   );
