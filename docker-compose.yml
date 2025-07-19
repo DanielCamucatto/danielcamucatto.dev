@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .  # MUDANÇA IMPORTANTE: O contexto de build agora é a raiz do seu projeto
+      dockerfile: ./frontend/Dockerfile # Caminho para o Dockerfile dentro da raiz
+    container_name: danielcamucatto_frontend
+    ports:
+      - "80:80" # Mapeia a porta 80 do host para a porta 80 do contêiner
+    volumes:
+      # Monta a pasta do seu código fonte local (./frontend) dentro do contêiner (/app).
+      # Isso permite que você edite o código na sua máquina e veja as mudanças no contêiner.
+      - ./frontend:/app
+      # Volume anônimo para o node_modules para evitar problemas de permissão/sincronização
+      # entre o host e o contêiner para as dependências instaladas.
+      - /app/node_modules
+    # environment:
+    #   - NODE_ENV=development # Opcional: Define o ambiente para desenvolvimento, se sua app React usar
+    restart: always # Reinicia o contêiner automaticamente em caso de falha
