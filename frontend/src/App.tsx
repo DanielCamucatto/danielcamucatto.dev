@@ -1,8 +1,9 @@
 import './App.css';
 import { useEffect, useRef } from 'react';
+import { ThemeProvider } from './contexts/ThemeContext';
 import { Header, Navigation, Footer, About, Experience, Projects } from './components';
 
-function App() {
+function AppContent() {
   const highlightRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -20,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative z-10 min-h-screen bg-slate-900 text-slate-100">
+    <div className="relative z-10 min-h-screen bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
       <div
         ref={highlightRef}
         className="fixed inset-0 pointer-events-none z-0 transition-all duration-200"
@@ -41,6 +42,14 @@ function App() {
         </div>
       </div>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 }
 
