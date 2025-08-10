@@ -1,4 +1,5 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
+import type { ReactNode } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -23,11 +24,21 @@ interface ThemeProviderProps {
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Verifica se há um tema salvo no localStorage
-    const savedTheme = localStorage.getItem('theme') as Theme;
-    if (savedTheme) {
-      return savedTheme;
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme') as Theme;
+      if (savedTheme) {
+        if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+        return savedTheme;
+      }
+      
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        return 'dark';
+      }
     }
+    return 'light';
     
     // Verifica a preferência do sistema
     if (window.matchMedia('(prefers-color-scheme: light)').matches) {
@@ -38,12 +49,10 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   });
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    
     if (theme === 'dark') {
-      root.classList.add('dark');
+      document.documentElement.classList.add('dark');
     } else {
-      root.classList.remove('dark');
+      document.documentElement.classList.remove('dark');
     }
     
     localStorage.setItem('theme', theme);
