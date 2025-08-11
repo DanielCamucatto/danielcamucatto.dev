@@ -50,5 +50,9 @@ codequality:
 test:
 	cd frontend && npx jest --passWithNoTests
 
+# Gera relatório de cobertura de testes
+coverage:
+	cd frontend && npx jest --coverage
+
 # Declara que os targets não são arquivos para evitar conflitos
-.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality test
+.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality test coverage
