@@ -54,5 +54,9 @@ test:
 coverage:
 	cd frontend && npx jest --coverage
 
+# Atualiza snapshots dos testes
+snapshots:
+	cd frontend && npx jest --updateSnapshot
+
 # Declara que os targets não são arquivos para evitar conflitos
-.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality test coverage
+.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality test coverage snapshots

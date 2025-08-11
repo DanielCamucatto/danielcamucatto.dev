@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Footer snapshot deve bater o snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0"
+  >
+    <p>
+      Construído com 
+      <a
+        aria-label="React (opens in a new tab)"
+        class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+        href="https://reactjs.org/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        React
+      </a>
+       e 
+      <a
+        aria-label="Tailwind CSS (opens in a new tab)"
+        class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+        href="https://tailwindcss.com/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        Tailwind CSS
+      </a>
+      .
+    </p>
+  </footer>
+</DocumentFragment>
+`;
