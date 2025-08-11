@@ -1,6 +1,5 @@
-interface NavigationProps {}
 
-export default function Navigation({}: NavigationProps) {
+export default function Navigation() {
   return (
     <nav className="nav hidden lg:block" aria-label="In-page jump links">
       <ul className="mt-16 w-max">

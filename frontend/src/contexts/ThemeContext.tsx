@@ -39,13 +39,6 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       }
     }
     return 'light';
-    
-    // Verifica a preferência do sistema
-    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-      return 'light';
-    }
-    
-    return 'dark'; // Default
   });
 
   useEffect(() => {

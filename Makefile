@@ -35,5 +35,13 @@ logs-prod:
 	docker compose logs -f
 
 
+
+# ==============================================================================
+#  Code Quality
+# ==============================================================================
+
+codequality:
+	npx eslint frontend/src --ext .js,.jsx,.ts,.tsx --fix
+
 # Declara que os targets não são arquivos para evitar conflitos
-.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod
+.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality

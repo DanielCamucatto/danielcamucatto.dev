@@ -1,6 +1,5 @@
-interface FooterProps {}
 
-export default function Footer({}: FooterProps) {
+export default function Footer() {
   return (
     <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
       <p>
