@@ -43,5 +43,12 @@ logs-prod:
 codequality:
 	npx eslint frontend/src --ext .js,.jsx,.ts,.tsx --fix
 
+# ==============================================================================
+#  Testes
+# ==============================================================================
+
+test:
+	cd frontend && npx jest --passWithNoTests
+
 # Declara que os targets não são arquivos para evitar conflitos
-.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality
+.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality test
