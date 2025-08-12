@@ -6,6 +6,10 @@
 dev:
 	docker compose -f docker-compose.dev.yml up -d
 
+# Constrói e inicia os contêineres de desenvolvimento
+build-dev:
+	docker compose -f docker-compose.dev.yml up -d --build
+
 # Para os contêineres de desenvolvimento
 stop-dev:
 	docker compose -f docker-compose.dev.yml down
@@ -59,4 +63,4 @@ snapshots:
 	cd frontend && npx jest --updateSnapshot
 
 # Declara que os targets não são arquivos para evitar conflitos
-.PHONY: dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality test coverage snapshots
+.PHONY: dev build-dev stop-dev logs-dev build-prod prod stop-prod logs-prod codequality test coverage snapshots
