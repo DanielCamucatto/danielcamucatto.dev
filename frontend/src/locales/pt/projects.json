@@ -1,45 +1,77 @@
 {
-  "title": "Projetos",
-  "projects": [
-    {
-      "title": "Divam",
-      "description": "Plataforma de agendamento de consulta médica online, oferecendo uma experiência intuitiva para pacientes e profissionais de saúde.",
-      "link": "https://divam.com.br/",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "TailwindCSS",
-        "Node.js",
-        "PostgreSQL"
-      ],
-      "featured": true,
-      "imageUrl": "/projects/divam.png",
-      "details": [
-        "Interface moderna e responsiva para agendamento de consultas",
-        "Sistema de notificações em tempo real",
-        "Dashboard completo para gestão de agenda médica",
-        "Integração com gateway de pagamento",
-        "Sistema de avaliações e feedback"
-      ]
-    },
-    {
-      "title": "Portfolio",
-      "description": "Site pessoal e portfolio, desenvolvido com tecnologias modernas e foco em performance e acessibilidade.",
-      "link": "https://danielcamucatto.dev",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "TailwindCSS",
-        "Docker"
-      ],
-      "featured": true,
-      "imageUrl": "/projects/portfolio.png",
-      "details": [
-        "Design responsivo e minimalista",
-        "Suporte a múltiplos idiomas (i18n)",
-        "Otimização de performance com SSR",
-        "Integração contínua com Docker"
-      ]
-    }
-  ]
+    "title": "Projetos",
+    "projects": [
+        {
+            "title": "Divam",
+            "description": "Plataforma de agendamento de consulta médica online, oferecendo uma experiência intuitiva para pacientes e profissionais de saúde.",
+            "link": "https://divam.com.br/",
+            "featured": true,
+            "imageUrl": "/projects/divam.png",
+            "details": [
+                "Interface moderna e responsiva para agendamento de consultas",
+                "Sistema de notificações em tempo real",
+                "Dashboard completo para gestão de agenda médica",
+                "Integração com gateway de pagamento",
+                "Sistema de avaliações e feedback"
+            ]
+        },
+        {
+            "title": "Bae Digital",
+            "description": "A BAE Digital é uma plataforma de relacionamentos que se diferencia de outros aplicativos ao focar em conexões mais profundas e experiências. ",
+            "link": "https://baedigital.com.br/",
+            "featured": true,
+            "imageUrl": "/projects/bae_digital.png",
+            "details": [
+                "Design responsivo para diversas plataformas",
+                "Uso de certificados SSL/TLS para segurança (HTTPS)",
+                "Foco em usabilidade e experiência do usuário (UX)",
+                "Implementação de um blog para marketing de conteúdo"
+            ]
+        },
+        {
+            "title": "Pix 4 Fun",
+            "description": "A Pix4Fun é uma plataforma de comércio eletrônico que oferece um serviço de revelação de fotos personalizadas em formato físico. O foco principal são as fotos estilo Polaroid e fotos-ímã, permitindo que os clientes transformem suas memórias digitais em produtos tangíveis.",
+            "link": "https://www.pix4fun.com.br/",
+            "featured": true,
+            "imageUrl": "/projects/pix4fun.png",
+            "details": [
+                "Plataforma de e-commerce focada em produtos personalizados",
+                "Fluxo de compra simplificado e intuitivo (3 passos)",
+                "Processo de personalização de fotos diretamente no site",
+                "Integração com múltiplos meios de pagamento (PIX, cartão e boleto)",
+                "Design responsivo para compra via desktop e mobile",
+                "Suporte a envios via Correios com opções de rastreamento"
+            ]
+        },
+        {
+            "title": "Inteligência Financeira - Globo.com",
+            "description": " portal de conteúdo focado em educação financeira, oferecendo artigos, vídeos e análises para ajudar o público a gerenciar suas finanças de forma mais inteligente.Hoje infelizmente ele foi descontinuado",
+            "link": "www.inteligenciafinanceira.com.br/",
+            "featured": true,
+            "imageUrl": "/projects/inteligencia_financeira.png",
+            "details": [
+                "Arquitetura em nuvem escalável para alto tráfego",
+                "Utilização de Content Management System (CMS) para gestão de conteúdo",
+                "Design responsivo para múltiplos dispositivos e interfaces",
+                "Otimização para SEO com renderização estática ou híbrida (SSG/SSR)",
+                "Implementação de pipeline de CI/CD para releases contínuos",
+                "Estratégias de segurança e conformidade de dados"
+            ]
+        },
+        {
+            "title": "Mitos e Verdades Sobre o Cartão de Crédito Empresarial",
+            "description": "conteúdo publicitário especial no G1, focado em promover o Cartão de Crédito Empresarial do Bradesco. A página é um quiz interativo no formato Mito ou Verdade que busca educar e desmistificar informações sobre o cartão para empreendedores.",
+            "link": "https://especiais.g1.globo.com/especial-publicitario/mitos-e-verdades-sobre-o-cartao-de-credito-empresarial/",
+            "featured": true,
+            "imageUrl": "/projects/mitos_e_verdades.png",
+            "details": [
+                "Plataforma de conteúdo modular e reutilizável",
+                "Design otimizado para a identidade visual da marca (Bradesco)",
+                "Implementação de elementos interativos (quiz)",
+                "Integração com ferramentas de análise de dados (Analytics)",
+                "Foco em métricas de engajamento e conversão de público",
+                "Otimização para SEO dentro do domínio de alta autoridade do G1"
+            ]
+        }
+    ]
 }

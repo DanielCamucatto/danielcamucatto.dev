@@ -20,7 +20,6 @@ const ProjectCard: React.FC<Project> = ({
   title,
   description,
   link,
-  technologies,
   imageUrl,
   details
 }) => {
@@ -70,16 +69,6 @@ const ProjectCard: React.FC<Project> = ({
             {details.map((detail, index) => (
               <li key={index} className="mb-2 flex items-center">
                 <span className="mr-2 text-teal-300">▹</span> {detail}
-              </li>
-            ))}
-          </ul>
-
-          <ul className="mt-4 flex flex-wrap" aria-label="Tecnologias utilizadas">
-            {technologies.map((tech) => (
-              <li key={tech} className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
-                  {tech}
-                </div>
               </li>
             ))}
           </ul>
