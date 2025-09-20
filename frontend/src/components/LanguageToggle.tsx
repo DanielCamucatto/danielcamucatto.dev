@@ -34,7 +34,7 @@ export default function LanguageToggle() {
     <div className="relative" ref={dropdownRef}>
       <button
         type="button"
-        className="flex items-center rounded-lg p-2 text-sm text-slate-400 hover:text-teal-300 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600"
+        className="flex items-center justify-center w-10 h-10 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 text-slate-400 hover:text-teal-300"
         aria-label="Selecionar idioma"
         onClick={toggleDropdown}
       >

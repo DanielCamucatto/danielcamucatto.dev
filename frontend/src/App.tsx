@@ -35,10 +35,8 @@ function AppContent() {
         className="fixed inset-0 pointer-events-none z-0 transition-all duration-200"
         aria-hidden
       />
-      <div className="fixed top-4 right-4 flex items-center gap-4">
-        <div className="mr-12">
-          <LanguageToggle />
-        </div>
+      <div className="fixed top-4 right-4 flex items-center space-x-2">
+        <LanguageToggle />
         <ThemeToggle />
       </div>
       <div className="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
