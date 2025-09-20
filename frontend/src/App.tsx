@@ -1,7 +1,8 @@
 import './App.css';
 import { useEffect, useRef } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { Header, Navigation, Footer, About, Experience, Projects, ThemeToggle } from './components';
+import { LanguageProvider } from './contexts/LanguageContext';
+import { Header, Navigation, Footer, About, Experience, Projects, ThemeToggle, LanguageToggle } from './components';
 
 function AppContent() {
   const highlightRef = useRef<HTMLDivElement>(null);
@@ -34,7 +35,12 @@ function AppContent() {
         className="fixed inset-0 pointer-events-none z-0 transition-all duration-200"
         aria-hidden
       />
-      <ThemeToggle />
+      <div className="fixed top-4 right-4 flex items-center gap-4">
+        <div className="mr-12">
+          <LanguageToggle />
+        </div>
+        <ThemeToggle />
+      </div>
       <div className="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-4">
           <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
@@ -56,7 +62,9 @@ function AppContent() {
 function App() {
   return (
     <ThemeProvider>
-      <AppContent />
+      <LanguageProvider>
+        <AppContent />
+      </LanguageProvider>
     </ThemeProvider>
   );
 }
