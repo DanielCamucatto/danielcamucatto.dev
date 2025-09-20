@@ -1,5 +1,19 @@
 {
   "name": "Daniel Santana Camuçatto",
   "role": "Full Stack Developer",
-  "description": "I am passionate about technology and disruptive ideas."
+  "description": "I am passionate about technology and disruptive ideas.",
+  "socialLinks": {
+    "linkedin": {
+      "url": "https://linkedin.com/in/danielcamucatto",
+      "label": "LinkedIn"
+    },
+    "github": {
+      "url": "https://github.com/danielcamucatto",
+      "label": "GitHub"
+    },
+    "devto": {
+      "url": "https://dev.to/danielcamucatto",
+      "label": "Technical Articles"
+    }
+  }
 }
