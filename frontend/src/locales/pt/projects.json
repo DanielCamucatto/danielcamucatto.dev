@@ -1,0 +1,45 @@
+{
+  "title": "Projetos",
+  "projects": [
+    {
+      "title": "Divam",
+      "description": "Plataforma de agendamento de consulta médica online, oferecendo uma experiência intuitiva para pacientes e profissionais de saúde.",
+      "link": "https://divam.com.br/",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "featured": true,
+      "imageUrl": "/projects/divam.png",
+      "details": [
+        "Interface moderna e responsiva para agendamento de consultas",
+        "Sistema de notificações em tempo real",
+        "Dashboard completo para gestão de agenda médica",
+        "Integração com gateway de pagamento",
+        "Sistema de avaliações e feedback"
+      ]
+    },
+    {
+      "title": "Portfolio",
+      "description": "Site pessoal e portfolio, desenvolvido com tecnologias modernas e foco em performance e acessibilidade.",
+      "link": "https://danielcamucatto.dev",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Docker"
+      ],
+      "featured": true,
+      "imageUrl": "/projects/portfolio.png",
+      "details": [
+        "Design responsivo e minimalista",
+        "Suporte a múltiplos idiomas (i18n)",
+        "Otimização de performance com SSR",
+        "Integração contínua com Docker"
+      ]
+    }
+  ]
+}
