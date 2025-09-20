@@ -1,0 +1,22 @@
+{
+  "title": "Experiencia",
+  "experiences": [
+    {
+      "period": "2024 — Presente",
+      "ariaLabel": "2024 hasta el Presente",
+      "role": "Ingeniero Frontend Senior",
+      "company": "Empresa XYZ",
+      "description": "Desarrollo de interfaces web responsivas y accesibles utilizando React, TypeScript y otras tecnologías modernas. Implementación de estándares de accesibilidad y mejores prácticas de desarrollo.",
+      "technologies": ["React", "TypeScript", "TailwindCSS"]
+    },
+    {
+      "period": "2022 — 2024",
+      "ariaLabel": "2022 hasta 2024",
+      "role": "Ingeniero Frontend",
+      "company": "Empresa ABC",
+      "description": "Desarrollo de aplicaciones web enfocadas en el rendimiento y la experiencia del usuario. Implementación de pruebas automatizadas e integración continua.",
+      "technologies": ["JavaScript", "Vue.js", "Jest"]
+    }
+  ],
+  "technologiesLabel": "Tecnologías utilizadas"
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Experiência",
+  "experiences": [
+    {
+      "period": "Abril de 2025 — Presente",
+      "ariaLabel": "Abril de 2025 até o Presente",
+      "role": "FullStack Engineer",
+      "company": "Visto Tecnologia",
+      "description": "Na Visto Tecnologia, atuo como um agente de transformação, integrando inteligência artificial em soluções de varejo. Gerencio o ciclo de vida completo de aplicações, desde o desenvolvimento até o deploy, com um foco rigoroso na observabilidade e performance. Minhas entregas resultam em sistemas escaláveis e de alta qualidade, garantindo eficiência e monitoramento contínuo.",
+      "technologies": ["React", "TypeScript", "PHP", "Datadog", "Postgree", "CSS", "PHP Unit", "Docker"]
+    },
+    {
+      "period": "Dezembro de 2023 até Julho de 2025",
+      "ariaLabel": "Dezembro de 2023 até Julho de 2025",
+      "role": "FullStack Engineer",
+      "company": "Mtrix",
+      "description": "Como Desenvolvedor Full Stack na Mtrix, liderei a arquitetura e o desenvolvimento de uma solução crucial para a geração e versionamento de arquivos, otimizando a forma como os usuários interagem com dados de Big Data**. Minha contribuição incluiu a criação de dashboards interativos no Qlik Sense e a resolução de problemas em tempo real, impulsionando a eficiência e a tomada de decisões estratégicas.",
+      "technologies": ["React", "JavaScript", "TypeScript", "Python", "Kubernets", "Docker", "Storybook", "styled-component", "Tailwindcss", "Datadog", "Qlik sense", "Mashup", "Spark", "SQL", "Trino", "Kubemaestro"]
+    },
+    {
+      "period": "Junho de 2023 até Março de 2024",
+      "ariaLabel": "Junho de 2023 até Março de 2024",
+      "role": "Front-End Engineer",
+      "company": "Divam Oficial",
+      "description": "Na Divam Oficial, realizei uma refatoração estratégica no sistema de login e autenticação, elevando a segurança e a experiência do usuário. Fui o principal responsável pela implementação de estratégias de SEO que aumentaram a visibilidade online e liderei a adoção bem-sucedida da **autenticação OAuth, garantindo um ecossistema digital mais seguro e eficiente.",
+      "technologies": ["React", "JavaScript", "TypeScript", "Next.js", "Node.js", "Nest.js", "Storybook", "styled-component", "Tailwindcss", "Apollo", "Recoil", "GraphQL", "MongoDB", "JWT", "Cypress", "Jest"]
+    },
+    {
+      "period": "Outubro de 2022 até Maio de 2023",
+      "ariaLabel": "Outubro de 2022 até Maio de 2023",
+      "role": "Front-End Engineer",
+      "company": "DW3 Tecnologia",
+      "description": "Liderei a criação e implementação de um **design system com Angular**, padronizando a experiência do usuário e elevando a eficiência do desenvolvimento. Minha iniciativa resultou em um framework de componentes reutilizáveis, documentado com **Storybook**, que acelerou a entrega de projetos e garantiu a consistência em todas as aplicações da empresa.",
+      "technologies": ["JavaScript", "TypeScript", "Angular", "Node.js", "PHP", "Yii", "CSS", "SASS", "Mustache.js", "Storybook", "Tailwindcss", "Jasmini", "Karma", "Bootstrap"]
+    },
+    {
+      "period": "Junho de 2022 até Outubro de 2022",
+      "ariaLabel": "Junho de 2022 até Outubro de 2022",
+      "role": "Front-End Engineer",
+      "company": "Dark Media Group",
+      "description": "Contribuí para a modernização do portfólio digital, participando ativamente da **manutenção e melhoria de sites. Fui essencial no **desenvolvimento e integração de um novo produto**, assegurando sua performance e responsividade em uma ampla gama de dispositivos, desde smartphones a telas 4K, demonstrando adaptabilidade e foco na experiência do usuário.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Docker", "React.js", "JQuery", "SASS"]
+    },
+    {
+      "period": "Abril de 2021 até Outubro de 2022",
+      "ariaLabel": "Abril de 2021 até Outubro de 2022",
+      "role": "Desenvolvedor Web",
+      "company": "Arizona",
+      "description": "Participei ativamente da entrega de projetos web de alta visibilidade, incluindo Landing Pages e sites institucionais, para clientes de peso como o grupo XP Inc. Minha atuação focou na colaboração com equipes multidisciplinares, aplicando a metodologia Scrum para garantir entregas eficientes e alinhadas com as expectativas dos clientes.",
+      "technologies": ["HTML", "CSS", "JavaScript", "JQuery", "Git", "Scrum", "Bootstrap"]
+    },
+    {
+      "period": "Dezembro de 2020 até Fevereiro de 2021",
+      "ariaLabel": "Dezembro de 2020 até Fevereiro de 2021",
+      "role": "Desenvolvedor Web",
+      "company": "Live Promo e Incentive",
+      "description": "Minha principal contribuição foi o desenvolvimento de um algoritmo de interação dinâmica que gerou um aumento significativo no rendimento da empresa. Entreguei projetos web robustos para clientes como Bauducco, Hydra e Coral, criando experiências interativas que resultaram em maior engajamento e sucesso para as marcas.",
+      "technologies": ["PHP", "Angular", "MySQL", "CSS", "JQuery", "HTML", "Webpack", "React.js", "Bootstrap"]
+    },
+    {
+      "period": "Março de 2020 até Dezembro de 2020",
+      "ariaLabel": "Março de 2020 até Dezembro de 2020",
+      "role": "Desenvolvedor Full Stack",
+      "company": "R-consulters",
+      "description": "Trabalhei na criação de soluções web personalizadas para pequenas e médias empresas, transformando suas necessidades de negócio em aplicações dinâmicas e escaláveis. Minha atuação como Full Stack resultou na entrega de sistemas robustos, que impulsionaram a presença online dos clientes e demonstraram minha capacidade de criar soluções completas e eficientes.",
+      "technologies": ["React", "Node.js", "MongoDB", "Docker", "SASS", "Tailwind CSS", "Redux.js", "HTML5", "CSS", "JavaScript", "TypeScript", "Bootstrap"]
+    },
+    {
+      "period": "Fevereiro de 2019 até Fevereiro de 2020",
+      "ariaLabel": "Fevereiro de 2019 até Fevereiro de 2020",
+      "role": "Desenvolvedor Web",
+      "company": "Centro de Missões Urbanas - CEMU",
+      "description": "Fui o principal responsável pelo esenvolvimento e manutenção do site da organização, com foco em otimização para motores de busca (SEO) e performance. Minhas contribuições incluíram a criação de plugins e a manutenção do banco de dados, resultando em um site funcional e com visibilidade ampliada, que atendia de forma eficaz às necessidades da comunidade.",
+      "technologies": ["jQuery", "JavaScript", "CSS", "PHP", "WordPress", "MySQL", "HTML5", "SQL"]
+    }
+  ],
+  "technologiesLabel": "Tecnologias usadas"
+}

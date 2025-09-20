@@ -1,0 +1,22 @@
+{
+  "title": "Experience",
+  "experiences": [
+    {
+      "period": "2024 — Present",
+      "ariaLabel": "2024 to Present",
+      "role": "Senior Frontend Engineer",
+      "company": "Company XYZ",
+      "description": "Development of responsive and accessible web interfaces using React, TypeScript, and other modern technologies. Implementation of accessibility standards and development best practices.",
+      "technologies": ["React", "TypeScript", "TailwindCSS"]
+    },
+    {
+      "period": "2022 — 2024",
+      "ariaLabel": "2022 to 2024",
+      "role": "Frontend Engineer",
+      "company": "Company ABC",
+      "description": "Development of web applications focused on performance and user experience. Implementation of automated tests and continuous integration.",
+      "technologies": ["JavaScript", "Vue.js", "Jest"]
+    }
+  ],
+  "technologiesLabel": "Technologies used"
+}
