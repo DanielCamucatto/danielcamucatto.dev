@@ -3,8 +3,8 @@ import Footer from '../components/Footer';
 describe('Footer', () => {
   it('renderiza "Construído com React"', () => {
     render(<Footer />);
-    expect(screen.getByText(/construído com/i)).toBeInTheDocument();
-    expect(screen.getByText(/react/i)).toBeInTheDocument();
-    expect(screen.getByText(/tailwind css/i)).toBeInTheDocument();
+    // verifica email e presença do nome/ano
+    expect(screen.getByText(/daniel.camucatto@gmail.com/i)).toBeInTheDocument();
+    expect(screen.getByText(/daniel camucatto/i)).toBeInTheDocument();
   });
 });
