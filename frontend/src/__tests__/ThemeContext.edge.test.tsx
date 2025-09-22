@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme.ts';
 
 function UseThemeOutsideProvider() {
   useTheme();

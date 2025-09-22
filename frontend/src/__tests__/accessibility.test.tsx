@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
-import ThemeToggle from '../components/ThemeToggle';
+import { ThemeToggle } from '../components/ThemeToggle';
 import { ThemeProvider } from '../contexts/ThemeContext';
 
 describe('Acessibilidade dos componentes principais', () => {
@@ -29,7 +29,7 @@ describe('Acessibilidade dos componentes principais', () => {
         <ThemeToggle />
       </ThemeProvider>
     );
-    expect(screen.getByLabelText(/mudar para tema/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/ativar modo/i)).toBeInTheDocument();
   });
 
   it('Projects tem heading acessível', () => {

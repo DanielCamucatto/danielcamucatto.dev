@@ -4,5 +4,5 @@ export { default as Footer } from './Footer';
 export { default as About } from './About';
 export { default as Experience } from './Experience';
 export { default as Projects } from './Projects';
-export { default as ThemeToggle } from './ThemeToggle';
-export { default as LanguageToggle } from './LanguageToggle';
+export { ThemeToggle } from './ThemeToggle';
+export { LanguageToggle } from './LanguageToggle';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 
 const languages = {
   pt: { name: 'Português', flag: '🇧🇷' },
@@ -7,7 +7,7 @@ const languages = {
   es: { name: 'Español', flag: '🇪🇸' },
 } as const;
 
-export default function LanguageToggle() {
+export function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = React.useState(false);
   const dropdownRef = React.useRef<HTMLDivElement>(null);

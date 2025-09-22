@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import ThemeToggle from '../components/ThemeToggle';
+import { ThemeToggle } from '../components/ThemeToggle';
 import { ThemeProvider } from '../contexts/ThemeContext';
 
 describe('ThemeToggle', () => {
@@ -10,7 +10,7 @@ describe('ThemeToggle', () => {
       </ThemeProvider>
     );
     // O botão deve começar no tema light (ícone de lua)
-    expect(screen.getByLabelText(/mudar para tema escuro/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/ativar modo escuro/i)).toBeInTheDocument();
   });
 
   it('alterna o tema ao clicar', () => {
@@ -22,9 +22,9 @@ describe('ThemeToggle', () => {
     const button = screen.getByRole('button');
     // Clica para alternar para dark
     fireEvent.click(button);
-    expect(screen.getByLabelText(/mudar para tema claro/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/ativar modo claro/i)).toBeInTheDocument();
     // Clica novamente para voltar para light
     fireEvent.click(button);
-    expect(screen.getByLabelText(/mudar para tema escuro/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/ativar modo escuro/i)).toBeInTheDocument();
   });
 });
