@@ -32,21 +32,26 @@ const translations = {
   }
 } as const;
 
-export type Language = keyof typeof translations;
+import type { Language } from '../types/language';
+
 export type TranslationKeys = typeof translations[Language];
 
 import { useLanguage } from '../contexts/LanguageContext';
 
-export function getTranslations(defaultLang: 'pt' | 'en' | 'es' = 'pt') {
-  // Se estivermos em um componente, use o hook
-  try {
-    const { language } = useLanguage();
-    return translations[language];
-  } catch {
-    // Se não estivermos em um componente ou o contexto não estiver disponível,
-    // use o idioma padrão
-    return translations[defaultLang];
-  }
+// Pure helper: recebe explicitamente o idioma e retorna as traduções
+export function getTranslationsByLang(lang: Language) {
+  return translations[lang];
+}
+
+// Hook para uso dentro de componentes: usa o contexto
+export function useTranslations(): TranslationKeys {
+  const { language } = useLanguage();
+  return translations[language];
+}
+
+// Compatibilidade: mantém função utilitária que aceita um fallback
+export function getTranslations(defaultLang: Language = 'pt'): TranslationKeys {
+  return translations[defaultLang];
 }
 
 export default translations;

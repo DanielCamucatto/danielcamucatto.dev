@@ -1,8 +1,8 @@
-require('@testing-library/jest-dom');
+import '@testing-library/jest-dom';
 
 // Mock para window.matchMedia no ambiente de testes
 if (typeof window !== 'undefined' && !window.matchMedia) {
-	window.matchMedia = (query) => ({
+	window.matchMedia = (query: string) => ({
 		matches: false,
 		media: query,
 		onchange: null,
@@ -11,5 +11,5 @@ if (typeof window !== 'undefined' && !window.matchMedia) {
 		addEventListener: () => {},
 		removeEventListener: () => {},
 		dispatchEvent: () => false,
-	});
+	} as unknown as MediaQueryList);
 }
