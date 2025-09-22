@@ -13,7 +13,7 @@
         "PostgreSQL"
       ],
       "featured": true,
-      "imageUrl": "/projects/divam.png",
+  "imageUrl": "projects/divam.png",
       "details": [
         "Modern and responsive interface for appointment scheduling",
         "Real-time notification system",
@@ -33,7 +33,7 @@
         "Docker"
       ],
       "featured": true,
-      "imageUrl": "/projects/portfolio.png",
+  "imageUrl": "projects/portfolio.png",
       "details": [
         "Responsive and minimalist design",
         "Multi-language support (i18n)",
