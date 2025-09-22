@@ -42,6 +42,7 @@ Marque abaixo as sugestões que você quer que eu implemente primeiro e eu come�
 - [ ] Implementar IA (inicialmente como integração com OpenAI para respostas estáticas)
 - [ ] Ajustar estilos para contraste no modo light
 - [ ] Configurar proteção de branch para bloquear deploy quando checks falharem
+ - [ ] Integrar Google Analytics 4 (GA4) — adicionar Measurement ID e enviar eventos (CV download, projetos, contato, idioma, tema)
 
 ## 7. Testes de Performance
 - Avaliar tempo de renderização dos principais componentes se o projeto crescer.
