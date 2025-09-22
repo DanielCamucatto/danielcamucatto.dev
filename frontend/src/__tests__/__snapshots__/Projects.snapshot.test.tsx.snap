@@ -37,7 +37,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Divam"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="/projects/divam.png"
+                  src="projects/divam.png"
                 />
               </div>
             </div>
@@ -157,7 +157,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Bae Digital"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="/projects/bae_digital.png"
+                  src="projects/bae_digital.png"
                 />
               </div>
             </div>
@@ -267,7 +267,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Pix 4 Fun"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="/projects/pix4fun.png"
+                  src="projects/pix4fun.png"
                 />
               </div>
             </div>
@@ -397,7 +397,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Inteligência Financeira - Globo.com"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="/projects/inteligencia_financeira.png"
+                  src="projects/inteligencia_financeira.png"
                 />
               </div>
             </div>
@@ -527,7 +527,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Mitos e Verdades Sobre o Cartão de Crédito Empresarial"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="/projects/mitos_e_verdades.png"
+                  src="projects/mitos_e_verdades.png"
                 />
               </div>
             </div>

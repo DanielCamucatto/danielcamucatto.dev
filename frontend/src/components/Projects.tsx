@@ -1,5 +1,5 @@
 import React from 'react';
-import { getTranslations } from '../utils/translations';
+import { useTranslations } from '../utils/translations';
 
 interface Project {
   title: string;
@@ -79,7 +79,7 @@ const ProjectCard: React.FC<Project> = ({
 };
 
 export default function Projects() {
-  const translations = getTranslations('pt').projects as ProjectsTranslations;
+  const translations = useTranslations().projects as ProjectsTranslations;
 
   return (
     <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">

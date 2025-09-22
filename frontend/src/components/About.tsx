@@ -1,5 +1,5 @@
 
-import { getTranslations } from '../utils/translations';
+import { useTranslations } from '../utils/translations';
 
 interface AboutTranslations {
   title: string;
@@ -7,7 +7,7 @@ interface AboutTranslations {
 }
 
 export default function About() {
-  const translations = getTranslations('pt').about as AboutTranslations;
+  const translations = useTranslations().about as AboutTranslations;
 
   return (
     <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">

@@ -1,5 +1,5 @@
 
-import { getTranslations } from '../utils/translations';
+import { useTranslations } from '../utils/translations';
 
 interface SocialLink {
   url: string;
@@ -18,7 +18,7 @@ interface HeaderTranslations {
 }
 
 export default function Header() {
-  const translations = getTranslations('pt').header as HeaderTranslations;
+  const translations = useTranslations().header as HeaderTranslations;
 
   return (
     <header className="lg:sticky lg:top-0 lg:max-h-screen lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:py-24">

@@ -36,7 +36,8 @@ import type { Language } from '../types/language';
 
 export type TranslationKeys = typeof translations[Language];
 
-import { useLanguage } from '../hooks/useLanguage';
+import { useContext } from 'react';
+import { LanguageContext } from '../contexts/LanguageContext';
 
 // ... (o resto do seu código)
 
@@ -51,7 +52,10 @@ export function getTranslationsByLang(lang: Language) {
 
 // Hook para uso dentro de componentes: usa o contexto
 export function useTranslations(): TranslationKeys {
-  const { language } = useLanguage();
+  // Tentamos ler o contexto; se não houver provider (ex.: testes isolados),
+  // caímos para 'pt' como fallback para manter compatibilidade.
+  const context = useContext(LanguageContext);
+  const language: Language = context?.language ?? 'pt';
   return translations[language];
 }
 
