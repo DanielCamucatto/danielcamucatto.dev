@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import { ThemeToggle } from '../components/ThemeToggle';
-import { ThemeProvider } from '../contexts/ThemeContext';
+import { ThemeProvider } from '../contexts/ThemeProvider';
 
 describe('Acessibilidade dos componentes principais', () => {
   it('Header tem role="banner"', () => {

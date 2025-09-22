@@ -41,7 +41,6 @@ import { useLanguage } from '../hooks/useLanguage';
 // ... (o resto do seu código)
 
 export function useTranslation() {
-  const { language } = useLanguage();
   // ... (o resto da sua lógica de tradução)
 }
 

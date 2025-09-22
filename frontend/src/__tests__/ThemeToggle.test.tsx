@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { ThemeToggle } from '../components/ThemeToggle';
-import { ThemeProvider } from '../contexts/ThemeContext';
+import { ThemeProvider } from '../contexts/ThemeProvider';
 
 describe('ThemeToggle', () => {
   it('exibe o ícone correto para o tema atual', () => {
