@@ -7,6 +7,7 @@ describe('Projects', () => {
   });
   it('renderiza o texto de placeholder', () => {
     render(<Projects />);
-    expect(screen.getByText(/adicionar projetos aqui/i)).toBeInTheDocument();
+    // Verifica que um projeto real da lista está sendo renderizado (evita usar texto placeholder)
+    expect(screen.getByText(/Divam/i)).toBeInTheDocument();
   });
 });

@@ -7,20 +7,639 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
     id="projects"
   >
     <div
-      class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-white/75 dark:bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+      class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
     >
       <h2
-        class="text-sm font-bold uppercase tracking-widest text-slate-800 dark:text-slate-200 lg:sr-only"
+        class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only"
       >
         Projetos
       </h2>
     </div>
     <div>
-      <p
-        class="text-slate-700"
+      <ul
+        class="group/list"
       >
-        Adicionar projetos aqui
-      </p>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto Divam"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="/projects/divam.png"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Divam"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://divam.com.br/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Divam
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Plataforma de agendamento de consulta médica online, oferecendo uma experiência intuitiva para pacientes e profissionais de saúde.
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Interface moderna e responsiva para agendamento de consultas
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Sistema de notificações em tempo real
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Dashboard completo para gestão de agenda médica
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Integração com gateway de pagamento
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Sistema de avaliações e feedback
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto Bae Digital"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="/projects/bae_digital.png"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Bae Digital"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://baedigital.com.br/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Bae Digital
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                A BAE Digital é uma plataforma de relacionamentos que se diferencia de outros aplicativos ao focar em conexões mais profundas e experiências. 
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Design responsivo para diversas plataformas
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Uso de certificados SSL/TLS para segurança (HTTPS)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Foco em usabilidade e experiência do usuário (UX)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Implementação de um blog para marketing de conteúdo
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto Pix 4 Fun"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="/projects/pix4fun.png"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Pix 4 Fun"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://www.pix4fun.com.br/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Pix 4 Fun
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                A Pix4Fun é uma plataforma de comércio eletrônico que oferece um serviço de revelação de fotos personalizadas em formato físico. O foco principal são as fotos estilo Polaroid e fotos-ímã, permitindo que os clientes transformem suas memórias digitais em produtos tangíveis.
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Plataforma de e-commerce focada em produtos personalizados
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Fluxo de compra simplificado e intuitivo (3 passos)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Processo de personalização de fotos diretamente no site
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Integração com múltiplos meios de pagamento (PIX, cartão e boleto)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Design responsivo para compra via desktop e mobile
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Suporte a envios via Correios com opções de rastreamento
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto Inteligência Financeira - Globo.com"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="/projects/inteligencia_financeira.png"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Inteligência Financeira - Globo.com"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="www.inteligenciafinanceira.com.br/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Inteligência Financeira - Globo.com
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                 portal de conteúdo focado em educação financeira, oferecendo artigos, vídeos e análises para ajudar o público a gerenciar suas finanças de forma mais inteligente.Hoje infelizmente ele foi descontinuado
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Arquitetura em nuvem escalável para alto tráfego
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Utilização de Content Management System (CMS) para gestão de conteúdo
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Design responsivo para múltiplos dispositivos e interfaces
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Otimização para SEO com renderização estática ou híbrida (SSG/SSR)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Implementação de pipeline de CI/CD para releases contínuos
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Estratégias de segurança e conformidade de dados
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto Mitos e Verdades Sobre o Cartão de Crédito Empresarial"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="/projects/mitos_e_verdades.png"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Mitos e Verdades Sobre o Cartão de Crédito Empresarial"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://especiais.g1.globo.com/especial-publicitario/mitos-e-verdades-sobre-o-cartao-de-credito-empresarial/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Mitos e Verdades Sobre o Cartão de Crédito Empresarial
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                conteúdo publicitário especial no G1, focado em promover o Cartão de Crédito Empresarial do Bradesco. A página é um quiz interativo no formato Mito ou Verdade que busca educar e desmistificar informações sobre o cartão para empreendedores.
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Plataforma de conteúdo modular e reutilizável
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Design otimizado para a identidade visual da marca (Bradesco)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Implementação de elementos interativos (quiz)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Integração com ferramentas de análise de dados (Analytics)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Foco em métricas de engajamento e conversão de público
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Otimização para SEO dentro do domínio de alta autoridade do G1
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 </DocumentFragment>

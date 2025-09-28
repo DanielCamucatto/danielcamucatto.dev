@@ -7,6 +7,8 @@ describe('Experience', () => {
   });
   it('renderiza o texto de placeholder', () => {
     render(<Experience />);
-    expect(screen.getByText(/adicionar experiências profissionais aqui/i)).toBeInTheDocument();
+    // Verifica que pelo menos uma ocorrência de 'FullStack Engineer' está sendo renderizada
+    const matches = screen.getAllByText(/FullStack Engineer/i);
+    expect(matches.length).toBeGreaterThan(0);
   });
 });

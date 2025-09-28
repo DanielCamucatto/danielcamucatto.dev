@@ -7,20 +7,1522 @@ exports[`Experience snapshot deve bater o snapshot 1`] = `
     id="experience"
   >
     <div
-      class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-white/75 dark:bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+      class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
     >
       <h2
-        class="text-sm font-bold uppercase tracking-widest text-slate-800 dark:text-slate-200 lg:sr-only"
+        class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only"
       >
         Experiência
       </h2>
     </div>
     <div>
-      <p
-        class="text-slate-700 dark:text-slate-400"
+      <ol
+        class="group/list"
       >
-        Adicionar experiências profissionais aqui
-      </p>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Abril de 2025 até o Presente"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Abril de 2025 — Presente
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="FullStack Engineer"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      FullStack Engineer ·  
+                      <span
+                        class="inline-block"
+                      >
+                        Visto Tecnologia
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Na Visto Tecnologia, atuo como um agente de transformação, integrando inteligência artificial em soluções de varejo. Gerencio o ciclo de vida completo de aplicações, desde o desenvolvimento até o deploy, com um foco rigoroso na observabilidade e performance. Minhas entregas resultam em sistemas escaláveis e de alta qualidade, garantindo eficiência e monitoramento contínuo.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    React
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    TypeScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    PHP
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Datadog
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Postgree
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    PHP Unit
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Docker
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Dezembro de 2023 até Julho de 2025"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Dezembro de 2023 até Julho de 2025
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="FullStack Engineer"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      FullStack Engineer ·  
+                      <span
+                        class="inline-block"
+                      >
+                        Mtrix
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Como Desenvolvedor Full Stack na Mtrix, liderei a arquitetura e o desenvolvimento de uma solução crucial para a geração e versionamento de arquivos, otimizando a forma como os usuários interagem com dados de Big Data**. Minha contribuição incluiu a criação de dashboards interativos no Qlik Sense e a resolução de problemas em tempo real, impulsionando a eficiência e a tomada de decisões estratégicas.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    React
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    TypeScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Python
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Kubernets
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Docker
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Storybook
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    styled-component
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Tailwindcss
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Datadog
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Qlik sense
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Mashup
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Spark
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    SQL
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Trino
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Kubemaestro
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Junho de 2023 até Março de 2024"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Junho de 2023 até Março de 2024
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Front-End Engineer"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Front-End Engineer ·  
+                      <span
+                        class="inline-block"
+                      >
+                        Divam Oficial
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Na Divam Oficial, realizei uma refatoração estratégica no sistema de login e autenticação, elevando a segurança e a experiência do usuário. Fui o principal responsável pela implementação de estratégias de SEO que aumentaram a visibilidade online e liderei a adoção bem-sucedida da **autenticação OAuth, garantindo um ecossistema digital mais seguro e eficiente.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    React
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    TypeScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Next.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Node.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Nest.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Storybook
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    styled-component
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Tailwindcss
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Apollo
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Recoil
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    GraphQL
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    MongoDB
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JWT
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Cypress
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Jest
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Outubro de 2022 até Maio de 2023"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Outubro de 2022 até Maio de 2023
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Front-End Engineer"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Front-End Engineer ·  
+                      <span
+                        class="inline-block"
+                      >
+                        DW3 Tecnologia
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Liderei a criação e implementação de um **design system com Angular**, padronizando a experiência do usuário e elevando a eficiência do desenvolvimento. Minha iniciativa resultou em um framework de componentes reutilizáveis, documentado com **Storybook**, que acelerou a entrega de projetos e garantiu a consistência em todas as aplicações da empresa.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    TypeScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Angular
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Node.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    PHP
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Yii
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    SASS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Mustache.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Storybook
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Tailwindcss
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Jasmini
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Karma
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Bootstrap
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Junho de 2022 até Outubro de 2022"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Junho de 2022 até Outubro de 2022
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Front-End Engineer"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Front-End Engineer ·  
+                      <span
+                        class="inline-block"
+                      >
+                        Dark Media Group
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Contribuí para a modernização do portfólio digital, participando ativamente da **manutenção e melhoria de sites. Fui essencial no **desenvolvimento e integração de um novo produto**, assegurando sua performance e responsividade em uma ampla gama de dispositivos, desde smartphones a telas 4K, demonstrando adaptabilidade e foco na experiência do usuário.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    HTML
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    PHP
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Docker
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    React.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JQuery
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    SASS
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Abril de 2021 até Outubro de 2022"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Abril de 2021 até Outubro de 2022
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Desenvolvedor Web"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Desenvolvedor Web ·  
+                      <span
+                        class="inline-block"
+                      >
+                        Arizona
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Participei ativamente da entrega de projetos web de alta visibilidade, incluindo Landing Pages e sites institucionais, para clientes de peso como o grupo XP Inc. Minha atuação focou na colaboração com equipes multidisciplinares, aplicando a metodologia Scrum para garantir entregas eficientes e alinhadas com as expectativas dos clientes.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    HTML
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JQuery
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Git
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Scrum
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Bootstrap
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Dezembro de 2020 até Fevereiro de 2021"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Dezembro de 2020 até Fevereiro de 2021
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Desenvolvedor Web"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Desenvolvedor Web ·  
+                      <span
+                        class="inline-block"
+                      >
+                        Live Promo e Incentive
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Minha principal contribuição foi o desenvolvimento de um algoritmo de interação dinâmica que gerou um aumento significativo no rendimento da empresa. Entreguei projetos web robustos para clientes como Bauducco, Hydra e Coral, criando experiências interativas que resultaram em maior engajamento e sucesso para as marcas.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    PHP
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Angular
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    MySQL
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JQuery
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    HTML
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Webpack
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    React.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Bootstrap
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Março de 2020 até Dezembro de 2020"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Março de 2020 até Dezembro de 2020
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Desenvolvedor Full Stack"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Desenvolvedor Full Stack ·  
+                      <span
+                        class="inline-block"
+                      >
+                        R-consulters
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Trabalhei na criação de soluções web personalizadas para pequenas e médias empresas, transformando suas necessidades de negócio em aplicações dinâmicas e escaláveis. Minha atuação como Full Stack resultou na entrega de sistemas robustos, que impulsionaram a presença online dos clientes e demonstraram minha capacidade de criar soluções completas e eficientes.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    React
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Node.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    MongoDB
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Docker
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    SASS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Tailwind CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Redux.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    HTML5
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    TypeScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Bootstrap
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Fevereiro de 2019 até Fevereiro de 2020"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Fevereiro de 2019 até Fevereiro de 2020
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Desenvolvedor Web"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://exemplo.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Desenvolvedor Web ·  
+                      <span
+                        class="inline-block"
+                      >
+                        Centro de Missões Urbanas - CEMU
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Fui o principal responsável pelo esenvolvimento e manutenção do site da organização, com foco em otimização para motores de busca (SEO) e performance. Minhas contribuições incluíram a criação de plugins e a manutenção do banco de dados, resultando em um site funcional e com visibilidade ampliada, que atendia de forma eficaz às necessidades da comunidade.
+              </p>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    jQuery
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    PHP
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    WordPress
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    MySQL
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    HTML5
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    SQL
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 </DocumentFragment>

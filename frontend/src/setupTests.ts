@@ -1,4 +1,4 @@
-require('@testing-library/jest-dom');
+import '@testing-library/jest-dom';
 
 // Mock para window.matchMedia no ambiente de testes
 if (typeof window !== 'undefined' && !window.matchMedia) {
