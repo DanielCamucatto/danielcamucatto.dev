@@ -1,6 +1,5 @@
 import { render, screen, fireEvent, act } from '@testing-library/react';
 import { ThemeProvider, useTheme } from '../contexts/ThemeContext';
-import React from 'react';
 
 function ThemeConsumerTest() {
   const { theme, toggleTheme } = useTheme();

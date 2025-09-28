@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Navegação snapshot da navegação 1`] = `
+exports[`Navigation snapshot snapshot da navegação 1`] = `
 <DocumentFragment>
   <nav
     aria-label="In-page jump links"

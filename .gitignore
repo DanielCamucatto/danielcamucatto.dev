@@ -17,6 +17,10 @@ node_modules
 dist
 dist-ssr
 
+# Test coverage
+/frontend/coverage
+coverage
+
 # Local files
 *.local
 

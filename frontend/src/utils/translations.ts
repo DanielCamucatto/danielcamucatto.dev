@@ -35,18 +35,11 @@ const translations = {
 export type Language = keyof typeof translations;
 export type TranslationKeys = typeof translations[Language];
 
-import { useLanguage } from '../contexts/LanguageContext';
+
 
 export function getTranslations(defaultLang: 'pt' | 'en' | 'es' = 'pt') {
-  // Se estivermos em um componente, use o hook
-  try {
-    const { language } = useLanguage();
-    return translations[language];
-  } catch {
-    // Se não estivermos em um componente ou o contexto não estiver disponível,
-    // use o idioma padrão
-    return translations[defaultLang];
-  }
+  // Use apenas o idioma padrão para evitar usar hook fora de componente
+  return translations[defaultLang];
 }
 
 export default translations;
