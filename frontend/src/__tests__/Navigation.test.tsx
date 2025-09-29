@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../utils/test/render-utils';
 import Navigation from '../components/Navigation';
 describe('Navigation', () => {
   it('renderiza links de navegação', () => {

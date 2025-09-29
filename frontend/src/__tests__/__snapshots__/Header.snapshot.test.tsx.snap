@@ -3,7 +3,7 @@
 exports[`Header snapshot deve bater o snapshot 1`] = `
 <DocumentFragment>
   <header
-    class="lg:sticky lg:top-0 lg:max-h-screen lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:py-24"
+    class="lg:sticky lg:top-0 lg:max-h-screen lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:py-12"
   >
     <div>
       <div
@@ -110,6 +110,43 @@ exports[`Header snapshot deve bater o snapshot 1`] = `
           </span>
         </li>
       </ul>
+      <div
+        class="mt-6"
+      >
+        <div
+          class="relative group "
+        >
+          <button
+            aria-label="Baixar currículo em PDF"
+            class="inline-flex items-center gap-2 px-3 py-2 text-slate-600 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400 font-medium border border-slate-300 dark:border-slate-600 hover:border-teal-500 dark:hover:border-teal-400 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 bg-transparent hover:bg-slate-50 dark:hover:bg-slate-800/50"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span
+              class="text-sm font-normal"
+            >
+              Baixar CV
+            </span>
+          </button>
+          <span
+            class="absolute -top-12 left-1/2 -translate-x-1/2 opacity-0 transition-opacity group-hover:opacity-100 bg-slate-800 dark:bg-slate-700 text-slate-200 dark:text-slate-300 px-3 py-1 text-xs rounded whitespace-nowrap pointer-events-none z-10 shadow-lg"
+          >
+            Baixar currículo em PDF
+          </span>
+        </div>
+      </div>
     </div>
   </header>
 </DocumentFragment>

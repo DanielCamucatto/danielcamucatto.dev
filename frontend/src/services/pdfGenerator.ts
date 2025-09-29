@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import jsPDF from 'jspdf';
 import { getTranslations } from '../utils/translations';
