@@ -1,5 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import jsPDF from 'jspdf';
 import { getTranslations } from '../utils/translations';
 
@@ -54,36 +52,55 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
   // Cria um novo documento PDF
   const doc = new jsPDF();
   
-  // Configurações de fonte e cores
+  // Configurações de fonte e cores (hex convertidos para RGB)
   const primaryColor = '#0f172a'; // slate-900
   const secondaryColor = '#475569'; // slate-600
   const accentColor = '#14b8a6'; // teal-500
+
+  // Converte hex ("#rrggbb" ou "rrggbb") para tupla RGB [r,g,b]
+  function hexToRgb(hex: string): [number, number, number] {
+    const sanitized = hex.replace('#', '');
+    const bigint = parseInt(sanitized, 16);
+    const r = (bigint >> 16) & 255;
+    const g = (bigint >> 8) & 255;
+    const b = bigint & 255;
+    return [r, g, b];
+  }
+
+  const primaryRgb = hexToRgb(primaryColor);
+  const secondaryRgb = hexToRgb(secondaryColor);
+  const accentRgb = hexToRgb(accentColor);
   
   let yPosition = 20;
   const leftMargin = 20;
   const pageWidth = doc.internal.pageSize.getWidth();
+  const pageHeight = doc.internal.pageSize.getHeight();
   const contentWidth = pageWidth - (leftMargin * 2);
+  // Margin from bottom to consider for page break (keeps footer space)
+  const bottomMargin = 20;
+  // Threshold for when we should insert a page break. Calculated from page height
+  const pageBreakThreshold = pageHeight - bottomMargin - 30; // 30 accounts for text block height
   
   // Header Section
   doc.setFontSize(24);
-  doc.setTextColor(primaryColor);
+  doc.setTextColor(primaryRgb[0], primaryRgb[1], primaryRgb[2]);
   doc.text(cvData.header.name, leftMargin, yPosition);
   yPosition += 10;
   
   doc.setFontSize(16);
-  doc.setTextColor(accentColor);
+  doc.setTextColor(accentRgb[0], accentRgb[1], accentRgb[2]);
   doc.text(cvData.header.role, leftMargin, yPosition);
   yPosition += 8;
   
   doc.setFontSize(11);
-  doc.setTextColor(secondaryColor);
+  doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
   const descriptionLines = doc.splitTextToSize(cvData.header.description, contentWidth);
   doc.text(descriptionLines, leftMargin, yPosition);
   yPosition += descriptionLines.length * 5 + 5;
   
   // Contact Information
   doc.setFontSize(10);
-  doc.setTextColor(secondaryColor);
+  doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
   doc.text(`LinkedIn: ${cvData.header.socialLinks.linkedin.url}`, leftMargin, yPosition);
   yPosition += 5;
   doc.text(`GitHub: ${cvData.header.socialLinks.github.url}`, leftMargin, yPosition);
@@ -93,12 +110,12 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
   
   // About Section
   doc.setFontSize(16);
-  doc.setTextColor(primaryColor);
+  doc.setTextColor(primaryRgb[0], primaryRgb[1], primaryRgb[2]);
   doc.text(cvData.about.title, leftMargin, yPosition);
   yPosition += 8;
   
   doc.setFontSize(11);
-  doc.setTextColor(secondaryColor);
+  doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
   cvData.about.paragraphs.forEach(paragraph => {
     const paragraphLines = doc.splitTextToSize(paragraph, contentWidth);
     doc.text(paragraphLines, leftMargin, yPosition);
@@ -109,32 +126,32 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
   
   // Experience Section
   doc.setFontSize(16);
-  doc.setTextColor(primaryColor);
+  doc.setTextColor(primaryRgb[0], primaryRgb[1], primaryRgb[2]);
   doc.text(cvData.experience.title, leftMargin, yPosition);
   yPosition += 10;
   
   cvData.experience.experiences.forEach((exp, index) => {
     // Verifica se precisa de nova página
-    if (yPosition > 250) {
+    if (yPosition > pageBreakThreshold) {
       doc.addPage();
       yPosition = 20;
     }
     
     // Período
-    doc.setFontSize(10);
-    doc.setTextColor(accentColor);
+  doc.setFontSize(10);
+  doc.setTextColor(accentRgb[0], accentRgb[1], accentRgb[2]);
     doc.text(exp.period, leftMargin, yPosition);
     yPosition += 6;
     
     // Cargo e Empresa
-    doc.setFontSize(12);
-    doc.setTextColor(primaryColor);
+  doc.setFontSize(12);
+  doc.setTextColor(primaryRgb[0], primaryRgb[1], primaryRgb[2]);
     doc.text(`${exp.role} - ${exp.company}`, leftMargin, yPosition);
     yPosition += 7;
     
     // Descrição
-    doc.setFontSize(10);
-    doc.setTextColor(secondaryColor);
+  doc.setFontSize(10);
+  doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
     const descLines = doc.splitTextToSize(exp.description, contentWidth);
     doc.text(descLines, leftMargin, yPosition);
     yPosition += descLines.length * 4 + 3;
@@ -142,11 +159,11 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
     // Tecnologias
     if (exp.technologies && exp.technologies.length > 0) {
       const techLabel = cvData.experience.technologiesLabel || 'Technologies';
-      doc.setFontSize(9);
-      doc.setTextColor(accentColor);
+  doc.setFontSize(9);
+  doc.setTextColor(accentRgb[0], accentRgb[1], accentRgb[2]);
       doc.text(`${techLabel}: `, leftMargin, yPosition);
       
-      doc.setTextColor(secondaryColor);
+  doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
       const techText = exp.technologies.join(', ');
       const techLines = doc.splitTextToSize(techText, contentWidth - 30);
       doc.text(techLines, leftMargin + 30, yPosition);
@@ -167,32 +184,32 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
   
   // Education Section
   doc.setFontSize(16);
-  doc.setTextColor(primaryColor);
+  doc.setTextColor(primaryRgb[0], primaryRgb[1], primaryRgb[2]);
   doc.text(cvData.education.title, leftMargin, yPosition);
   yPosition += 10;
   
   cvData.education.education.forEach((item, index) => {
     // Verifica se precisa de nova página
-    if (yPosition > 250) {
+    if (yPosition > pageBreakThreshold) {
       doc.addPage();
       yPosition = 20;
     }
     
     // Período
-    doc.setFontSize(10);
-    doc.setTextColor(accentColor);
+  doc.setFontSize(10);
+  doc.setTextColor(accentRgb[0], accentRgb[1], accentRgb[2]);
     doc.text(item.period, leftMargin, yPosition);
     yPosition += 6;
     
     // Curso e Instituição
-    doc.setFontSize(12);
-    doc.setTextColor(primaryColor);
+  doc.setFontSize(12);
+  doc.setTextColor(primaryRgb[0], primaryRgb[1], primaryRgb[2]);
     doc.text(`${item.degree} - ${item.institution}`, leftMargin, yPosition);
     yPosition += 7;
     
     // Tipo
-    doc.setFontSize(10);
-    doc.setTextColor(secondaryColor);
+  doc.setFontSize(10);
+  doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
     doc.text(item.type, leftMargin, yPosition);
     yPosition += 8;
     
