@@ -26,31 +26,6 @@ export default function Footer() {
             daniel.camucatto@gmail.com
           </a>
         </p>
-        
-        <p>
-          {translations.builtWith}{" "}
-          <a
-            href="https://reactjs.org/"
-            className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="React (opens in a new tab)"
-          >
-            React
-          </a>{" "}
-          {translations.and}{" "}
-          <a
-            href="https://tailwindcss.com/"
-            className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Tailwind CSS (opens in a new tab)"
-          >
-            Tailwind CSS
-          </a>
-          .
-        </p>
-        
         <p className="text-xs">
           {translations.copyright}
         </p>
