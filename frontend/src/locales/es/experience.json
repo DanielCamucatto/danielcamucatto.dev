@@ -2,20 +2,52 @@
   "title": "Experiencia",
   "experiences": [
     {
-      "period": "2024 — Presente",
-      "ariaLabel": "2024 hasta el Presente",
-      "role": "Ingeniero Frontend Senior",
-      "company": "Empresa XYZ",
-      "description": "Desarrollo de interfaces web responsivas y accesibles utilizando React, TypeScript y otras tecnologías modernas. Implementación de estándares de accesibilidad y mejores prácticas de desarrollo.",
-      "technologies": ["React", "TypeScript", "TailwindCSS"]
+      "period": "Abril de 2025 — Presente",
+      "ariaLabel": "Abril de 2025 hasta el Presente",
+      "role": "Ingeniero FullStack",
+      "company": "Visto Tecnologia",
+      "description": "En Visto Tecnologia, actúo como un agente de transformación, integrando inteligencia artificial en soluciones de retail. Gestiono el ciclo de vida completo de aplicaciones, desde el desarrollo hasta el deploy, con un enfoque riguroso en la observabilidad y performance. Mis entregas resultan en sistemas escalables y de alta calidad, garantizando eficiencia y monitoreo continuo.",
+      "technologies": ["React", "TypeScript", "PHP", "Datadog", "Postgree", "CSS", "PHP Unit", "Docker"]
     },
     {
-      "period": "2022 — 2024",
-      "ariaLabel": "2022 hasta 2024",
-      "role": "Ingeniero Frontend",
-      "company": "Empresa ABC",
-      "description": "Desarrollo de aplicaciones web enfocadas en el rendimiento y la experiencia del usuario. Implementación de pruebas automatizadas e integración continua.",
-      "technologies": ["JavaScript", "Vue.js", "Jest"]
+      "period": "Diciembre de 2023 hasta Julio de 2025",
+      "ariaLabel": "Diciembre de 2023 hasta Julio de 2025",
+      "role": "Ingeniero FullStack",
+      "company": "Mtrix",
+      "description": "Como Desarrollador Full Stack en Mtrix, lideré la arquitectura y el desarrollo de una solución crucial para la generación y versionado de archivos, optimizando la forma en que los usuarios interactúan con datos de Big Data. Mi contribución incluyó la creación de dashboards interactivos en Qlik Sense y la resolución de problemas en tiempo real, impulsando la eficiencia y la toma de decisiones estratégicas.",
+      "technologies": ["React", "JavaScript", "TypeScript", "Python", "Kubernets", "Docker", "Storybook", "styled-component", "Tailwindcss", "Datadog", "Qlik sense", "Mashup", "Spark", "SQL", "Trino", "Kubemaestro"]
+    },
+    {
+      "period": "Junio de 2023 hasta Marzo de 2024",
+      "ariaLabel": "Junio de 2023 hasta Marzo de 2024",
+      "role": "Ingeniero Front-End",
+      "company": "Divam Oficial",
+      "description": "En Divam Oficial, realicé una refactorización estratégica en el sistema de login y autenticación, elevando la seguridad y la experiencia del usuario. Fui el principal responsable de la implementación de estrategias de SEO que aumentaron la visibilidad online y lideré la adopción exitosa de la autenticación OAuth, garantizando un ecosistema digital más seguro y eficiente.",
+      "technologies": ["React", "JavaScript", "TypeScript", "Next.js", "Node.js", "Nest.js", "Storybook", "styled-component", "Tailwindcss", "Apollo", "Recoil", "GraphQL", "MongoDB", "JWT", "Cypress", "Jest"]
+    },
+    {
+      "period": "Octubre de 2022 hasta Mayo de 2023",
+      "ariaLabel": "Octubre de 2022 hasta Mayo de 2023",
+      "role": "Ingeniero Front-End",
+      "company": "DW3 Tecnologia",
+      "description": "Lideré la creación e implementación de un design system con Angular, estandarizando la experiencia del usuario y elevando la eficiencia del desarrollo. Mi iniciativa resultó en un framework de componentes reutilizables, documentado con Storybook, que aceleró la entrega de proyectos y garantizó la consistencia en todas las aplicaciones de la empresa.",
+      "technologies": ["JavaScript", "TypeScript", "Angular", "Node.js", "PHP", "Yii", "CSS", "SASS", "Mustache.js", "Storybook", "Tailwindcss", "Jasmini", "Karma", "Bootstrap"]
+    },
+    {
+      "period": "Junio de 2022 hasta Octubre de 2022",
+      "ariaLabel": "Junio de 2022 hasta Octubre de 2022",
+      "role": "Ingeniero Front-End",
+      "company": "Dark Media Group",
+      "description": "Contribuí a la modernización del portafolio digital, participando activamente en el mantenimiento y mejora de sitios web. Fui esencial en el desarrollo e integración de un nuevo producto, asegurando su performance y responsividad en una amplia gama de dispositivos, desde smartphones hasta pantallas 4K, demostrando adaptabilidad y enfoque en la experiencia del usuario.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Docker", "React.js", "JQuery", "SASS"]
+    },
+    {
+      "period": "Abril de 2021 hasta Octubre de 2022",
+      "ariaLabel": "Abril de 2021 hasta Octubre de 2022",
+      "role": "Desarrollador Web",
+      "company": "Arizona",
+      "description": "Participé activamente en la entrega de proyectos web de alta visibilidad, incluyendo Landing Pages y sitios institucionales, para clientes importantes como el grupo XP Inc. Mi actuación se enfocó en la colaboración con equipos multidisciplinarios, aplicando la metodología Scrum para garantizar entregas eficientes y alineadas con las expectativas de los clientes.",
+      "technologies": ["HTML", "CSS", "JavaScript", "JQuery", "Git", "Scrum", "Bootstrap"]
     }
   ],
   "technologiesLabel": "Tecnologías utilizadas"

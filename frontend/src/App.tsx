@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useRef } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
-import { Header, Navigation, Footer, About, Experience, Projects, ThemeToggle, LanguageToggle } from './components';
+import { Header, Navigation, Footer, About, Experience, Projects, Education, ThemeToggle, LanguageToggle } from './components';
 
 function AppContent() {
   const highlightRef = useRef<HTMLDivElement>(null);
@@ -50,6 +50,7 @@ function AppContent() {
             <About />
             <Experience />
             <Projects />
+            <Education />
           </div>
         </div>
       </div>
