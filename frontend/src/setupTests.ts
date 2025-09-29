@@ -13,3 +13,27 @@ if (typeof window !== 'undefined' && !window.matchMedia) {
 		dispatchEvent: () => false,
 	});
 }
+
+// Mock para IntersectionObserver no ambiente de testes (typed)
+declare global {
+	interface Window {
+		IntersectionObserver: typeof IntersectionObserver;
+	}
+	// For Node test env, ensure globalThis has the type as well
+	var IntersectionObserver: typeof IntersectionObserver;
+}
+
+class MockIntersectionObserver implements IntersectionObserver {
+	readonly root: Element | null = null;
+	readonly rootMargin: string = '';
+	readonly thresholds: ReadonlyArray<number> = [];
+	constructor() {}
+	observe(): void {}
+	unobserve(): void {}
+	disconnect(): void {}
+	takeRecords(): IntersectionObserverEntry[] {
+		return [];
+	}
+}
+
+globalThis.IntersectionObserver = MockIntersectionObserver as unknown as typeof IntersectionObserver;
