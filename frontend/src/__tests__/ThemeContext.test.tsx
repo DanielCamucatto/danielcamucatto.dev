@@ -1,35 +1,5 @@
-import { render, screen, fireEvent, act, renderHook } from '@testing-library/react';
-import { ThemeProvider } from '../contexts/ThemeProvider';
-import { useTheme } from '../hooks/useTheme';
-import type { ReactNode } from 'react';
-
-describe('useTheme hook', () => {
-  it('deve alternar o tema de light para dark e vice-versa', () => {
-    const wrapper = ({ children }: { children: ReactNode }) => (
-      <ThemeProvider>{children}</ThemeProvider>
-    );
-
-    const { result } = renderHook(() => useTheme(), { wrapper });
-
-    // O tema inicial pode ser 'light' ou 'dark' dependendo das configurações do sistema
-    const initialTheme = result.current.theme;
-
-    act(() => {
-      result.current.toggleTheme();
-    });
-
-    // Verifica se o tema foi alterado
-    expect(result.current.theme).toBe(initialTheme === 'light' ? 'dark' : 'light');
-
-    act(() => {
-      result.current.toggleTheme();
-    });
-
-    // Verifica se o tema voltou ao estado inicial
-    expect(result.current.theme).toBe(initialTheme);
-  });
-});
-
+import { render, screen, fireEvent, act } from '@testing-library/react';
+import { ThemeProvider, useTheme } from '../contexts/ThemeContext';
 
 function ThemeConsumerTest() {
   const { theme, toggleTheme } = useTheme();

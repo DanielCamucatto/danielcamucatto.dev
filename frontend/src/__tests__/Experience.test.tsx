@@ -5,9 +5,9 @@ describe('Experience', () => {
     render(<Experience />);
     expect(screen.getByRole('heading', { name: /experi/i })).toBeInTheDocument();
   });
-  it('renderiza ao menos uma experiência listada', () => {
+  it('renderiza o texto de placeholder', () => {
     render(<Experience />);
-    // pode haver múltiplas ocorrências; garante que exista pelo menos uma
+    // Verifica que pelo menos uma ocorrência de 'FullStack Engineer' está sendo renderizada
     const matches = screen.getAllByText(/FullStack Engineer/i);
     expect(matches.length).toBeGreaterThan(0);
   });

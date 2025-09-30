@@ -1,5 +1,7 @@
 
-import { useTranslations } from '../utils/translations';
+import { getTranslations } from '../utils/translations';
+import { useLanguage } from '../contexts/LanguageContext';
+import DownloadCVButton from './DownloadCVButton';
 
 interface SocialLink {
   url: string;
@@ -18,10 +20,11 @@ interface HeaderTranslations {
 }
 
 export default function Header() {
-  const translations = useTranslations().header as HeaderTranslations;
+  const { language } = useLanguage();
+  const translations = getTranslations(language).header as HeaderTranslations;
 
   return (
-    <header className="lg:sticky lg:top-0 lg:max-h-screen lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:py-24">
+    <header className="lg:sticky lg:top-0 lg:max-h-screen lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:py-12">
       <div>
         <div className="mb-4">
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-200 sm:text-5xl">
@@ -85,6 +88,11 @@ export default function Header() {
             </span>
           </li>
         </ul>
+        
+        {/* Botão de Download CV */}
+        <div className="mt-6">
+          <DownloadCVButton />
+        </div>
       </div>
     </header>
   );

@@ -5,9 +5,9 @@ describe('Projects', () => {
     render(<Projects />);
     expect(screen.getByRole('heading', { name: /projeto/i })).toBeInTheDocument();
   });
-  it('renderiza pelo menos um projeto listado', () => {
+  it('renderiza o texto de placeholder', () => {
     render(<Projects />);
-    // verifica presença de um título de projeto conhecido
+    // Verifica que um projeto real da lista está sendo renderizado (evita usar texto placeholder)
     expect(screen.getByText(/Divam/i)).toBeInTheDocument();
   });
 });

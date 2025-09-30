@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../utils/test/render-utils';
 import Header from '../components/Header';
 describe('Header', () => {
   it('renderiza o título ou logo', () => {

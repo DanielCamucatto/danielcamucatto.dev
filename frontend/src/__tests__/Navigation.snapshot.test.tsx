@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../utils/test/render-utils';
 import Navigation from '../components/Navigation';
 
-describe('Navegação', () => {
+describe('Navigation snapshot', () => {
   it('renderiza todos os links de navegação', () => {
     render(<Navigation />);
     expect(screen.getByRole('link', { name: /sobre/i })).toBeInTheDocument();

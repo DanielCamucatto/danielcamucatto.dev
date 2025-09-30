@@ -26,7 +26,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
             class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
           >
             <div
-              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
             />
             <div
               class="z-10 sm:col-span-3"
@@ -37,7 +37,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Divam"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="projects/divam.png"
+                  src="/projects/divam.png"
                 />
               </div>
             </div>
@@ -50,7 +50,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <div>
                   <a
                     aria-label="Divam"
-                    class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
                     href="https://divam.com.br/"
                     rel="noreferrer"
                     target="_blank"
@@ -146,7 +146,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
             class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
           >
             <div
-              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
             />
             <div
               class="z-10 sm:col-span-3"
@@ -157,7 +157,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Bae Digital"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="projects/bae_digital.png"
+                  src="/projects/bae_digital.png"
                 />
               </div>
             </div>
@@ -170,7 +170,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <div>
                   <a
                     aria-label="Bae Digital"
-                    class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
                     href="https://baedigital.com.br/"
                     rel="noreferrer"
                     target="_blank"
@@ -256,7 +256,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
             class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
           >
             <div
-              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
             />
             <div
               class="z-10 sm:col-span-3"
@@ -267,7 +267,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Pix 4 Fun"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="projects/pix4fun.png"
+                  src="/projects/pix4fun.png"
                 />
               </div>
             </div>
@@ -280,7 +280,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <div>
                   <a
                     aria-label="Pix 4 Fun"
-                    class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
                     href="https://www.pix4fun.com.br/"
                     rel="noreferrer"
                     target="_blank"
@@ -386,7 +386,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
             class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
           >
             <div
-              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
             />
             <div
               class="z-10 sm:col-span-3"
@@ -397,7 +397,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Inteligência Financeira - Globo.com"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="projects/inteligencia_financeira.png"
+                  src="/projects/inteligencia_financeira.png"
                 />
               </div>
             </div>
@@ -410,7 +410,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <div>
                   <a
                     aria-label="Inteligência Financeira - Globo.com"
-                    class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
                     href="www.inteligenciafinanceira.com.br/"
                     rel="noreferrer"
                     target="_blank"
@@ -516,7 +516,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
             class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
           >
             <div
-              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
             />
             <div
               class="z-10 sm:col-span-3"
@@ -527,7 +527,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <img
                   alt="Screenshot do projeto Mitos e Verdades Sobre o Cartão de Crédito Empresarial"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
-                  src="projects/mitos_e_verdades.png"
+                  src="/projects/mitos_e_verdades.png"
                 />
               </div>
             </div>
@@ -540,7 +540,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 <div>
                   <a
                     aria-label="Mitos e Verdades Sobre o Cartão de Crédito Empresarial"
-                    class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
                     href="https://especiais.g1.globo.com/especial-publicitario/mitos-e-verdades-sobre-o-cartao-de-credito-empresarial/"
                     rel="noreferrer"
                     target="_blank"
