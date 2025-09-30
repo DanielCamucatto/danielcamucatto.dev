@@ -50,15 +50,17 @@ const translations = {
   }
 } as const;
 
-import { useLanguage } from '../contexts/LanguageContext';
+import { useContext } from 'react';
+import { LanguageContext } from '../contexts/LanguageContext';
 
 export type Language = keyof typeof translations;
 export type TranslationKeys = typeof translations[Language];
 
-// Hook para uso dentro de componentes: usa o contexto
+// Hook para uso dentro de componentes: usa o contexto com fallback para 'pt'
 export function useTranslations(): TranslationKeys {
-  const { language } = useLanguage();
-  return translations[language as Language];
+  const context = useContext(LanguageContext);
+  const language: Language = context?.language ?? 'pt';
+  return translations[language];
 }
 
 export function getTranslations(defaultLang: 'pt' | 'en' | 'es' = 'pt') {

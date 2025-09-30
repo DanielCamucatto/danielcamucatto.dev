@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
-import ThemeToggle from '../components/ThemeToggle';
+import { ThemeToggle } from '../components/ThemeToggle';
 
 describe('Acessibilidade dos componentes principais', () => {
   it('Header tem role="banner"', () => {
@@ -24,7 +24,7 @@ describe('Acessibilidade dos componentes principais', () => {
 
   it('ThemeToggle tem aria-label', () => {
     render(<ThemeToggle />);
-    expect(screen.getByLabelText(/mudar para tema/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/ativar modo (escuro|claro)/i)).toBeInTheDocument();
   });
 
   it('Projects tem heading acessível', () => {
