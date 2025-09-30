@@ -13,7 +13,7 @@
         "PostgreSQL"
       ],
       "featured": true,
-      "imageUrl": "/projects/divam.png",
+  "imageUrl": "projects/divam.png",
       "details": [
         "Interfaz moderna y responsiva para programar citas",
         "Sistema de notificaciones en tiempo real",
@@ -33,7 +33,7 @@
         "Docker"
       ],
       "featured": true,
-      "imageUrl": "/projects/portfolio.png",
+  "imageUrl": "projects/portfolio.png",
       "details": [
         "Diseño responsivo y minimalista",
         "Soporte multilingüe (i18n)",

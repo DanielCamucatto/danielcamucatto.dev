@@ -1,13 +1,14 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
+import type { Language } from '../contexts/LanguageContext';
 
-const languages = {
+const languages: Record<Language, { name: string; flag: string }> = {
   pt: { name: 'Português', flag: '🇧🇷' },
   en: { name: 'English', flag: '🇺🇸' },
   es: { name: 'Español', flag: '🇪🇸' },
-} as const;
+};
 
-export default function LanguageToggle() {
+export function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = React.useState(false);
   const dropdownRef = React.useRef<HTMLDivElement>(null);
