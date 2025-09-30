@@ -1,6 +1,6 @@
 
 import { getTranslations } from '../utils/translations';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 import DownloadCVButton from './DownloadCVButton';
 
 interface SocialLink {

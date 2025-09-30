@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLanguage } from '../hooks/useLanguage';
+import type { Language } from '../contexts/LanguageContext';
 
-const languages = {
+const languages: Record<Language, { name: string; flag: string }> = {
   pt: { name: 'Português', flag: '🇧🇷' },
   en: { name: 'English', flag: '🇺🇸' },
   es: { name: 'Español', flag: '🇪🇸' },
-} as const;
+};
 
 export function LanguageToggle() {
   const { language, setLanguage } = useLanguage();

@@ -1,5 +1,5 @@
 
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 import { getTranslations } from '../utils/translations';
 
 interface FooterTranslations {
