@@ -8,3 +8,5 @@ export { default as Education } from './Education';
 export { ThemeToggle } from './ThemeToggle';
 export { LanguageToggle } from './LanguageToggle';
 export { default as DownloadCVButton } from './DownloadCVButton';
+export { default as ContactModal } from './ContactModal';
+export { default as ContactForm } from './ContactForm';
