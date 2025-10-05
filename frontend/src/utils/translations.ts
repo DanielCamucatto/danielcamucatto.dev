@@ -19,6 +19,9 @@ import esEducation from '../locales/es/education.json';
 import ptNavigation from '../locales/pt/navigation.json';
 import enNavigation from '../locales/en/navigation.json';
 import esNavigation from '../locales/es/navigation.json';
+import ptContactForm from '../locales/pt/contactForm.json';
+import enContactForm from '../locales/en/contactForm.json';
+import esContactForm from '../locales/es/contactForm.json';
 
 const translations = {
   pt: {
@@ -28,7 +31,8 @@ const translations = {
     about: ptAbout,
     footer: ptFooter,
     education: ptEducation,
-    navigation: ptNavigation
+    navigation: ptNavigation,
+    contactForm: ptContactForm
   },
   en: {
     experience: enExperience,
@@ -37,7 +41,8 @@ const translations = {
     about: enAbout,
     footer: enFooter,
     education: enEducation,
-    navigation: enNavigation
+    navigation: enNavigation,
+    contactForm: enContactForm
   },
   es: {
     experience: esExperience,
@@ -46,7 +51,8 @@ const translations = {
     about: esAbout,
     footer: esFooter,
     education: esEducation,
-    navigation: esNavigation
+    navigation: esNavigation,
+    contactForm: esContactForm
   }
 } as const;
 

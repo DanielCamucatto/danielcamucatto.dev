@@ -1,0 +1,16 @@
+{
+  "nameLabel": "Nome",
+  "namePlaceholder": "Seu nome completo",
+  "emailLabel": "Email",
+  "emailPlaceholder": "seu@exemplo.com",
+  "subjectLabel": "Assunto",
+  "subjectPlaceholder": "Assunto da mensagem",
+  "messageLabel": "Mensagem",
+  "messagePlaceholder": "Escreva sua mensagem aqui",
+  "send": "Enviar",
+  "sending": "Enviando...",
+  "successMessage": "Obrigado! Sua mensagem foi enviada com sucesso.",
+  "errorRequired": "Por favor, preencha todos os campos obrigatórios.",
+  "errorInvalidEmail": "Por favor, insira um email válido.",
+  "errorSending": "Erro ao enviar. Tente novamente mais tarde."
+}
