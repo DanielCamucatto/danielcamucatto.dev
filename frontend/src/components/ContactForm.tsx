@@ -35,21 +35,31 @@ export default function ContactForm({ onClose }: Props) {
     setError(v);
     if (v) return;
     setError(null);
-    // enviar para o backend (placeholder). Integre com Supabase/Firebase aqui.
     setLoading(true);
     (async () => {
       try {
-        // TODO: substituir URL pelo endpoint real (Supabase function, Firebase function, etc.)
-        const res = await fetch('/api/contact', {
+        const res = await fetch('https://formspree.io/f/xyznpdbz', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, email, subject, message }),
+          body: JSON.stringify({ 
+            name, 
+            email, 
+            subject, 
+            message,
+            _replyto: email,
+            _subject: `Novo contato: ${subject}`
+          }),
         });
-        if (!res.ok) throw new Error('Falha no envio');
+        
+        const data = await res.json();
+        
+        if (!res.ok) {
+          throw new Error(data.error || 'Falha no envio');
+        }
+        
         setSent(true);
-        setTimeout(() => onClose?.(), 700);
+        setTimeout(() => onClose?.(), 2000);
       } catch (err) {
-        console.error(err);
         setError(translations.errorSending);
       } finally {
         setLoading(false);

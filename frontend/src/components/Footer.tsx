@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
       <div className="space-y-3">
-        <p className="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
           <GhostButton
             onClick={() => setOpen(true)}
             ariaLabel={translations.contactButton}
@@ -36,7 +36,7 @@ export default function Footer() {
           >
             {translations.contactButton}
           </GhostButton>
-        </p>
+        </div>
 
       </div>
 
