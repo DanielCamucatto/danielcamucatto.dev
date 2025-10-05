@@ -118,7 +118,8 @@ exports[`Header snapshot deve bater o snapshot 1`] = `
         >
           <button
             aria-label="Baixar currículo em PDF"
-            class="inline-flex items-center gap-2 px-3 py-2 text-slate-600 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400 font-medium border border-slate-300 dark:border-slate-600 hover:border-teal-500 dark:hover:border-teal-400 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 bg-transparent hover:bg-slate-50 dark:hover:bg-slate-800/50"
+            class="w-full sm:w-auto mt-2 sm:mt-0 inline-flex items-center justify-center gap-2 px-3 py-2 h-10 text-sm text-slate-600 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400 font-medium border border-slate-300 dark:border-slate-600 hover:border-teal-500 dark:hover:border-teal-400 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 bg-transparent hover:bg-slate-50 dark:hover:bg-slate-800"
+            type="button"
           >
             <svg
               class="w-4 h-4"

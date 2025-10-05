@@ -59,7 +59,7 @@ export default function ContactForm({ onClose }: Props) {
         
         setSent(true);
         setTimeout(() => onClose?.(), 2000);
-      } catch (err) {
+      } catch {
         setError(translations.errorSending);
       } finally {
         setLoading(false);
@@ -78,10 +78,11 @@ export default function ContactForm({ onClose }: Props) {
   return (
     <form onSubmit={onSubmit} className="space-y-3">
       <div>
-        <label className="text-sm text-slate-700 dark:text-slate-200">
+        <label htmlFor="contact-name" className="text-sm text-slate-700 dark:text-slate-200">
           {translations.nameLabel} <span className="text-red-500">*</span>
         </label>
         <input
+          id="contact-name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="mt-1 w-full rounded border px-3 py-2 text-sm text-slate-900 dark:bg-slate-800 dark:text-slate-100"
@@ -91,10 +92,11 @@ export default function ContactForm({ onClose }: Props) {
       </div>
 
       <div>
-        <label className="text-sm text-slate-700 dark:text-slate-200">
+        <label htmlFor="contact-email" className="text-sm text-slate-700 dark:text-slate-200">
           {translations.emailLabel} <span className="text-red-500">*</span>
         </label>
         <input
+          id="contact-email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -105,10 +107,11 @@ export default function ContactForm({ onClose }: Props) {
       </div>
 
       <div>
-        <label className="text-sm text-slate-700 dark:text-slate-200">
+        <label htmlFor="contact-subject" className="text-sm text-slate-700 dark:text-slate-200">
           {translations.subjectLabel} <span className="text-red-500">*</span>
         </label>
         <input
+          id="contact-subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           className="mt-1 w-full rounded border px-3 py-2 text-sm text-slate-900 dark:bg-slate-800 dark:text-slate-100"
@@ -118,10 +121,11 @@ export default function ContactForm({ onClose }: Props) {
       </div>
 
       <div>
-        <label className="text-sm text-slate-700 dark:text-slate-200">
+        <label htmlFor="contact-message" className="text-sm text-slate-700 dark:text-slate-200">
           {translations.messageLabel} <span className="text-red-500">*</span>
         </label>
         <textarea
+          id="contact-message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className="mt-1 w-full rounded border px-3 py-2 text-sm text-slate-900 dark:bg-slate-800 dark:text-slate-100"
