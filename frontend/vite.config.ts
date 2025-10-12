@@ -3,10 +3,13 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Ao publicar no GitHub Pages como project page (username.github.io/repo),
-  // precisamos definir o `base` para o nome do repositório para que os
-  // assets sejam referenciados como /repo/assets/...
-  base: '/danielcamucatto.dev/',
+  // Detecta ambiente:
+  // - Netlify: usa base '/' (raiz)
+  // - GitHub Pages: usa base '/danielcamucatto.dev/' (project page)
+  // - Local dev: usa '/' por padrão
+  base: process.env.NETLIFY === 'true' 
+    ? '/' 
+    : process.env.VITE_BASE_PATH || '/danielcamucatto.dev/',
   plugins: [react()],
   server: {
     host: '0.0.0.0',
