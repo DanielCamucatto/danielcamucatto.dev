@@ -6,9 +6,9 @@ Este projeto usa diferentes `base` paths dependendo do ambiente de deploy:
 
 ### Netlify (branch `homolog`)
 - **Base path**: `/` (raiz)
-- **Detecção automática**: O Netlify injeta `NETLIFY=true` durante o build
+- **Configuração**: Arquivo `netlify.toml` na raiz define `NETLIFY=true` e `VITE_BASE_PATH=/`
 - **URL**: https://danielcamucattodev.netlify.app
-- Não precisa configurar nada — funciona automaticamente
+- Não precisa configurar nada no dashboard — o `netlify.toml` configura automaticamente
 
 ### GitHub Pages (branch `main`)
 - **Base path**: `/danielcamucatto.dev/` (project page)
@@ -63,8 +63,10 @@ Após o build, verifique `dist/index.html`:
 ## Troubleshooting
 
 ### Erro 404 em assets no Netlify
-- Verifique se `NETLIFY=true` está presente durante o build (Netlify injeta automaticamente)
-- Verifique `dist/index.html` — os paths devem ser `/assets/...` (sem prefixo)
+- **Causa**: Build não detectou configuração correta
+- **Solução**: Arquivo `netlify.toml` na raiz já configura `NETLIFY=true` e `VITE_BASE_PATH=/`
+- **Verificação**: Após deploy, inspecione `dist/index.html` — os paths devem ser `/assets/...` (sem prefixo `/danielcamucatto.dev/`)
+- **Forçar rebuild**: No dashboard do Netlify → **Deploys** → **Trigger deploy** → **Clear cache and deploy site**
 
 ### Erro 404 em assets no GitHub Pages
 - Verifique se `VITE_BASE_PATH=/danielcamucatto.dev/` foi definido no build
