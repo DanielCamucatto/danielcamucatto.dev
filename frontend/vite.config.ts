@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Ao publicar no GitHub Pages como project page (username.github.io/repo),
-  // precisamos definir o `base` para o nome do repositório para que os
-  // assets sejam referenciados como /repo/assets/...
-  base: '/danielcamucatto.dev/',
+  // Usar base relativo por padrão para que a mesma build funcione com:
+  // - custom domain (danielcamucatto.dev)
+  // - GitHub project page (username.github.io/repo)
+  // Permitir override via variável de ambiente VITE_BASE quando necessário.
+  base: process.env.VITE_BASE ?? '',
   plugins: [react()],
   server: {
     host: '0.0.0.0',
