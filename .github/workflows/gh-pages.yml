@@ -20,10 +20,19 @@ jobs:
           node-version: '20'
 
       - name: Install and build frontend
+        env:
+          # build for domain root (GitHub Pages custom domain)
+          VITE_BASE_PATH: /
         run: |
           cd frontend
           npm ci
           npm run build
+
+      - name: Add CNAME for GitHub Pages
+        run: |
+          # ensure the custom domain is preserved in the published site
+          mkdir -p frontend/dist
+          echo "danielcamucatto.dev" > frontend/dist/CNAME
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
