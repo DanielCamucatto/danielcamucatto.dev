@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - homolog
+    paths:
+      - 'frontend/**'
+      - 'netlify.toml'
 
 jobs:
   build-and-deploy:

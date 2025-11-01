@@ -3,11 +3,13 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Usar base relativo por padrão para que a mesma build funcione com:
-  // - custom domain (danielcamucatto.dev)
-  // - GitHub project page (username.github.io/repo)
-  // Permitir override via variável de ambiente VITE_BASE quando necessário.
-  base: process.env.VITE_BASE ?? '',
+  // Detecta ambiente:
+  // - Netlify: usa base '/' (raiz)
+  // - GitHub Pages: usa base '/danielcamucatto.dev/' (project page)
+  // - Local dev: usa '/' por padrão
+  base: process.env.NETLIFY === 'true' 
+    ? '/' 
+    : process.env.VITE_BASE_PATH || '/danielcamucatto.dev/',
   plugins: [react()],
   server: {
     host: '0.0.0.0',

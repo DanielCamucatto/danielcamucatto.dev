@@ -1,0 +1,23 @@
+[build]
+  # Diretório onde está o código frontend
+  base = "frontend/"
+  
+  # Comando de build
+  command = "npm run build"
+  
+  # Diretório de publicação (output do build)
+  publish = "dist"
+
+[build.environment]
+  # Define NETLIFY=true para o Vite detectar que está no Netlify
+  NETLIFY = "true"
+  # Força o Vite a usar base '/' no Netlify
+  VITE_BASE_PATH = "/"
+  # Node version
+  NODE_VERSION = "20"
+
+[[redirects]]
+  # SPA redirect: todas as rotas devem redirecionar para index.html
+  from = "/*"
+  to = "/index.html"
+  status = 200
