@@ -6,8 +6,8 @@
 
 declare global {
   interface Window {
-    dataLayer?: any[]
-    gtag?: (...args: any[]) => void
+    dataLayer?: unknown[]
+    gtag?: (...args: unknown[]) => void
   }
 }
 
@@ -30,11 +30,11 @@ export function initGA(measurementId?: string) {
   console.log('[GA] Initializing with ID:', measurementId)
   
   window.dataLayer = window.dataLayer || []
-  function gtag(...args: any[]) {
+  function gtag(...args: unknown[]) {
     // push a real array copy of args to match GA expectation
     window.dataLayer!.push(Array.prototype.slice.call(args))
   }
-  window.gtag = gtag as any
+  window.gtag = gtag
 
   // create script tag
   const script = document.createElement('script')
@@ -90,8 +90,8 @@ export function pageview(path: string) {
   try {
     console.log('[GA] Sending pageview:', path)
     window.gtag('event', 'page_view', { page_path: path })
-  } catch (e) {
-    console.error('[GA] Error sending pageview:', e)
+  } catch (error) {
+    console.error('[GA] Error sending pageview:', error)
   }
 }
 
@@ -110,7 +110,7 @@ export function event(params: {
       event_label: label,
       value,
     })
-  } catch (e) {
+  } catch {
     // noop
   }
 }
