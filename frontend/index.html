@@ -10,6 +10,24 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel Camuçatto | FullStack Engineer</title>
+  <script type="module">
+    // This script runs early to inject gtag script into head when configured
+    const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID
+  if (measurementId) {
+      // inject gtag script
+      const s = document.createElement('script')
+      s.async = true
+      s.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`
+      document.head.appendChild(s)
+
+      // minimal initialization to ensure window.gtag exists
+      window.dataLayer = window.dataLayer || []
+      function gtag(){window.dataLayer.push(arguments)}
+      window.gtag = gtag
+      gtag('js', new Date())
+      gtag('config', measurementId, { send_page_view: true, debug_mode: false })
+    }
+  </script>
 </head>
 
 <body>
