@@ -21,8 +21,8 @@ jobs:
 
       - name: Install and build frontend
         env:
-          # build for domain root (GitHub Pages custom domain)
           VITE_BASE_PATH: /
+          VITE_GA_MEASUREMENT_ID: ${{ secrets.VITE_GA_MEASUREMENT_ID }} 
         run: |
           cd frontend
           npm ci
