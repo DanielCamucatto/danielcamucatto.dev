@@ -39,6 +39,29 @@ export default tseslint.config([
 ])
 ```
 
+## Google Analytics (optional)
+
+This project supports Google Analytics 4 (GA4) via a Vite environment variable.
+
+- Set the variable `VITE_GA_MEASUREMENT_ID` to your GA4 Measurement ID (looks like `G-XXXXXXXXXX`) in your production environment.
+- The app will only load gtag and send pageviews when this variable is present.
+
+Examples:
+
+- Netlify: add an Environment variable `VITE_GA_MEASUREMENT_ID` in Site settings -> Build & deploy -> Environment.
+- Vercel / other hosts: set the env var in the project settings.
+
+Locally you can create a `.env.production` (not committed) with:
+
+```
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+Notes:
+
+- Pageviews are sent manually from `src/main.tsx` so SPA navigation should call the `pageview()` helper if you add client-side routing.
+- If you want automatic page_view behavior remove `send_page_view: false` in `src/services/analytics.ts`.
+
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
