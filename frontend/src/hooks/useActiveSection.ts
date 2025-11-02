@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { pageview } from '../services/analytics';
 
 export const useActiveSection = () => {
   const [activeSection, setActiveSection] = useState('about');
+  const initialLoad = useRef(true);
 
   useEffect(() => {
     const sections = ['about', 'experience', 'projects', 'education'];
@@ -27,6 +29,14 @@ export const useActiveSection = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (initialLoad.current) {
+      initialLoad.current = false;
+      return;
+    }
+    pageview(`/#${activeSection}`);
+  }, [activeSection]);
 
   return activeSection;
 };
