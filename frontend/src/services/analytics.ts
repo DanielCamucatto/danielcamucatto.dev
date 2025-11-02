@@ -15,23 +15,24 @@ const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefine
 
 export function initGA(measurementId?: string) {
   if (!isBrowser) {
-    
+    console.log('[analytics] not in browser, skipping initGA')
     return
   }
   if (!measurementId) {
-    
+    console.log('[analytics] no measurementId provided, skipping initGA')
     return
   }
   if (window.gtag) {
-    
+    console.log('[analytics] window.gtag already defined, skipping initGA')
     return // already initialized
   }
 
-  
-  
+  console.log('[analytics] initializing GA with', measurementId)
+
   window.dataLayer = window.dataLayer || [];
   function gtag(...args: unknown[]) {
     window.dataLayer!.push(args);
+    console.log('[analytics] gtag called with', args)
   }
 
   window.gtag = gtag;
@@ -46,24 +47,21 @@ export function initGA(measurementId?: string) {
     cookie_flags: 'SameSite=None;Secure',
   });
 
-  
-
   // Create script tag
   const script = document.createElement('script');
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
 
   script.onload = () => {
-    
+    console.log('[analytics] gtag script loaded')
   }
   
-  script.onerror = () => {
-    
+  script.onerror = (e) => {
+    console.error('[analytics] gtag script failed to load', e)
   }
   
   document.head.appendChild(script)
 
-  
 }
 
 export function pageview(path: string) {
