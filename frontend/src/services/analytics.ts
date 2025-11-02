@@ -30,9 +30,8 @@ export function initGA(measurementId?: string) {
   
   
   window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    // eslint-disable-next-line prefer-rest-params
-    window.dataLayer!.push(arguments);
+  function gtag(...args: unknown[]) {
+    window.dataLayer!.push(args);
   }
 
   window.gtag = gtag;
@@ -74,10 +73,9 @@ export function pageview(path: string) {
     return
   }
   try {
-    
     window.gtag('event', 'page_view', { page_path: path })
-  } catch (error) {
-    
+  } catch {
+    // noop - silently fail if gtag is blocked
   }
 }
 
