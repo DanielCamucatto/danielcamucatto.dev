@@ -19,6 +19,13 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Validate environment variables
+        run: |
+          if [ -z "${VITE_GA_MEASUREMENT_ID}" ]; then
+            echo "ERROR: VITE_GA_MEASUREMENT_ID is not set. Please add it to the repository secrets as 'VITE_GA_MEASUREMENT_ID'." >&2
+            exit 1
+          fi
+
       - name: Install and build frontend
         env:
           VITE_BASE_PATH: /
