@@ -6,7 +6,13 @@
       "ariaLabel": "Julho de 2026 até o Presente",
       "role": "Desenvolvedor Full Stack (contrato)",
       "company": "Maiver",
-      "description": "Responsável pela arquitetura de software, separando a plataforma em 3 VPS: banco de dados PostgreSQL, microsserviços (pagamento e mensageria) e microfrontends. Liderei o projeto e orquestrei a migração das campanhas de SMS do n8n para a plataforma própria, reduzindo o tempo de execução de uma campanha de 7 para 4 horas (cerca de 43% mais rápido). Integrei a Twilio à plataforma, que envia mais de 15 milhões de SMS por mês, integrei pagamentos com Stripe e implementei mensageria com RabbitMQ. Criei o design system reutilizado na plataforma, na landing page e no CRM, e desenvolvi microfrontends para dashboards com dados em tempo real de campanhas, mensagens enviadas e opt-outs. Desenvolvi servidores MCP para conectar os dashboards a modelos de IA como Claude, Gemini e GPT, e implementei CI/CD com Terraform e testes automatizados, com infraestrutura em Portainer, Hetzner e Staycloud.",
+      "description": [
+        "Responsável pela arquitetura de software, separando a plataforma em 3 VPS: banco de dados PostgreSQL, microsserviços (pagamento e mensageria) e microfrontends.",
+        "Liderei o projeto e orquestrei a migração das campanhas de SMS do n8n para a plataforma própria, reduzindo o tempo de execução de uma campanha de 7 para 4 horas (cerca de 43% mais rápido).",
+        "Integrei a Twilio à plataforma, que envia mais de 15 milhões de SMS por mês, integrei pagamentos com Stripe e implementei mensageria com RabbitMQ.",
+        "Criei o design system reutilizado na plataforma, na landing page e no CRM, e desenvolvi microfrontends para dashboards com dados em tempo real de campanhas, mensagens enviadas e opt-outs.",
+        "Desenvolvi servidores MCP para conectar os dashboards a modelos de IA como Claude, Gemini e GPT, e implementei CI/CD com Terraform e testes automatizados, com infraestrutura em Portainer, Hetzner e Staycloud."
+      ],
       "technologies": [
         "Node.js",
         "NestJS",
@@ -23,14 +29,19 @@
         "Portainer",
         "Hetzner",
         "Staycloud"
-      ]
+      ],
+      "link": "https://maiver.com.br"
     },
     {
       "period": "Abril de 2025 — Abril de 2026",
       "ariaLabel": "Abril de 2025 até Abril de 2026",
       "role": "FullStack Engineer",
       "company": "Visto Tecnologia",
-      "description": "Liderei, junto ao time, a automação com IA de um revisor de planilhas, reduzindo o tempo de revisão de 2 horas para 30 minutos (75% mais rápido). Utilizei RAG e engenharia de prompt no modelo agêntico da empresa e desenvolvi soluções MCP para integrar IA aos dashboards (Claude, Gemini e GPT). Conduzi o ciclo completo das aplicações com React, TypeScript, PHP e PostgreSQL e implementei CI/CD, testes com PHPUnit e observabilidade com Datadog.",
+      "description": [
+        "Liderei, junto ao time, a automação com IA de um revisor de planilhas, reduzindo o tempo de revisão de 2 horas para 30 minutos (75% mais rápido).",
+        "Utilizei RAG e engenharia de prompt no modelo agêntico da empresa e desenvolvi soluções MCP para integrar IA aos dashboards (Claude, Gemini e GPT).",
+        "Conduzi o ciclo completo das aplicações com React, TypeScript, PHP e PostgreSQL e implementei CI/CD, testes com PHPUnit e observabilidade com Datadog."
+      ],
       "technologies": [
         "React",
         "TypeScript",
@@ -43,14 +54,19 @@
         "Datadog",
         "Docker",
         "CI/CD"
-      ]
+      ],
+      "link": "https://visto.global"
     },
     {
       "period": "Dezembro de 2023 — Abril de 2025",
       "ariaLabel": "Dezembro de 2023 até Abril de 2025",
       "role": "FullStack Engineer",
       "company": "Mtrix",
-      "description": "Liderei a arquitetura e o desenvolvimento de uma solução de geração e versionamento de relatórios sobre dados de Big Data, gerando aumento de 30% na receita da empresa. Construí dashboards com Qlik Sense e Mashup que apoiaram decisões estratégicas e processei dados com Python, Spark, SQL e Trino. Implementei CI/CD com Terraform e testes automatizados, e monitorei as aplicações com Datadog, Docker e Kubernetes.",
+      "description": [
+        "Liderei a arquitetura e o desenvolvimento de uma solução de geração e versionamento de relatórios sobre dados de Big Data, gerando aumento de 30% na receita da empresa.",
+        "Construí dashboards com Qlik Sense e Mashup que apoiaram decisões estratégicas e processei dados com Python, Spark, SQL e Trino.",
+        "Implementei CI/CD com Terraform e testes automatizados, e monitorei as aplicações com Datadog, Docker e Kubernetes."
+      ],
       "technologies": [
         "React",
         "TypeScript",
@@ -66,14 +82,18 @@
         "Kubernetes",
         "Storybook",
         "Tailwind CSS"
-      ]
+      ],
+      "link": "https://www.mtrix.com.br"
     },
     {
       "period": "Junho de 2023 — Dezembro de 2023",
       "ariaLabel": "Junho de 2023 até Dezembro de 2023",
       "role": "FullStack Engineer",
       "company": "Divam Oficial",
-      "description": "Refatorei o login e a autenticação e liderei a adoção de OAuth com JWT, elevando a segurança da plataforma; fui o principal responsável pela estratégia de SEO que aumentou a visibilidade online. Desenvolvi o front-end com React e Next.js e o back-end com Node.js, NestJS, GraphQL e MongoDB, com testes em Jest e Cypress.",
+      "description": [
+        "Refatorei o login e a autenticação e liderei a adoção de OAuth com JWT, elevando a segurança da plataforma; fui o principal responsável pela estratégia de SEO que aumentou a visibilidade online.",
+        "Desenvolvi o front-end com React e Next.js e o back-end com Node.js, NestJS, GraphQL e MongoDB, com testes em Jest e Cypress."
+      ],
       "technologies": [
         "React",
         "Next.js",
@@ -89,14 +109,18 @@
         "Jest",
         "Cypress",
         "SEO"
-      ]
+      ],
+      "link": "https://divam.com.br"
     },
     {
       "period": "Outubro de 2022 — Maio de 2023",
       "ariaLabel": "Outubro de 2022 até Maio de 2023",
       "role": "Front-End Engineer",
       "company": "DW3 Tecnologia",
-      "description": "Liderei a criação e implementação de um design system com Angular, padronizando a experiência do usuário e elevando a eficiência do desenvolvimento. Minha iniciativa resultou em um framework de componentes reutilizáveis, documentado com Storybook, que acelerou a entrega de projetos e garantiu a consistência em todas as aplicações da empresa.",
+      "description": [
+        "Liderei a criação e implementação de um design system com Angular, padronizando a experiência do usuário e elevando a eficiência do desenvolvimento.",
+        "Minha iniciativa resultou em um framework de componentes reutilizáveis, documentado com Storybook, que acelerou a entrega de projetos e garantiu a consistência em todas as aplicações da empresa."
+      ],
       "technologies": [
         "Angular",
         "TypeScript",
@@ -109,14 +133,18 @@
         "Tailwind CSS",
         "Jasmine",
         "Karma"
-      ]
+      ],
+      "link": "https://dw3.com.br"
     },
     {
       "period": "Junho de 2022 — Outubro de 2022",
       "ariaLabel": "Junho de 2022 até Outubro de 2022",
       "role": "Front-End Engineer",
       "company": "Dark Media Group",
-      "description": "Contribuí para a modernização do portfólio digital, participando ativamente da manutenção e melhoria de sites. Fui essencial no desenvolvimento e integração de um novo produto, assegurando sua performance e responsividade em uma ampla gama de dispositivos, desde smartphones a telas 4K, demonstrando adaptabilidade e foco na experiência do usuário.",
+      "description": [
+        "Contribuí para a modernização do portfólio digital, participando ativamente da manutenção e melhoria de sites.",
+        "Fui essencial no desenvolvimento e integração de um novo produto, assegurando sua performance e responsividade em uma ampla gama de dispositivos, desde smartphones a telas 4K, demonstrando adaptabilidade e foco na experiência do usuário."
+      ],
       "technologies": [
         "HTML",
         "CSS",
@@ -126,14 +154,18 @@
         "jQuery",
         "PHP",
         "Docker"
-      ]
+      ],
+      "link": "https://www.darkmedia.com.br"
     },
     {
       "period": "Abril de 2021 — Junho de 2022",
       "ariaLabel": "Abril de 2021 até Junho de 2022",
       "role": "Desenvolvedor Web",
       "company": "Arizona",
-      "description": "Participei ativamente da entrega de projetos web de alta visibilidade, incluindo Landing Pages e sites institucionais, para clientes de peso como o grupo XP Inc. Minha atuação focou na colaboração com equipes multidisciplinares, aplicando a metodologia Scrum para garantir entregas eficientes e alinhadas com as expectativas dos clientes.",
+      "description": [
+        "Participei ativamente da entrega de projetos web de alta visibilidade, incluindo Landing Pages e sites institucionais, para clientes de peso como o grupo XP Inc.",
+        "Minha atuação focou na colaboração com equipes multidisciplinares, aplicando a metodologia Scrum para garantir entregas eficientes e alinhadas com as expectativas dos clientes."
+      ],
       "technologies": [
         "HTML",
         "CSS",
@@ -142,7 +174,8 @@
         "Bootstrap",
         "Git",
         "Scrum"
-      ]
+      ],
+      "link": "https://arizona.com.br"
     }
   ],
   "technologiesLabel": "Tecnologias usadas"

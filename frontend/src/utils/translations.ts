@@ -22,6 +22,9 @@ import esNavigation from '../locales/es/navigation.json';
 import ptContactForm from '../locales/pt/contactForm.json';
 import enContactForm from '../locales/en/contactForm.json';
 import esContactForm from '../locales/es/contactForm.json';
+import ptSkills from '../locales/pt/skills.json';
+import enSkills from '../locales/en/skills.json';
+import esSkills from '../locales/es/skills.json';
 
 const translations = {
   pt: {
@@ -32,7 +35,8 @@ const translations = {
     footer: ptFooter,
     education: ptEducation,
     navigation: ptNavigation,
-    contactForm: ptContactForm
+    contactForm: ptContactForm,
+    skills: ptSkills
   },
   en: {
     experience: enExperience,
@@ -42,7 +46,8 @@ const translations = {
     footer: enFooter,
     education: enEducation,
     navigation: enNavigation,
-    contactForm: enContactForm
+    contactForm: enContactForm,
+    skills: enSkills
   },
   es: {
     experience: esExperience,
@@ -52,7 +57,8 @@ const translations = {
     footer: esFooter,
     education: esEducation,
     navigation: esNavigation,
-    contactForm: esContactForm
+    contactForm: esContactForm,
+    skills: esSkills
   }
 } as const;
 
