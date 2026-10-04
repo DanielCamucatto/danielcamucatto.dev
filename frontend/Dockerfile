@@ -1,6 +1,6 @@
 # Use uma imagem base do Node.js para construir e servir a aplicação.
 # O "alpine" é uma versão leve do Node.js, ideal para contêineres.
-FROM node:20-alpine as build
+FROM node:22-alpine as build
 
 # Define o diretório de trabalho dentro do contêiner
 WORKDIR /app

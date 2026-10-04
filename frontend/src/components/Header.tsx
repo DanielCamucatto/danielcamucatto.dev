@@ -89,6 +89,13 @@ export default function Header() {
           </li>
         </ul>
         
+        <a
+          href="/artigos"
+          className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-teal-600 dark:text-teal-300 hover:underline lg:hidden"
+        >
+          {getTranslations(language).navigation.articles} →
+        </a>
+
         {/* Botão de Download CV */}
         <div className="mt-6">
           <DownloadCVButton />

@@ -1,0 +1,48 @@
+---
+import { render } from 'astro:content';
+import ArtigosLayout from '../../layouts/ArtigosLayout.astro';
+import { getArtigos, formatDate, readingTime, type Artigo } from '../../utils/artigos';
+
+export async function getStaticPaths() {
+  const artigos = await getArtigos();
+  return artigos.map((artigo) => ({ params: { slug: artigo.id }, props: { artigo } }));
+}
+
+const { artigo } = Astro.props as { artigo: Artigo };
+const { Content } = await render(artigo);
+const { title, description, pubDate, updatedDate, tags, cover, devtoUrl } = artigo.data;
+---
+
+<ArtigosLayout title={`${title} | Daniel Camuçatto`} description={description} image={cover} type="article" publishedTime={pubDate}>
+  <article>
+    <header class="mb-10">
+      <p class="text-xs uppercase tracking-wider text-slate-500">
+        <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
+        {updatedDate && updatedDate > pubDate && <> · atualizado em {formatDate(updatedDate)}</>}
+        · {readingTime(artigo.body)} min de leitura
+      </p>
+      <h1 class="!text-3xl sm:!text-4xl !leading-tight mt-2 !mb-4">{title}</h1>
+      {tags.length > 0 && (
+        <ul class="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <li class="rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium text-teal-700 dark:text-teal-300">{tag}</li>
+          ))}
+        </ul>
+      )}
+      {cover && <img src={cover} alt="" class="mt-8 w-full rounded-lg" loading="eager" />}
+    </header>
+
+    <div class="prose prose-slate dark:prose-invert max-w-none prose-a:text-teal-700 dark:prose-a:text-teal-300 prose-img:rounded-lg prose-pre:border prose-pre:border-slate-200 dark:prose-pre:border-slate-700 prose-headings:text-slate-900 dark:prose-headings:text-slate-100 prose-code:before:content-none prose-code:after:content-none prose-code:rounded prose-code:bg-slate-200/60 dark:prose-code:bg-slate-800 prose-code:px-1 prose-code:py-0.5 prose-code:font-normal">
+      <Content />
+    </div>
+
+    <footer class="mt-16 border-t border-slate-200 pt-8 text-sm text-slate-500 dark:border-slate-700">
+      {devtoUrl && (
+        <p>
+          Também publicado no <a href={devtoUrl} class="text-teal-700 dark:text-teal-300 hover:underline" rel="noopener">dev.to</a>.
+        </p>
+      )}
+      <p class="mt-2"><a href="/artigos" class="text-teal-700 dark:text-teal-300 hover:underline">← Todos os artigos</a></p>
+    </footer>
+  </article>
+</ArtigosLayout>

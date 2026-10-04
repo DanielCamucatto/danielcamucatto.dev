@@ -1,5 +1,5 @@
 # Use uma imagem base do Node.js para o ambiente de desenvolvimento.
-FROM node:20-alpine
+FROM node:22-alpine
 
 # Define o diretório de trabalho dentro do contêiner
 WORKDIR /app
@@ -14,7 +14,7 @@ RUN npm install
 # Copia todo o restante do código da sua aplicação para o diretório de trabalho
 COPY . .
 
-# Expõe a porta 5173, que é a porta padrão do Vite
+# Expõe a porta 5173, que é a porta usada pelo `astro dev` (ver package.json)
 EXPOSE 5173
 
 # Comando para iniciar o servidor de desenvolvimento do Vite
