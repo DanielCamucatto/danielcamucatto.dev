@@ -12,7 +12,8 @@ interface Props {
 
 const { title, description, image, type = 'website', publishedTime } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const ogImage = image ?? new URL('/favicon.png', Astro.site).href;
+// Sem imagem própria (ex.: capa do artigo), usa a imagem padrão 1200x630 do site
+const ogImage = image ?? new URL('/og.jpg', Astro.site).href;
 const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
@@ -34,9 +35,13 @@ const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    {!image && <meta property="og:image:width" content="1200" />}
+    {!image && <meta property="og:image:height" content="630" />}
+    <meta property="og:image:alt" content={title} />
+    <meta property="og:site_name" content="Daniel Camuçatto" />
     <meta property="og:locale" content="pt_BR" />
     {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
-    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Aplica o tema antes da pintura para evitar flash (mesma regra do ThemeProvider) -->
     <script is:inline>
