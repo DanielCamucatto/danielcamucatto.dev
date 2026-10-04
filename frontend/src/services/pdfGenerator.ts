@@ -22,10 +22,14 @@ export interface CVData {
       period: string;
       role: string;
       company: string;
-      description: string;
+      description: string[];
       technologies: string[];
     }>;
     technologiesLabel?: string;
+  };
+  skills: {
+    title: string;
+    groups: Array<{ name: string; items: string[] }>;
   };
   education: {
     title: string;
@@ -45,6 +49,7 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
   const cvData: CVData = {
     header: translations.header,
     about: translations.about,
+    skills: translations.skills,
     experience: translations.experience,
     education: translations.education,
   };
@@ -123,16 +128,61 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
   });
   
   yPosition += 5;
+
+  // Skills Section
+  doc.setFontSize(16);
+  doc.setTextColor(primaryRgb[0], primaryRgb[1], primaryRgb[2]);
+  doc.text(cvData.skills.title, leftMargin, yPosition);
+  yPosition += 8;
+
+  doc.setFontSize(10);
+  cvData.skills.groups.forEach(group => {
+    if (yPosition > pageBreakThreshold) {
+      doc.addPage();
+      yPosition = 20;
+    }
+    doc.setTextColor(accentRgb[0], accentRgb[1], accentRgb[2]);
+    doc.text(`${group.name}:`, leftMargin, yPosition);
+    doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
+    const itemLines = doc.splitTextToSize(group.items.join(', '), contentWidth - 50);
+    doc.text(itemLines, leftMargin + 50, yPosition);
+    yPosition += itemLines.length * 4 + 3;
+  });
+
+  yPosition += 10;
   
   // Experience Section
+  // Altura (em mm) que uma experiência ocupa, calculada com as mesmas fontes usadas no desenho
+  const techLabelWidth = 30;
+  const experienceHeight = (exp: CVData['experience']['experiences'][number]): number => {
+    doc.setFontSize(10);
+    const descHeight = exp.description.reduce(
+      (sum, item) => sum + doc.splitTextToSize(item, contentWidth - 5).length * 4 + 1,
+      0
+    );
+    doc.setFontSize(9);
+    const techHeight = exp.technologies?.length
+      ? doc.splitTextToSize(exp.technologies.join(', '), contentWidth - techLabelWidth).length * 4
+      : 0;
+    return 6 + 7 + descHeight + 2 + techHeight + 8;
+  };
+  const pageBottom = pageHeight - bottomMargin;
+
+  // O título da seção só entra na página se a primeira experiência couber junto
+  const firstExperience = cvData.experience.experiences[0];
+  if (firstExperience && yPosition + 10 + experienceHeight(firstExperience) > pageBottom) {
+    doc.addPage();
+    yPosition = 20;
+  }
+
   doc.setFontSize(16);
   doc.setTextColor(primaryRgb[0], primaryRgb[1], primaryRgb[2]);
   doc.text(cvData.experience.title, leftMargin, yPosition);
   yPosition += 10;
   
   cvData.experience.experiences.forEach((exp, index) => {
-    // Verifica se precisa de nova página
-    if (yPosition > pageBreakThreshold) {
+    // Quebra a página só quando a experiência inteira não cabe no espaço restante
+    if (yPosition + experienceHeight(exp) > pageBottom) {
       doc.addPage();
       yPosition = 20;
     }
@@ -152,9 +202,13 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
     // Descrição
   doc.setFontSize(10);
   doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
-    const descLines = doc.splitTextToSize(exp.description, contentWidth);
-    doc.text(descLines, leftMargin, yPosition);
-    yPosition += descLines.length * 4 + 3;
+    exp.description.forEach(item => {
+      const itemLines = doc.splitTextToSize(item, contentWidth - 5);
+      doc.text('•', leftMargin, yPosition);
+      doc.text(itemLines, leftMargin + 5, yPosition);
+      yPosition += itemLines.length * 4 + 1;
+    });
+    yPosition += 2;
     
     // Tecnologias
     if (exp.technologies && exp.technologies.length > 0) {
@@ -165,8 +219,8 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
       
   doc.setTextColor(secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
       const techText = exp.technologies.join(', ');
-      const techLines = doc.splitTextToSize(techText, contentWidth - 30);
-      doc.text(techLines, leftMargin + 30, yPosition);
+      const techLines = doc.splitTextToSize(techText, contentWidth - techLabelWidth);
+      doc.text(techLines, leftMargin + techLabelWidth, yPosition);
       yPosition += techLines.length * 4 + 8;
     } else {
       yPosition += 8;
@@ -189,8 +243,8 @@ export function generatePDF(language: 'pt' | 'en' | 'es'): void {
   yPosition += 10;
   
   cvData.education.education.forEach((item, index) => {
-    // Verifica se precisa de nova página
-    if (yPosition > pageBreakThreshold) {
+    // Período (6) + curso (7) + tipo (8): quebra só se o item não couber
+    if (yPosition + 21 > pageBottom) {
       doc.addPage();
       yPosition = 20;
     }

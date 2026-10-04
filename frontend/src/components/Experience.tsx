@@ -6,8 +6,9 @@ interface ExperienceItem {
   ariaLabel: string;
   role: string;
   company: string;
-  description: string;
+  description: string[];
   technologies: string[];
+  link?: string;
 }
 
 interface ExperienceTranslations {
@@ -27,6 +28,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   company,
   description,
   technologies,
+  link,
   technologiesLabel,
 }) => (
   <li className="mb-12">
@@ -38,21 +40,29 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       <div className="z-10 sm:col-span-6">
         <h3 className="font-medium leading-snug text-slate-200">
           <div>
-            <a className="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base" href="https://exemplo.com" target="_blank" rel="noreferrer" aria-label={role}>
-              <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-              <span>
-                {role} · {' '}
-                <span className="inline-block">
-                  {company}
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>
+            {link ? (
+              <a className="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base" href={link} target="_blank" rel="noreferrer" aria-label={`${role} · ${company}`}>
+                <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                <span>
+                  {role} · {' '}
+                  <span className="inline-block">
+                    {company}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>
+                  </span>
                 </span>
+              </a>
+            ) : (
+              <span className="inline-flex items-baseline font-semibold leading-tight text-teal-300 dark:text-slate-200 text-base">
+                {role} · {company}
               </span>
-            </a>
+            )}
           </div>
         </h3>
-        <p className="mt-2 text-sm leading-normal text-slate-400">
-          {description}
-        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-4 text-sm leading-normal text-slate-400 marker:text-teal-500/70">
+          {description.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
         <ul className="mt-2 flex flex-wrap" aria-label={technologiesLabel}>
           {technologies.map((tech) => (
             <li key={tech} className="mr-1.5 mt-2">

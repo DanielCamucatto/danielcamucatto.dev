@@ -1,0 +1,83 @@
+{
+  "title": "Competencias",
+  "groups": [
+    {
+      "name": "Front-end",
+      "items": [
+        "React",
+        "Next.js",
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Tailwind CSS",
+        "Storybook",
+        "Design System",
+        "Redux",
+        "Recoil"
+      ]
+    },
+    {
+      "name": "Back-end, APIs e IA",
+      "items": [
+        "Node.js",
+        "NestJS",
+        "PHP",
+        "Python",
+        "APIs REST",
+        "GraphQL",
+        "Apollo",
+        "OAuth",
+        "JWT",
+        "Twilio",
+        "RabbitMQ",
+        "Stripe",
+        "MCP",
+        "RAG",
+        "Ingeniería de Prompts",
+        "LLMs (Claude, Gemini, GPT)"
+      ]
+    },
+    {
+      "name": "Datos",
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "SQL",
+        "Spark",
+        "Trino",
+        "Qlik Sense"
+      ]
+    },
+    {
+      "name": "DevOps y observabilidad",
+      "items": [
+        "CI/CD",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "Portainer",
+        "Hetzner",
+        "Staycloud",
+        "Datadog",
+        "Git"
+      ]
+    },
+    {
+      "name": "Pruebas y prácticas",
+      "items": [
+        "Jest",
+        "Cypress",
+        "PHPUnit",
+        "Arquitectura de Software",
+        "Microservicios",
+        "Microfrontends",
+        "SEO",
+        "Scrum"
+      ]
+    }
+  ]
+}

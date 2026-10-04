@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useRef } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
-import { Header, Navigation, Footer, About, Experience, Projects, Education, ThemeToggle, LanguageToggle } from './components';
+import { Header, Navigation, Footer, About, Skills, Experience, Projects, Education, ThemeToggle, LanguageToggle } from './components';
 
 function AppContent() {
   const highlightRef = useRef<HTMLDivElement>(null);
@@ -48,6 +48,7 @@ function AppContent() {
           </div>
           <div className="pt-24 lg:w-1/2 lg:py-24">
             <About />
+            <Skills />
             <Experience />
             <Projects />
             <Education />
