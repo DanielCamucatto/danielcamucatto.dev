@@ -1,7 +1,13 @@
+import { useEffect, useState } from 'react';
 import { useTheme } from '../hooks/useTheme';
 
 export function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme: currentTheme, toggleTheme } = useTheme();
+  // No build (SSR) o tema é sempre 'light'; só usamos o tema real depois de montar
+  // para o primeiro render no navegador bater com o HTML gerado.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const theme = mounted ? currentTheme : 'light';
 
   return (
     <button

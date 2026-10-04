@@ -75,3 +75,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Blocos de código (Shiki com tema duplo): usa as cores escuras quando .dark está ativo */
+html.dark .astro-code,
+html.dark .astro-code span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+}
+
+/* O estilo de código inline do .prose não deve valer dentro de blocos <pre> */
+.prose pre code {
+  background: transparent !important;
+  padding: 0 !important;
+}

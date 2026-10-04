@@ -41,21 +41,10 @@ export default tseslint.config([
 
 ## Google Analytics (optional)
 
-This project supports Google Analytics 4 (GA4) via a Vite environment variable.
+GA4 is loaded by `src/layouts/BaseLayout.astro` only when `PUBLIC_GA_MEASUREMENT_ID` is set at build time.
 
-- Set the variable `VITE_GA_MEASUREMENT_ID` to your GA4 Measurement ID (looks like `G-XXXXXXXXXX`) in your production environment.
-- The app will only load gtag and send pageviews when this variable is present.
-
-Examples:
-
-- Netlify: add an Environment variable `VITE_GA_MEASUREMENT_ID` in Site settings -> Build & deploy -> Environment.
-- Vercel / other hosts: set the env var in the project settings.
-
-Locally you can create a `.env.production` (not committed) with:
-
-```
-VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-```
+- Cloudflare Pages: Settings → Variables and Secrets → add `PUBLIC_GA_MEASUREMENT_ID`.
+- Locally: create a `.env` (not committed) with `PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX`.
 
 Notes:
 

@@ -1,0 +1,40 @@
+---
+import ArtigosLayout from '../../layouts/ArtigosLayout.astro';
+import { getArtigos, formatDate, readingTime } from '../../utils/artigos';
+
+const artigos = await getArtigos();
+---
+
+<ArtigosLayout
+  title="Artigos | Daniel Camuçatto"
+  description="Artigos técnicos sobre arquitetura de software, backend, frontend e liderança técnica."
+>
+  <h1 class="!text-3xl sm:!text-4xl !mb-3">Artigos</h1>
+  <p class="text-slate-600 dark:text-slate-400 mb-12">
+    O que venho aprendendo sobre arquitetura, backend, frontend e liderança técnica.
+  </p>
+
+  <ul class="space-y-10">
+    {artigos.map((artigo) => (
+      <li>
+        <a href={`/artigos/${artigo.id}/`} class="group block">
+          <p class="text-xs uppercase tracking-wider text-slate-500">
+            {formatDate(artigo.data.pubDate)} · {readingTime(artigo.body)} min de leitura
+            {artigo.data.draft && <span class="ml-2 text-amber-500">rascunho</span>}
+          </p>
+          <h2 class="!mb-2 mt-1 !text-xl font-semibold !text-slate-800 dark:!text-slate-200 group-hover:!text-teal-600 dark:group-hover:!text-teal-300 transition-colors">
+            {artigo.data.title}
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">{artigo.data.description}</p>
+          {artigo.data.tags.length > 0 && (
+            <ul class="mt-3 flex flex-wrap gap-2">
+              {artigo.data.tags.map((tag) => (
+                <li class="rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium text-teal-700 dark:text-teal-300">{tag}</li>
+              ))}
+            </ul>
+          )}
+        </a>
+      </li>
+    ))}
+  </ul>
+</ArtigosLayout>
