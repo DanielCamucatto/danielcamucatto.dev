@@ -108,6 +108,13 @@
       "title": "Divam",
       "description": "Plataforma de agendamento de consulta médica online, oferecendo uma experiência intuitiva para pacientes e profissionais de saúde.",
       "link": "https://divam.com.br/",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "PostgreSQL"
+      ],
       "featured": true,
       "imageUrl": "projects/divam.png",
       "details": [
@@ -120,8 +127,9 @@
     },
     {
       "title": "Bae Digital",
-      "description": "A BAE Digital é uma plataforma de relacionamentos que se diferencia de outros aplicativos ao focar em conexões mais profundas e experiências. ",
+      "description": "A BAE Digital é uma plataforma de relacionamentos que se diferencia de outros aplicativos ao focar em conexões mais profundas e experiências.",
       "link": "https://baedigital.com.br/",
+      "technologies": [],
       "featured": true,
       "imageUrl": "projects/bae_digital.png",
       "details": [
@@ -135,6 +143,7 @@
       "title": "Pix 4 Fun",
       "description": "A Pix4Fun é uma plataforma de comércio eletrônico que oferece um serviço de revelação de fotos personalizadas em formato físico. O foco principal são as fotos estilo Polaroid e fotos-ímã, permitindo que os clientes transformem suas memórias digitais em produtos tangíveis.",
       "link": "https://www.pix4fun.com.br/",
+      "technologies": [],
       "featured": true,
       "imageUrl": "projects/pix4fun.png",
       "details": [
@@ -148,8 +157,9 @@
     },
     {
       "title": "Inteligência Financeira - Globo.com",
-      "description": " portal de conteúdo focado em educação financeira, oferecendo artigos, vídeos e análises para ajudar o público a gerenciar suas finanças de forma mais inteligente.Hoje infelizmente ele foi descontinuado",
-      "link": "www.inteligenciafinanceira.com.br/",
+      "description": "Portal de conteúdo focado em educação financeira, oferecendo artigos, vídeos e análises para ajudar o público a gerenciar suas finanças de forma mais inteligente. O portal foi descontinuado.",
+      "link": "https://www.inteligenciafinanceira.com.br/",
+      "technologies": [],
       "featured": true,
       "imageUrl": "projects/inteligencia_financeira.png",
       "details": [
@@ -163,8 +173,9 @@
     },
     {
       "title": "Mitos e Verdades Sobre o Cartão de Crédito Empresarial",
-      "description": "conteúdo publicitário especial no G1, focado em promover o Cartão de Crédito Empresarial do Bradesco. A página é um quiz interativo no formato Mito ou Verdade que busca educar e desmistificar informações sobre o cartão para empreendedores.",
+      "description": "Conteúdo publicitário especial no G1 para promover o Cartão de Crédito Empresarial do Bradesco. A página é um quiz interativo no formato Mito ou Verdade que busca educar e desmistificar informações sobre o cartão para empreendedores.",
       "link": "https://especiais.g1.globo.com/especial-publicitario/mitos-e-verdades-sobre-o-cartao-de-credito-empresarial/",
+      "technologies": [],
       "featured": true,
       "imageUrl": "projects/mitos_e_verdades.png",
       "details": [

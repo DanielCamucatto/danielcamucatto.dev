@@ -760,7 +760,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
               <p
                 class="mt-2 text-sm leading-normal text-slate-400"
               >
-                A BAE Digital é uma plataforma de relacionamentos que se diferencia de outros aplicativos ao focar em conexões mais profundas e experiências. 
+                A BAE Digital é uma plataforma de relacionamentos que se diferencia de outros aplicativos ao focar em conexões mais profundas e experiências.
               </p>
               <ul
                 class="mt-2 text-sm leading-normal text-slate-400"
@@ -971,7 +971,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                   <a
                     aria-label="Inteligência Financeira - Globo.com"
                     class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
-                    href="www.inteligenciafinanceira.com.br/"
+                    href="https://www.inteligenciafinanceira.com.br/"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -1000,7 +1000,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
               <p
                 class="mt-2 text-sm leading-normal text-slate-400"
               >
-                 portal de conteúdo focado em educação financeira, oferecendo artigos, vídeos e análises para ajudar o público a gerenciar suas finanças de forma mais inteligente.Hoje infelizmente ele foi descontinuado
+                Portal de conteúdo focado em educação financeira, oferecendo artigos, vídeos e análises para ajudar o público a gerenciar suas finanças de forma mais inteligente. O portal foi descontinuado.
               </p>
               <ul
                 class="mt-2 text-sm leading-normal text-slate-400"
@@ -1130,7 +1130,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
               <p
                 class="mt-2 text-sm leading-normal text-slate-400"
               >
-                conteúdo publicitário especial no G1, focado em promover o Cartão de Crédito Empresarial do Bradesco. A página é um quiz interativo no formato Mito ou Verdade que busca educar e desmistificar informações sobre o cartão para empreendedores.
+                Conteúdo publicitário especial no G1 para promover o Cartão de Crédito Empresarial do Bradesco. A página é um quiz interativo no formato Mito ou Verdade que busca educar e desmistificar informações sobre o cartão para empreendedores.
               </p>
               <ul
                 class="mt-2 text-sm leading-normal text-slate-400"

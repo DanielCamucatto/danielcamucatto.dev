@@ -111,7 +111,7 @@
       "technologies": [
         "React",
         "TypeScript",
-        "TailwindCSS",
+        "Tailwind CSS",
         "Node.js",
         "PostgreSQL"
       ],
@@ -126,22 +126,65 @@
       ]
     },
     {
-      "title": "Portfolio",
-      "description": "Personal website and portfolio, developed with modern technologies and focus on performance and accessibility.",
-      "link": "https://danielcamucatto.dev.br",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "TailwindCSS",
-        "Docker"
-      ],
+      "title": "Bae Digital",
+      "description": "BAE Digital is a dating platform that stands out from other apps by focusing on deeper connections and experiences.",
+      "link": "https://baedigital.com.br/",
+      "technologies": [],
       "featured": true,
-      "imageUrl": "projects/portfolio.png",
+      "imageUrl": "projects/bae_digital.png",
       "details": [
-        "Responsive and minimalist design",
-        "Multi-language support (i18n)",
-        "Performance optimization with SSR",
-        "Continuous integration with Docker"
+        "Responsive design across platforms",
+        "SSL/TLS certificates for security (HTTPS)",
+        "Focus on usability and user experience (UX)",
+        "Blog for content marketing"
+      ]
+    },
+    {
+      "title": "Pix 4 Fun",
+      "description": "Pix4Fun is an e-commerce platform that prints personalized photos as physical products. Its focus is Polaroid-style photos and photo magnets, letting customers turn digital memories into tangible products.",
+      "link": "https://www.pix4fun.com.br/",
+      "technologies": [],
+      "featured": true,
+      "imageUrl": "projects/pix4fun.png",
+      "details": [
+        "E-commerce platform focused on personalized products",
+        "Simple, intuitive 3-step checkout",
+        "Photo customization directly on the website",
+        "Multiple payment methods (PIX, card and bank slip)",
+        "Responsive design for desktop and mobile purchases",
+        "Shipping via Correios with tracking options"
+      ]
+    },
+    {
+      "title": "Inteligência Financeira - Globo.com",
+      "description": "Content portal focused on financial education, offering articles, videos and analysis to help people manage their finances more wisely. The portal has been discontinued.",
+      "link": "https://www.inteligenciafinanceira.com.br/",
+      "technologies": [],
+      "featured": true,
+      "imageUrl": "projects/inteligencia_financeira.png",
+      "details": [
+        "Scalable cloud architecture for high traffic",
+        "Content Management System (CMS) for content management",
+        "Responsive design for multiple devices and interfaces",
+        "SEO optimization with static or hybrid rendering (SSG/SSR)",
+        "CI/CD pipeline for continuous releases",
+        "Security and data compliance strategies"
+      ]
+    },
+    {
+      "title": "Myths and Truths About the Business Credit Card",
+      "description": "Sponsored special on G1 promoting Bradesco's Business Credit Card. The page is an interactive Myth or Truth quiz that educates entrepreneurs and debunks misconceptions about the card.",
+      "link": "https://especiais.g1.globo.com/especial-publicitario/mitos-e-verdades-sobre-o-cartao-de-credito-empresarial/",
+      "technologies": [],
+      "featured": true,
+      "imageUrl": "projects/mitos_e_verdades.png",
+      "details": [
+        "Modular, reusable content platform",
+        "Design tailored to the brand's visual identity (Bradesco)",
+        "Interactive elements (quiz)",
+        "Integration with analytics tools",
+        "Focus on engagement and conversion metrics",
+        "SEO within G1's high-authority domain"
       ]
     }
   ]
