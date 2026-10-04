@@ -89,16 +89,18 @@ export default function Header() {
           </li>
         </ul>
         
-        <a
-          href="/artigos"
-          className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-teal-600 dark:text-teal-300 hover:underline lg:hidden"
-        >
-          {getTranslations(language).navigation.articles} →
-        </a>
-
-        {/* Botão de Download CV */}
-        <div className="mt-6">
+        {/* Ações: CV e Artigos (visíveis em todos os tamanhos) */}
+        <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
           <DownloadCVButton />
+          <a
+            href="/artigos"
+            className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-teal-500/60 px-3 py-2 text-sm font-medium text-teal-600 transition-all duration-200 hover:border-teal-500 hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white dark:border-teal-400/60 dark:text-teal-300 dark:hover:border-teal-400 dark:hover:bg-slate-800 dark:focus:ring-offset-slate-900"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-4 w-4" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            </svg>
+            {getTranslations(language).navigation.articles}
+          </a>
         </div>
       </div>
     </header>

@@ -110,14 +110,8 @@ exports[`Header snapshot deve bater o snapshot 1`] = `
           </span>
         </li>
       </ul>
-      <a
-        class="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-teal-600 dark:text-teal-300 hover:underline lg:hidden"
-        href="/artigos"
-      >
-        Artigos →
-      </a>
       <div
-        class="mt-6"
+        class="mt-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3"
       >
         <div
           class="relative group "
@@ -153,6 +147,27 @@ exports[`Header snapshot deve bater o snapshot 1`] = `
             Baixar currículo em PDF
           </span>
         </div>
+        <a
+          class="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-teal-500/60 px-3 py-2 text-sm font-medium text-teal-600 transition-all duration-200 hover:border-teal-500 hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-white dark:border-teal-400/60 dark:text-teal-300 dark:hover:border-teal-400 dark:hover:bg-slate-800 dark:focus:ring-offset-slate-900"
+          href="/artigos"
+        >
+          <svg
+            aria-hidden="true"
+            class="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Artigos
+        </a>
       </div>
     </div>
   </header>
