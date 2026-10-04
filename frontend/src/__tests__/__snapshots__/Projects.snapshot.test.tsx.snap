@@ -839,6 +839,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
               >
                 <div>
                   <a
+                    aria-haspopup="dialog"
                     aria-label="Pix 4 Fun"
                     class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
                     href="https://www.pix4fun.com.br/"
@@ -969,6 +970,7 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
               >
                 <div>
                   <a
+                    aria-haspopup="dialog"
                     aria-label="Inteligência Financeira - Globo.com"
                     class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
                     href="https://www.inteligenciafinanceira.com.br/"
