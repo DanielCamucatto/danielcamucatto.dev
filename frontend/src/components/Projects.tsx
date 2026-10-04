@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslations } from '../utils/translations';
+import ContactModal from './ContactModal';
 
 interface Project {
   title: string;
@@ -9,19 +10,27 @@ interface Project {
   featured: boolean;
   imageUrl: string;
   details: string[];
+  discontinued?: boolean;
 }
 
 interface ProjectsTranslations {
   title: string;
+  discontinuedModal: { title: string; message: string; close: string };
   projects: Project[];
 }
 
-const ProjectCard: React.FC<Project> = ({
+interface ProjectCardProps extends Project {
+  onDiscontinuedClick: () => void;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   link,
   imageUrl,
-  details
+  details,
+  discontinued,
+  onDiscontinuedClick,
 }) => {
   return (
     <li className="mb-12">
@@ -49,6 +58,8 @@ const ProjectCard: React.FC<Project> = ({
                 target="_blank" 
                 rel="noreferrer"
                 aria-label={title}
+                aria-haspopup={discontinued ? 'dialog' : undefined}
+                onClick={discontinued ? (e) => { e.preventDefault(); onDiscontinuedClick(); } : undefined}
               >
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                 <span>
@@ -80,6 +91,7 @@ const ProjectCard: React.FC<Project> = ({
 
 export default function Projects() {
   const translations = useTranslations().projects as ProjectsTranslations;
+  const [discontinuedOpen, setDiscontinuedOpen] = useState(false);
 
   return (
     <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
@@ -94,10 +106,28 @@ export default function Projects() {
             <ProjectCard
               key={project.title}
               {...project}
+              onDiscontinuedClick={() => setDiscontinuedOpen(true)}
             />
           ))}
         </ul>
       </div>
+
+      <ContactModal
+        open={discontinuedOpen}
+        onClose={() => setDiscontinuedOpen(false)}
+        title={translations.discontinuedModal.title}
+      >
+        <p className="text-slate-600 dark:text-slate-300">{translations.discontinuedModal.message}</p>
+        <div className="mt-6 flex justify-end">
+          <button
+            type="button"
+            onClick={() => setDiscontinuedOpen(false)}
+            className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:border-teal-500 hover:text-teal-600 dark:border-slate-600 dark:text-slate-200 dark:hover:border-teal-400 dark:hover:text-teal-300"
+          >
+            {translations.discontinuedModal.close}
+          </button>
+        </div>
+      </ContactModal>
     </section>
   );
 }

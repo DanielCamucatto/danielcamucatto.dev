@@ -71,6 +71,7 @@
       "items": [
         "Jest",
         "Cypress",
+        "Playwright",
         "PHPUnit",
         "Software Architecture",
         "Microservices",

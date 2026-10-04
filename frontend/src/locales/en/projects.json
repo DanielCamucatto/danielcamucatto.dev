@@ -1,5 +1,10 @@
 {
   "title": "Projects",
+  "discontinuedModal": {
+    "title": "Website discontinued",
+    "message": "This website has been discontinued by the company.",
+    "close": "Close"
+  },
   "projects": [
     {
       "title": "Maiver",
@@ -153,7 +158,8 @@
         "Multiple payment methods (PIX, card and bank slip)",
         "Responsive design for desktop and mobile purchases",
         "Shipping via Correios with tracking options"
-      ]
+      ],
+      "discontinued": true
     },
     {
       "title": "Inteligência Financeira - Globo.com",
@@ -169,7 +175,8 @@
         "SEO optimization with static or hybrid rendering (SSG/SSR)",
         "CI/CD pipeline for continuous releases",
         "Security and data compliance strategies"
-      ]
+      ],
+      "discontinued": true
     },
     {
       "title": "Myths and Truths About the Business Credit Card",
