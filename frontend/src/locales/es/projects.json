@@ -2,43 +2,189 @@
   "title": "Proyectos",
   "projects": [
     {
+      "title": "Maiver",
+      "description": "Plataforma de SMS marketing con compliance integrado: importa la lista, arma la campaña y sigue cada envío en vivo, con opt-out automático y costo visible.",
+      "link": "https://landing.appmaiver.com/",
+      "technologies": [
+        "Astro",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "featured": true,
+      "imageUrl": "projects/maiver.webp",
+      "details": [
+        "Flujo de la hoja de cálculo al envío en tres pasos: importar lista, armar campaña y enviar",
+        "Opt-out estructural: después del STOP, el contacto se bloquea automáticamente",
+        "Automatizaciones como la recuperación de carritos abandonados",
+        "Costo visible en cada envío, antes de enviarlo",
+        "Landing page en Astro con componentes React y Tailwind CSS"
+      ]
+    },
+    {
+      "title": "Voga",
+      "description": "Ecosistema de tecnología jurídica con IA para abogados, nacido de la experiencia de Cálculo Jurídico, usado por más de 105 mil abogados.",
+      "link": "https://voga.adv.br/",
+      "technologies": [
+        "React",
+        "Vite",
+        "IA"
+      ],
+      "featured": true,
+      "imageUrl": "projects/voga.webp",
+      "details": [
+        "Reúne soluciones como Cálculo Jurídico, Voga IA, Chat Jurídico, LivrosAdv y Jurídico Viral",
+        "Herramientas gratuitas y contenido para abogados",
+        "Integración entre los sistemas y procesos del despacho",
+        "Evolución continua basada en datos y uso real"
+      ]
+    },
+    {
+      "title": "Jurídico Viral",
+      "description": "Plataforma de contenido jurídico para redes sociales con el método de Kevin Domingos (Judiciário do Caos, +1,4 millones de seguidores): publicaciones listas, verificadas según las normas de la OAB.",
+      "link": "https://juridico-viral.web.app/",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Supabase",
+        "TanStack Query",
+        "Tailwind CSS",
+        "Jekyll",
+        "Firebase Hosting",
+        "Playwright"
+      ],
+      "featured": true,
+      "imageUrl": "projects/juridico_viral.webp",
+      "details": [
+        "Configuración del perfil del despacho y generación de contenido con el método viral",
+        "Verificación de compliance con las reglas de publicidad de la OAB",
+        "Aplicación en React, TypeScript y Vite con Supabase y pruebas E2E con Playwright",
+        "Sitio institucional y blog en Jekyll, alojados en Firebase"
+      ]
+    },
+    {
+      "title": "LivrosAdv",
+      "description": "Plataforma para que abogados escriban su propio libro jurídico con IA especializada en Derecho brasileño, de la estructura a la revisión.",
+      "link": "https://livros.adv.br/",
+      "technologies": [
+        "React",
+        "Vite",
+        "IA"
+      ],
+      "featured": true,
+      "imageUrl": "projects/livros_adv.webp",
+      "details": [
+        "Generación de la estructura y desarrollo de los capítulos con IA especializada en Derecho",
+        "Herramientas de revisión y validación de la obra",
+        "Publicación como etapa separada, por decisión del autor",
+        "Contenido de marketing jurídico por área de práctica, dentro de las reglas de la OAB"
+      ]
+    },
+    {
+      "title": "Foco Valinhos",
+      "description": "Portal de noticias de Valinhos en formato de red social: noticias, opinión y agenda en un feed continuo, con likes, comentarios y compartir.",
+      "link": "https://focovalinhos.com.br/",
+      "technologies": [
+        "TanStack Start",
+        "React",
+        "TypeScript",
+        "Payload CMS",
+        "Next.js",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Google Cloud Run"
+      ],
+      "featured": true,
+      "imageUrl": "projects/foco_valinhos.webp",
+      "details": [
+        "Feed continuo organizado por secciones (Ciudad, Política, Cultura, Deporte y más)",
+        "Front-end en TanStack Start con React y Tailwind CSS",
+        "Redacción gestionada en Payload CMS (Next.js) con PostgreSQL",
+        "Alojado en Google Cloud Run, con espacios para anunciantes y suscripción"
+      ]
+    },
+    {
       "title": "Divam",
-      "description": "Plataforma de programación de citas médicas en línea, que ofrece una experiencia intuitiva para pacientes y profesionales de la salud.",
+      "description": "Plataforma de agendamiento de consultas médicas en línea, que ofrece una experiencia intuitiva para pacientes y profesionales de la salud.",
       "link": "https://divam.com.br/",
       "technologies": [
         "React",
         "TypeScript",
-        "TailwindCSS",
+        "Tailwind CSS",
         "Node.js",
         "PostgreSQL"
       ],
       "featured": true,
-  "imageUrl": "projects/divam.png",
+      "imageUrl": "projects/divam.png",
       "details": [
-        "Interfaz moderna y responsiva para programar citas",
+        "Interfaz moderna y responsiva para agendar consultas",
         "Sistema de notificaciones en tiempo real",
-        "Panel completo para gestión de agenda médica",
+        "Dashboard completo para la gestión de la agenda médica",
         "Integración con pasarela de pago",
-        "Sistema de calificaciones y comentarios"
+        "Sistema de valoraciones y feedback"
       ]
     },
     {
-      "title": "Portfolio",
-      "description": "Sitio web personal y portafolio, desarrollado con tecnologías modernas y enfoque en rendimiento y accesibilidad.",
-      "link": "https://danielcamucatto.dev.br",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "TailwindCSS",
-        "Docker"
-      ],
+      "title": "Bae Digital",
+      "description": "BAE Digital es una plataforma de relaciones que se diferencia de otras aplicaciones al enfocarse en conexiones más profundas y experiencias.",
+      "link": "https://baedigital.com.br/",
+      "technologies": [],
       "featured": true,
-  "imageUrl": "projects/portfolio.png",
+      "imageUrl": "projects/bae_digital.png",
       "details": [
-        "Diseño responsivo y minimalista",
-        "Soporte multilingüe (i18n)",
-        "Optimización de rendimiento con SSR",
-        "Integración continua con Docker"
+        "Diseño responsivo para diversas plataformas",
+        "Certificados SSL/TLS para seguridad (HTTPS)",
+        "Enfoque en usabilidad y experiencia de usuario (UX)",
+        "Blog para marketing de contenidos"
+      ]
+    },
+    {
+      "title": "Pix 4 Fun",
+      "description": "Pix4Fun es una plataforma de comercio electrónico que imprime fotos personalizadas en formato físico. Su enfoque son las fotos estilo Polaroid y los fotoimanes, permitiendo que los clientes conviertan sus recuerdos digitales en productos tangibles.",
+      "link": "https://www.pix4fun.com.br/",
+      "technologies": [],
+      "featured": true,
+      "imageUrl": "projects/pix4fun.png",
+      "details": [
+        "Plataforma de e-commerce enfocada en productos personalizados",
+        "Flujo de compra simple e intuitivo (3 pasos)",
+        "Personalización de fotos directamente en el sitio",
+        "Múltiples medios de pago (PIX, tarjeta y boleto)",
+        "Diseño responsivo para compras en desktop y móvil",
+        "Envíos por Correios con opciones de seguimiento"
+      ]
+    },
+    {
+      "title": "Inteligência Financeira - Globo.com",
+      "description": "Portal de contenido enfocado en educación financiera, con artículos, videos y análisis para ayudar al público a gestionar sus finanzas de forma más inteligente. El portal fue descontinuado.",
+      "link": "https://www.inteligenciafinanceira.com.br/",
+      "technologies": [],
+      "featured": true,
+      "imageUrl": "projects/inteligencia_financeira.png",
+      "details": [
+        "Arquitectura en la nube escalable para alto tráfico",
+        "Content Management System (CMS) para la gestión de contenido",
+        "Diseño responsivo para múltiples dispositivos e interfaces",
+        "Optimización SEO con renderizado estático o híbrido (SSG/SSR)",
+        "Pipeline de CI/CD para releases continuos",
+        "Estrategias de seguridad y cumplimiento de datos"
+      ]
+    },
+    {
+      "title": "Mitos y Verdades sobre la Tarjeta de Crédito Empresarial",
+      "description": "Contenido publicitario especial en G1 para promover la Tarjeta de Crédito Empresarial de Bradesco. La página es un quiz interactivo de Mito o Verdad que educa a emprendedores y desmiente información sobre la tarjeta.",
+      "link": "https://especiais.g1.globo.com/especial-publicitario/mitos-e-verdades-sobre-o-cartao-de-credito-empresarial/",
+      "technologies": [],
+      "featured": true,
+      "imageUrl": "projects/mitos_e_verdades.png",
+      "details": [
+        "Plataforma de contenido modular y reutilizable",
+        "Diseño adaptado a la identidad visual de la marca (Bradesco)",
+        "Elementos interactivos (quiz)",
+        "Integración con herramientas de analítica",
+        "Enfoque en métricas de engagement y conversión",
+        "Optimización SEO dentro del dominio de alta autoridad de G1"
       ]
     }
   ]
