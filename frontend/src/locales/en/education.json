@@ -4,26 +4,20 @@
     {
       "period": "2020 - 2024",
       "institution": "Estácio",
-      "degree": "Bachelor of Science in Information Systems",
-      "type": "Bachelor's Degree"
-    },
-    {
-      "period": "July 2023 - December 2023",
-      "institution": "Ada Tech",
-      "degree": "Prep Tech_Afro 2023!, Computer Science",
-      "type": "Specialization Course"
+      "degree": "Bachelor's in Information Systems",
+      "type": "Undergraduate"
     },
     {
       "period": "2020 - 2021",
       "institution": "Faculdade Metropolitana",
-      "degree": "MBA - Software Engineering, Information Technology",
-      "type": "Graduate Degree"
+      "degree": "MBA in Software Engineering",
+      "type": "Postgraduate"
     },
     {
-      "period": "2005 - 2009",
-      "institution": "Universidade Metodista de São Paulo",
-      "degree": "Bachelor's Degree in Theology",
-      "type": "Bachelor's Degree"
+      "period": "July 2023 - December 2023",
+      "institution": "Ada Tech",
+      "degree": "Prep Tech_Afro 2023, Computer Science",
+      "type": "Specialization Course"
     }
   ]
 }
