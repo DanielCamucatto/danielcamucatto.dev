@@ -1,7 +1,8 @@
 {
   "title": "About",
   "paragraphs": [
-    "I am a full stack developer with extensive experience in creating robust and scalable web applications. My passion for technology drives me to constantly seek new solutions and improve my skills, always focusing on end-to-end solutions. I have a strong interest in software architectures, API development, and creating intuitive and efficient user interfaces.",
-    "In my free time, I enjoy exploring new technologies, contributing to open source projects, and sharing my knowledge with the development community."
+    "I'm a Full Stack Developer with more than 7 years of experience building end-to-end solutions with React, TypeScript, Node.js, NestJS and PostgreSQL. I like owning the whole system: from architecture and APIs to the design system and the user experience.",
+    "At Maiver, a platform that sends more than 15 million SMS per month, I'm responsible for the architecture, the design system and the Twilio, RabbitMQ and Stripe integrations, and I led a migration that cut campaign run time from 7 to 4 hours. Before that, at Mtrix, a solution I led drove a 30% revenue increase; at Visto, an AI automation cut a 2-hour review down to 30 minutes.",
+    "I work with CI/CD and infrastructure as code (Terraform) and with applied AI every day: prompt engineering since 2021, RAG and MCP servers. I also write technical articles about architecture, back end and front end, which you can find in the articles section."
   ]
 }
