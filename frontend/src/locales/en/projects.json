@@ -2,6 +2,109 @@
   "title": "Projects",
   "projects": [
     {
+      "title": "Maiver",
+      "description": "SMS marketing platform with built-in compliance: import a list, build the campaign and follow every send live, with automatic opt-out and visible cost.",
+      "link": "https://landing.appmaiver.com/",
+      "technologies": [
+        "Astro",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "featured": true,
+      "imageUrl": "projects/maiver.webp",
+      "details": [
+        "Spreadsheet-to-send flow in three steps: import list, build campaign, send",
+        "Structural opt-out: after STOP, the contact is blocked automatically",
+        "Automations such as abandoned-cart recovery",
+        "Cost visible for every send, before it goes out",
+        "Landing page built with Astro, React components and Tailwind CSS"
+      ]
+    },
+    {
+      "title": "Voga",
+      "description": "Legal-tech ecosystem with AI for lawyers, born from the experience of Cálculo Jurídico, used by more than 105,000 lawyers.",
+      "link": "https://voga.adv.br/",
+      "technologies": [
+        "React",
+        "Vite",
+        "IA"
+      ],
+      "featured": true,
+      "imageUrl": "projects/voga.webp",
+      "details": [
+        "Brings together products such as Cálculo Jurídico, Voga IA, Chat Jurídico, LivrosAdv and Jurídico Viral",
+        "Free tools and content for lawyers",
+        "Integration between the law firm's systems and processes",
+        "Continuous evolution driven by data and real usage"
+      ]
+    },
+    {
+      "title": "Jurídico Viral",
+      "description": "Social media content platform for lawyers based on Kevin Domingos' method (Judiciário do Caos, 1.4M+ followers): ready-to-post content checked against Brazilian Bar (OAB) rules.",
+      "link": "https://juridico-viral.web.app/",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Supabase",
+        "TanStack Query",
+        "Tailwind CSS",
+        "Jekyll",
+        "Firebase Hosting",
+        "Playwright"
+      ],
+      "featured": true,
+      "imageUrl": "projects/juridico_viral.webp",
+      "details": [
+        "Law firm profile setup and content generation with the viral method",
+        "Compliance check against OAB advertising rules",
+        "App built with React, TypeScript and Vite, Supabase, and Playwright E2E tests",
+        "Marketing site and blog built with Jekyll, hosted on Firebase"
+      ]
+    },
+    {
+      "title": "LivrosAdv",
+      "description": "Platform for lawyers to write their own legal book with AI specialized in Brazilian law, from outline to review.",
+      "link": "https://livros.adv.br/",
+      "technologies": [
+        "React",
+        "Vite",
+        "IA"
+      ],
+      "featured": true,
+      "imageUrl": "projects/livros_adv.webp",
+      "details": [
+        "Outline generation and chapter writing with law-specialized AI",
+        "Review and validation tools for the manuscript",
+        "Publishing as a separate step, at the author's discretion",
+        "Legal marketing content by practice area, within OAB rules"
+      ]
+    },
+    {
+      "title": "Foco Valinhos",
+      "description": "News portal for the city of Valinhos in a social media format: news, opinion and events in a continuous feed, with likes, comments and sharing.",
+      "link": "https://focovalinhos.com.br/",
+      "technologies": [
+        "TanStack Start",
+        "React",
+        "TypeScript",
+        "Payload CMS",
+        "Next.js",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Google Cloud Run"
+      ],
+      "featured": true,
+      "imageUrl": "projects/foco_valinhos.webp",
+      "details": [
+        "Continuous feed organized by section (City, Politics, Culture, Sports and more)",
+        "Front end built with TanStack Start, React and Tailwind CSS",
+        "Newsroom managed in Payload CMS (Next.js) with PostgreSQL",
+        "Hosted on Google Cloud Run, with ad slots and subscriptions"
+      ]
+    },
+    {
       "title": "Divam",
       "description": "Online medical appointment scheduling platform, offering an intuitive experience for patients and healthcare professionals.",
       "link": "https://divam.com.br/",
@@ -13,7 +116,7 @@
         "PostgreSQL"
       ],
       "featured": true,
-  "imageUrl": "projects/divam.png",
+      "imageUrl": "projects/divam.png",
       "details": [
         "Modern and responsive interface for appointment scheduling",
         "Real-time notification system",
@@ -33,7 +136,7 @@
         "Docker"
       ],
       "featured": true,
-  "imageUrl": "projects/portfolio.png",
+      "imageUrl": "projects/portfolio.png",
       "details": [
         "Responsive and minimalist design",
         "Multi-language support (i18n)",

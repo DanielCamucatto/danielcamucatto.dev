@@ -2,6 +2,109 @@
   "title": "Proyectos",
   "projects": [
     {
+      "title": "Maiver",
+      "description": "Plataforma de SMS marketing con compliance integrado: importa la lista, arma la campaña y sigue cada envío en vivo, con opt-out automático y costo visible.",
+      "link": "https://landing.appmaiver.com/",
+      "technologies": [
+        "Astro",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "featured": true,
+      "imageUrl": "projects/maiver.webp",
+      "details": [
+        "Flujo de la hoja de cálculo al envío en tres pasos: importar lista, armar campaña y enviar",
+        "Opt-out estructural: después del STOP, el contacto se bloquea automáticamente",
+        "Automatizaciones como la recuperación de carritos abandonados",
+        "Costo visible en cada envío, antes de enviarlo",
+        "Landing page en Astro con componentes React y Tailwind CSS"
+      ]
+    },
+    {
+      "title": "Voga",
+      "description": "Ecosistema de tecnología jurídica con IA para abogados, nacido de la experiencia de Cálculo Jurídico, usado por más de 105 mil abogados.",
+      "link": "https://voga.adv.br/",
+      "technologies": [
+        "React",
+        "Vite",
+        "IA"
+      ],
+      "featured": true,
+      "imageUrl": "projects/voga.webp",
+      "details": [
+        "Reúne soluciones como Cálculo Jurídico, Voga IA, Chat Jurídico, LivrosAdv y Jurídico Viral",
+        "Herramientas gratuitas y contenido para abogados",
+        "Integración entre los sistemas y procesos del despacho",
+        "Evolución continua basada en datos y uso real"
+      ]
+    },
+    {
+      "title": "Jurídico Viral",
+      "description": "Plataforma de contenido jurídico para redes sociales con el método de Kevin Domingos (Judiciário do Caos, +1,4 millones de seguidores): publicaciones listas, verificadas según las normas de la OAB.",
+      "link": "https://juridico-viral.web.app/",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Supabase",
+        "TanStack Query",
+        "Tailwind CSS",
+        "Jekyll",
+        "Firebase Hosting",
+        "Playwright"
+      ],
+      "featured": true,
+      "imageUrl": "projects/juridico_viral.webp",
+      "details": [
+        "Configuración del perfil del despacho y generación de contenido con el método viral",
+        "Verificación de compliance con las reglas de publicidad de la OAB",
+        "Aplicación en React, TypeScript y Vite con Supabase y pruebas E2E con Playwright",
+        "Sitio institucional y blog en Jekyll, alojados en Firebase"
+      ]
+    },
+    {
+      "title": "LivrosAdv",
+      "description": "Plataforma para que abogados escriban su propio libro jurídico con IA especializada en Derecho brasileño, de la estructura a la revisión.",
+      "link": "https://livros.adv.br/",
+      "technologies": [
+        "React",
+        "Vite",
+        "IA"
+      ],
+      "featured": true,
+      "imageUrl": "projects/livros_adv.webp",
+      "details": [
+        "Generación de la estructura y desarrollo de los capítulos con IA especializada en Derecho",
+        "Herramientas de revisión y validación de la obra",
+        "Publicación como etapa separada, por decisión del autor",
+        "Contenido de marketing jurídico por área de práctica, dentro de las reglas de la OAB"
+      ]
+    },
+    {
+      "title": "Foco Valinhos",
+      "description": "Portal de noticias de Valinhos en formato de red social: noticias, opinión y agenda en un feed continuo, con likes, comentarios y compartir.",
+      "link": "https://focovalinhos.com.br/",
+      "technologies": [
+        "TanStack Start",
+        "React",
+        "TypeScript",
+        "Payload CMS",
+        "Next.js",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Google Cloud Run"
+      ],
+      "featured": true,
+      "imageUrl": "projects/foco_valinhos.webp",
+      "details": [
+        "Feed continuo organizado por secciones (Ciudad, Política, Cultura, Deporte y más)",
+        "Front-end en TanStack Start con React y Tailwind CSS",
+        "Redacción gestionada en Payload CMS (Next.js) con PostgreSQL",
+        "Alojado en Google Cloud Run, con espacios para anunciantes y suscripción"
+      ]
+    },
+    {
       "title": "Divam",
       "description": "Plataforma de programación de citas médicas en línea, que ofrece una experiencia intuitiva para pacientes y profesionales de la salud.",
       "link": "https://divam.com.br/",
@@ -13,7 +116,7 @@
         "PostgreSQL"
       ],
       "featured": true,
-  "imageUrl": "projects/divam.png",
+      "imageUrl": "projects/divam.png",
       "details": [
         "Interfaz moderna y responsiva para programar citas",
         "Sistema de notificaciones en tiempo real",
@@ -33,7 +136,7 @@
         "Docker"
       ],
       "featured": true,
-  "imageUrl": "projects/portfolio.png",
+      "imageUrl": "projects/portfolio.png",
       "details": [
         "Diseño responsivo y minimalista",
         "Soporte multilingüe (i18n)",

@@ -35,6 +35,566 @@ exports[`Projects snapshot deve bater o snapshot 1`] = `
                 class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
               >
                 <img
+                  alt="Screenshot do projeto Maiver"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="projects/maiver.webp"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Maiver"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://landing.appmaiver.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Maiver
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Plataforma de SMS marketing com compliance embutido: importa a lista, monta a campanha e acompanha cada disparo ao vivo, com opt-out automático e custo visível.
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Fluxo da planilha ao disparo em três passos: importar lista, montar campanha e enviar
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Opt-out estrutural: depois do STOP, o contato é bloqueado automaticamente
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Automações como recuperação de carrinho abandonado
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Custo visível a cada envio, antes do disparo
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Landing page em Astro com componentes React e Tailwind CSS
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto Voga"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="projects/voga.webp"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Voga"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://voga.adv.br/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Voga
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Ecossistema de tecnologia jurídica com IA que nasceu da experiência do Cálculo Jurídico, usado por mais de 105 mil advogados.
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Reúne soluções como Cálculo Jurídico, Voga IA, Chat Jurídico, LivrosAdv e Jurídico Viral
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Ferramentas gratuitas e conteúdo para advogados
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Integração entre sistemas e processos do escritório
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Evolução contínua baseada em dados e uso real
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto Jurídico Viral"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="projects/juridico_viral.webp"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Jurídico Viral"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://juridico-viral.web.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Jurídico Viral
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Plataforma de conteúdo jurídico para redes sociais com o método de Kevin Domingos (Judiciário do Caos, +1,4 milhão de seguidores): posts prontos com checagem das normas da OAB.
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Configuração do perfil do escritório e geração de conteúdo com o método viral
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Verificação de compliance com as regras de publicidade da OAB
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Aplicação em React, TypeScript e Vite com Supabase e testes E2E com Playwright
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Site institucional e blog em Jekyll, hospedados no Firebase
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto LivrosAdv"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="projects/livros_adv.webp"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="LivrosAdv"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://livros.adv.br/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      LivrosAdv
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Plataforma para advogados escreverem o próprio livro jurídico com IA especializada em Direito brasileiro, da estrutura à revisão da obra.
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Geração da estrutura e desenvolvimento dos capítulos com IA especializada em Direito
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Ferramentas de revisão e validação da obra
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Publicação como etapa separada, por decisão do autor
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Conteúdo de marketing jurídico por área de atuação, dentro das regras da OAB
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
+                  alt="Screenshot do projeto Foco Valinhos"
+                  class="h-full w-full object-cover object-top transition group-hover:scale-105"
+                  src="projects/foco_valinhos.webp"
+                />
+              </div>
+            </div>
+            <div
+              class="z-10 sm:col-span-5"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Foco Valinhos"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://focovalinhos.com.br/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Foco Valinhos
+                      <svg
+                        aria-hidden="true"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <p
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                Portal de notícias de Valinhos em formato de rede social: notícias, opinião e agenda em um feed contínuo, com curtidas, comentários e compartilhamento.
+              </p>
+              <ul
+                class="mt-2 text-sm leading-normal text-slate-400"
+              >
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Feed contínuo organizado por editorias (Cidade, Política, Cultura, Esporte e outras)
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Front-end em TanStack Start com React e Tailwind CSS
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Redação gerenciada no Payload CMS (Next.js) com PostgreSQL
+                </li>
+                <li
+                  class="mb-2 flex items-center"
+                >
+                  <span
+                    class="mr-2 text-teal-300"
+                  >
+                    ▹
+                  </span>
+                   Hospedado no Google Cloud Run, com espaços para anunciantes e assinatura
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <div
+              class="z-10 sm:col-span-3"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-lg bg-slate-900"
+              >
+                <img
                   alt="Screenshot do projeto Divam"
                   class="h-full w-full object-cover object-top transition group-hover:scale-105"
                   src="projects/divam.png"
