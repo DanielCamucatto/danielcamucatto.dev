@@ -1,0 +1,53 @@
+---
+// Comentários e reações via Giscus (GitHub Discussions do próprio repositório).
+// Cada artigo vira uma discussão, criada no primeiro comentário, mapeada pelo pathname.
+// O ID da categoria vem de https://giscus.app; enquanto estiver vazio, a seção não aparece.
+const GISCUS = {
+  repo: 'DanielCamucatto/danielcamucatto.dev',
+  repoId: 'R_kgDOPPX_9w',
+  category: 'Announcements',
+  categoryId: '',
+};
+---
+
+{GISCUS.categoryId && (
+  <section aria-label="Comentários" class="mt-12">
+    <h2 class="mb-6 text-xl font-semibold text-slate-900 dark:text-slate-100">Comentários</h2>
+    <div class="giscus" data-giscus-config={JSON.stringify(GISCUS)}></div>
+  </section>
+)}
+
+<script>
+  const container = document.querySelector<HTMLElement>('.giscus[data-giscus-config]');
+
+  if (container) {
+    const config = JSON.parse(container.dataset.giscusConfig!);
+    const themeAtual = () => (document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    Object.entries({
+      'data-repo': config.repo,
+      'data-repo-id': config.repoId,
+      'data-category': config.category,
+      'data-category-id': config.categoryId,
+      'data-mapping': 'pathname',
+      'data-strict': '1',
+      'data-reactions-enabled': '1',
+      'data-emit-metadata': '0',
+      'data-input-position': 'top',
+      'data-theme': themeAtual(),
+      'data-lang': 'pt',
+      'data-loading': 'lazy',
+    }).forEach(([k, v]) => script.setAttribute(k, v));
+    container.appendChild(script);
+
+    // Acompanha o botão de tema do site
+    new MutationObserver(() => {
+      const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+      iframe?.contentWindow?.postMessage({ giscus: { setConfig: { theme: themeAtual() } } }, 'https://giscus.app');
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+  }
+</script>
