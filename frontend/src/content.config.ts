@@ -10,7 +10,8 @@ const artigos = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
-    cover: z.string().url().optional(),
+    // URL externa ou caminho em public/ (ex.: /artigos/capas/x.webp)
+    cover: z.union([z.string().url(), z.string().startsWith('/')]).optional(),
     // Link do artigo original no dev.to, quando foi importado de lá
     devtoUrl: z.string().url().optional(),
     draft: z.boolean().default(false),
