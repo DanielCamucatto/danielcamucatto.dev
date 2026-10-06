@@ -14,9 +14,11 @@ const { artigo } = Astro.props as { artigo: Artigo };
 const { Content } = await render(artigo);
 const { title, description, pubDate, updatedDate, tags, cover, devtoUrl } = artigo.data;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// og:image precisa de URL absoluta
+const ogImage = cover && new URL(cover, Astro.site).href;
 ---
 
-<ArtigosLayout title={`${title} | Daniel Camuçatto`} description={description} image={cover} type="article" publishedTime={pubDate}>
+<ArtigosLayout title={`${title} | Daniel Camuçatto`} description={description} image={ogImage} type="article" publishedTime={pubDate}>
   <article>
     <header class="mb-10">
       <p class="text-xs uppercase tracking-wider text-slate-500">
