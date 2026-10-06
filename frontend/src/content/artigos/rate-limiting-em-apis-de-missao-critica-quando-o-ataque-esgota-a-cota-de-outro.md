@@ -3,6 +3,7 @@ title: "Rate Limiting em APIs de Missão Crítica: quando o ataque esgota a cota
 description: "Um ataque ao cadastro esgotou a cota do nosso provedor de autenticação e derrubou o sistema inteiro por 4 horas. O que aprendi sobre rate limiting, dependências externas e segurança de APIs."
 pubDate: 2026-10-05
 tags: ["seguranca","api","backend","systemdesign"]
+cover: "/artigos/capas/rate-limiting-apis-missao-critica.jpg"
 ---
 
 Numa empresa em que trabalhei, tínhamos um sistema de agendamento. Nada de exótico: clientes entravam, marcavam horários, recebiam confirmação. A autenticação era terceirizada para um provedor externo, que cuidava do login, do cadastro de novos usuários e da validação das sessões.
