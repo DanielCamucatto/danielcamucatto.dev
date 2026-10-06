@@ -1,0 +1,53 @@
+---
+interface Props {
+  url: string;
+  title: string;
+}
+
+const { url, title } = Astro.props;
+const u = encodeURIComponent(url);
+const t = encodeURIComponent(title);
+
+const links = [
+  { label: 'LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${u}` },
+  { label: 'X', href: `https://x.com/intent/post?url=${u}&text=${t}` },
+  { label: 'WhatsApp', href: `https://wa.me/?text=${t}%20${u}` },
+];
+
+const buttonClass =
+  'rounded-lg border border-slate-200 px-3 py-1.5 font-medium text-slate-700 hover:border-teal-400 hover:text-teal-700 dark:border-slate-700 dark:text-slate-300 dark:hover:border-teal-300 dark:hover:text-teal-300';
+---
+
+<section aria-label="Compartilhar" class="mt-16 flex flex-wrap items-center gap-2 text-sm" data-share data-url={url} data-title={title}>
+  <span class="mr-1 font-semibold text-slate-700 dark:text-slate-300">Compartilhar:</span>
+  {links.map(({ label, href }) => (
+    <a href={href} target="_blank" rel="noopener noreferrer" class={buttonClass}>{label}</a>
+  ))}
+  <button type="button" class={buttonClass} data-copy>Copiar link</button>
+  <button type="button" class={`${buttonClass} hidden`} data-native>Mais opções…</button>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-share]').forEach((root) => {
+    const url = root.dataset.url!;
+    const title = root.dataset.title!;
+
+    const copy = root.querySelector<HTMLButtonElement>('[data-copy]')!;
+    copy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(url);
+        copy.textContent = 'Link copiado!';
+      } catch {
+        copy.textContent = 'Não foi possível copiar';
+      }
+      setTimeout(() => (copy.textContent = 'Copiar link'), 2000);
+    });
+
+    // Compartilhamento nativo (principalmente no celular), quando o navegador suporta
+    const native = root.querySelector<HTMLButtonElement>('[data-native]')!;
+    if (typeof navigator.share === 'function') {
+      native.classList.remove('hidden');
+      native.addEventListener('click', () => navigator.share({ title, url }).catch(() => {}));
+    }
+  });
+</script>

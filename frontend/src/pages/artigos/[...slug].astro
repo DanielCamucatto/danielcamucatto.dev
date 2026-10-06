@@ -1,6 +1,8 @@
 ---
 import { render } from 'astro:content';
 import ArtigosLayout from '../../layouts/ArtigosLayout.astro';
+import ShareButtons from '../../components/artigos/ShareButtons.astro';
+import Comments from '../../components/artigos/Comments.astro';
 import { getArtigos, formatDate, readingTime, type Artigo } from '../../utils/artigos';
 
 export async function getStaticPaths() {
@@ -11,6 +13,7 @@ export async function getStaticPaths() {
 const { artigo } = Astro.props as { artigo: Artigo };
 const { Content } = await render(artigo);
 const { title, description, pubDate, updatedDate, tags, cover, devtoUrl } = artigo.data;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
 // og:image precisa de URL absoluta
 const ogImage = cover && new URL(cover, Astro.site).href;
 ---
@@ -38,7 +41,10 @@ const ogImage = cover && new URL(cover, Astro.site).href;
       <Content />
     </div>
 
-    <footer class="mt-16 border-t border-slate-200 pt-8 text-sm text-slate-500 dark:border-slate-700">
+    <ShareButtons url={canonical} title={title} />
+    <Comments />
+
+    <footer class="mt-12 border-t border-slate-200 pt-8 text-sm text-slate-500 dark:border-slate-700">
       {devtoUrl && (
         <p>
           Também publicado no <a href={devtoUrl} class="text-teal-700 dark:text-teal-300 hover:underline" rel="noopener">dev.to</a>.
