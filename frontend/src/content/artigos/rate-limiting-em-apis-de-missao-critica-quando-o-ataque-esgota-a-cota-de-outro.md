@@ -1,5 +1,5 @@
 ---
-title: "Rate Limiting em APIs de Missão Crítica: quando o ataque esgota a cota de outro serviço"
+title: "Derrubaram nosso login sem tocar no servidor"
 description: "Um ataque ao cadastro esgotou a cota do nosso provedor de autenticação e derrubou o sistema inteiro por 4 horas. O que aprendi sobre rate limiting, dependências externas e segurança de APIs."
 pubDate: 2026-10-05
 tags: ["seguranca","api","backend","systemdesign"]
