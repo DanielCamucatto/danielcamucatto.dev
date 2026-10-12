@@ -3,7 +3,7 @@ title: "Seu LLM vai falhar e vai ser enganado: idempotência e segurança em flu
 description: "Um agente de atendimento que emite cupom em dobro por causa de um retry e quase dá 100% de desconto por causa de um prompt injection. Por que o LLM precisa ser tratado como uma dependência não confiável."
 pubDate: 2026-10-12
 tags: ["ai","backend","seguranca","systemdesign"]
-cover: "/artigos/capas/llm-ecommerce-idempotencia-seguranca.jpg"
+cover: "../../assets/capas/llm-ecommerce-idempotencia-seguranca.jpg"
 ---
 
 Imagine um e-commerce que resolveu colocar IA no atendimento. Nada de exótico: um agente lê a mensagem do cliente, consulta o pedido e, quando faz sentido, **emite um cupom de desconto** para compensar um atraso ou um produto que chegou errado. Menos fila para o time de suporte, resposta em segundos, cliente feliz.
