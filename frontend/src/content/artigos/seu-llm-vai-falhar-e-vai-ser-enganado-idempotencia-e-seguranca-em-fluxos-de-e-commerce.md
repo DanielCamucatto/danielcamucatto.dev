@@ -53,7 +53,7 @@ O modelo pode escolher *qual* ferramenta chamar e *com quais argumentos*. Mas qu
 
 ## Retries com LLM são diferentes
 
-Em um sistema comum, idempotência resolve o retry: se a mesma requisição chega duas vezes, o resultado é o mesmo. Se você ainda não está familiarizado com o conceito, escrevi sobre isso em [PARE DE USAR POST EM TUDO, JOVEM!](/artigos/pare-de-usar-post-em-tudo-jovem-e-descubra-o-superpoder-da-idempotencia).
+Em um sistema comum, idempotência resolve o retry: se a mesma requisição chega duas vezes, o resultado é o mesmo. Se você ainda não está familiarizado com o conceito, escrevi sobre isso em [PARE DE USAR POST EM TUDO, JOVEM!](/artigos/pare-de-usar-post-em-tudo-jovem-e-descubra-o-superpoder-da-idempotencia/).
 
 Com LLM existe uma pegadinha: **a "mesma requisição" não existe**. Na primeira tentativa, o modelo pediu um cupom de 10%. Na segunda, de 15%. Se a chave de idempotência fosse um hash dos argumentos, os dois cupons passariam, porque os argumentos são diferentes.
 
@@ -120,7 +120,7 @@ As duas camadas se complementam. A persistência dos passos evita a maioria das 
 
 Um ponto que parece óbvio, mas vale escrever: **checkout, pagamento e confirmação de pedido nunca esperam um LLM**. Se o modelo cair, o cliente precisa conseguir comprar.
 
-Tudo que envolve IA nesse tipo de sistema deveria ser assíncrono, atrás de uma fila. Escrevi sobre o porquê disso em [Seu sistema é um castelo de cartas? Resolva com RabbitMQ](/artigos/seu-sistema-e-um-castelo-de-cartas-resolva-com-rabbitmq). Na prática, isso significa:
+Tudo que envolve IA nesse tipo de sistema deveria ser assíncrono, atrás de uma fila. Escrevi sobre o porquê disso em [Seu sistema é um castelo de cartas? Resolva com RabbitMQ](/artigos/seu-sistema-e-um-castelo-de-cartas-resolva-com-rabbitmq/). Na prática, isso significa:
 
 - **Timeout explícito** em toda chamada ao modelo. O padrão de muitos SDKs é alto demais para um fluxo de atendimento.
 - **Retry com backoff exponencial e limite de tentativas.** Rate limit do provedor não se resolve martelando a API.
@@ -181,7 +181,7 @@ Tudo que custa dinheiro precisa de um limite que o modelo não consiga contornar
 - Teto por cliente por mês.
 - **Aprovação humana acima de um valor.** O agente pode abrir a solicitação, mas não aprová-la.
 
-E, assim como no [artigo sobre rate limiting](/artigos/rate-limiting-em-apis-de-missao-critica-quando-o-ataque-esgota-a-cota-de-outro), vale um **orçamento global**: se o volume de cupons emitidos pelo agente na última hora passar muito do normal, as emissões automáticas param e o time é avisado.
+E, assim como no [artigo sobre rate limiting](/artigos/rate-limiting-em-apis-de-missao-critica-quando-o-ataque-esgota-a-cota-de-outro/), vale um **orçamento global**: se o volume de cupons emitidos pelo agente na última hora passar muito do normal, as emissões automáticas param e o time é avisado.
 
 ### 3. Ferramentas com o menor privilégio possível
 
