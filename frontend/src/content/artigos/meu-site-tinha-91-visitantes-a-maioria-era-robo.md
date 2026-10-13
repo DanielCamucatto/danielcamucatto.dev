@@ -1,7 +1,7 @@
 ---
 title: "Meu site tinha 91 visitantes. A maioria era robô (parte 1)"
 description: "O Google Analytics dizia 91 usuários. A Cloudflare contava outra história. O que descobri colocando observabilidade num site pessoal: robôs, métricas que não batem, Core Web Vitals e a distribuição no LinkedIn."
-pubDate: 2026-10-14
+pubDate: 2026-10-12
 tags: ["observabilidade","webperf","cloudflare","analytics"]
 cover: "../../assets/capas/site-91-visitantes-robos.jpg"
 ---
