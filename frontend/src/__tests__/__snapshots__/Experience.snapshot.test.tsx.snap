@@ -29,10 +29,120 @@ exports[`Experience snapshot deve bater o snapshot 1`] = `
               class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
             />
             <header
-              aria-label="Julho de 2026 até o Presente"
+              aria-label="Outubro de 2026 até o Presente"
               class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
             >
-              Julho de 2026 — Presente
+              Outubro de 2026 — Presente
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <a
+                    aria-label="Tech Lead · Stalse"
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300 group/link text-base"
+                    href="https://www.stalse.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                    />
+                    <span>
+                      Tech Lead ·  
+                      <span
+                        class="inline-block"
+                      >
+                        Stalse
+                        <svg
+                          aria-hidden="true"
+                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </h3>
+              <ul
+                class="mt-2 list-disc space-y-1 pl-4 text-sm leading-normal text-slate-400 marker:text-teal-500/70"
+              >
+                <li>
+                  Responsável pelo planejamento e pela arquitetura de soluções de análise de dados para publicidade e propaganda, cobrindo mídia digital, TV paga e TV aberta.
+                </li>
+                <li>
+                  Construo visualizações de dados e insights a partir de dados reais de campanhas publicitárias de todo o Brasil.
+                </li>
+              </ul>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Python
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    React
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    TypeScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    .NET
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Julho de 2026 até Outubro de 2026"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Julho de 2026 — Outubro de 2026
             </header>
             <div
               class="z-10 sm:col-span-6"
