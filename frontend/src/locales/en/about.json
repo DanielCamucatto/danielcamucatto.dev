@@ -2,7 +2,7 @@
   "title": "About",
   "paragraphs": [
     "I'm a Full Stack Developer with more than 7 years of experience building end-to-end solutions with React, TypeScript, Node.js, NestJS and PostgreSQL. I like owning the whole system: from architecture and APIs to the design system and the user experience.",
-    "At Maiver, a platform that sends more than 15 million SMS per month, I'm responsible for the architecture, the design system and the Twilio, RabbitMQ and Stripe integrations, and I led a migration that cut campaign run time from 7 to 4 hours. Before that, at Mtrix, a solution I led drove a 30% revenue increase; at Visto, an AI automation cut a 2-hour review down to 30 minutes.",
+    "Today I'm a Tech Lead at Stalse, where I handle planning and solution architecture for advertising data analytics (digital, pay TV and broadcast TV), building visualizations and insights from real campaign data from across Brazil. Before that, at Maiver, a platform that sends more than 15 million SMS per month, I was responsible for the architecture, the design system and the Twilio, RabbitMQ and Stripe integrations, and I led a migration that cut campaign run time from 7 to 4 hours. Before that, at Mtrix, a solution I led drove a 30% revenue increase; at Visto, an AI automation cut a 2-hour review down to 30 minutes.",
     "I work with CI/CD and infrastructure as code (Terraform) and with applied AI every day: prompt engineering since 2021, RAG and MCP servers. I also write technical articles about architecture, back end and front end, which you can find in the articles section."
   ]
 }

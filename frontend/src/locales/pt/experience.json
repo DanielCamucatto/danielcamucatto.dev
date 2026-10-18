@@ -2,8 +2,25 @@
   "title": "Experiência",
   "experiences": [
     {
-      "period": "Julho de 2026 — Presente",
-      "ariaLabel": "Julho de 2026 até o Presente",
+      "period": "Outubro de 2026 — Presente",
+      "ariaLabel": "Outubro de 2026 até o Presente",
+      "role": "Tech Lead",
+      "company": "Stalse",
+      "description": [
+        "Responsável pelo planejamento e pela arquitetura de soluções de análise de dados para publicidade e propaganda, cobrindo mídia digital, TV paga e TV aberta.",
+        "Construo visualizações de dados e insights a partir de dados reais de campanhas publicitárias de todo o Brasil."
+      ],
+      "technologies": [
+        "Python",
+        "React",
+        "TypeScript",
+        ".NET"
+      ],
+      "link": "https://www.stalse.com/"
+    },
+    {
+      "period": "Julho de 2026 — Outubro de 2026",
+      "ariaLabel": "Julho de 2026 até Outubro de 2026",
       "role": "Desenvolvedor Full Stack (contrato)",
       "company": "Maiver",
       "description": [
