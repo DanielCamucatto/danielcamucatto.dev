@@ -1,7 +1,7 @@
 ---
 title: "Meu site tinha 91 visitantes. A maioria era robô (parte 2)"
 description: "Duas semanas depois de ligar o Bot Fight Mode e mudar a divulgação no LinkedIn, os números voltaram. Uma hipótese se confirmou pela metade, a outra estava errada."
-pubDate: 2026-10-27
+pubDate: 2026-10-24
 tags: ["observabilidade","cloudflare","analytics","linkedin"]
 cover: "../../assets/capas/site-robos-parte-2.jpg"
 ---
