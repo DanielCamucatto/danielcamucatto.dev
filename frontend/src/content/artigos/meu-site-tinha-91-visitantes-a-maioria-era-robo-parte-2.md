@@ -42,7 +42,7 @@ Se eu tivesse olhado só o antes e o depois, teria dado todo o crédito para a f
 (ip.src eq 178.128.112.36)
 ```
 
-O Bot Fight Mode fez, sim, o trabalho dele com os outros robôs. Ele vem desafiando todos os dias uma faixa de IPs de Singapura (`47.128.63.x`) e outra de servidores nos EUA (`18.97.9.x`). E as regras gerenciadas da Cloudflare barraram um scanner procurando arquivos PHP, num site que não tem uma linha de PHP.
+O Bot Fight Mode fez, sim, o trabalho dele com os outros robôs. Quando ele desconfia de uma requisição, a Cloudflare não entrega a página: entrega antes **um teste de verificação**, que um navegador de verdade resolve sozinho em segundos e um robô simples não consegue passar. Todos os dias ele vem parando nesse teste uma faixa de IPs de Singapura (`47.128.63.x`) e outra de servidores nos EUA (`18.97.9.x`). E as regras gerenciadas da Cloudflare barraram um scanner procurando arquivos PHP, num site que não tem uma linha de PHP.
 
 ### Duas semanas depois, o número voltou a subir
 
@@ -50,7 +50,7 @@ Nesta semana, as requisições das últimas 24 horas estavam em **342**. Bem aci
 
 E aqui veio outra lição. Um pico de cerca de 65 requisições de uma vez no gráfico era **eu mesmo**: um script que conferia se todos os links dos meus artigos no dev.to apontavam para páginas que existem. Tirando isso, ficam cerca de 275.
 
-O `robots.txt` foi pedido **211 vezes** em sete dias. Estados Unidos (1,02 mil requisições) lideram, à frente do Brasil (953), e Singapura, Alemanha e China completam a lista. Robô continua sendo a maior parte da audiência. Só que agora uma parte maior dele é desafiada antes de chegar.
+O `robots.txt` foi pedido **211 vezes** em sete dias. Estados Unidos (1,02 mil requisições) lideram, à frente do Brasil (953), e Singapura, Alemanha e China completam a lista. Robô continua sendo a maior parte da audiência. Só que agora uma parte maior dele fica presa no teste antes de chegar ao site.
 
 ### E o GA voltou a descolar
 
@@ -109,7 +109,7 @@ A lição continua a mesma da parte 1: **verifique o resultado, não a intençã
 
 ## O que muda daqui para frente
 
-1. **O Bot Fight Mode fica ligado.** Ele não resolve tudo, mas o custo é zero e o volume de robôs desafiados é constante.
+1. **O Bot Fight Mode fica ligado.** Ele não resolve tudo, mas o custo é zero e todos os dias ele segura robôs no teste de verificação.
 2. **Os relatórios continuam com duas fontes.** O número de referência para "gente" passa a ser o Web Analytics da Cloudflare, com o GA para o detalhe do comportamento.
 3. **O link volta para o corpo do post** no LinkedIn. Vou alternar com o link no comentário, com UTMs diferentes para cada um (`utm_content=corpo` e `utm_content=comentario`), e comparar com dados em vez de conselho.
 4. **Os canais que funcionam ganham atenção.** Ajustar título e descrição dos artigos que já aparecem no Google e continuar publicando no TabNews.
