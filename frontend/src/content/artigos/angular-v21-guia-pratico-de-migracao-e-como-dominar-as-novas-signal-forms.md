@@ -4,7 +4,7 @@ description: "O lançamento do Angular v21 não é apenas mais uma atualização
 pubDate: 2025-11-23
 updatedDate: 2025-11-23
 tags: ["angular","frontend","webdev","programming"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhaz43baovde3oeijhly3.png"
+cover: "../../assets/capas/angular-v21-guia-pratico-de-migracao-e-como-dominar-as-novas-signal-forms.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/angular-v21-guia-pratico-de-migracao-e-como-dominar-as-novas-signal-forms-1a05"
 ---
 

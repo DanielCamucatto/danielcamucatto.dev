@@ -3,7 +3,7 @@ title: "Node.js Cluster Mode: Maximizando a sua CPU para Performance de Elite"
 description: "Você já parou para olhar o gerenciador de tarefas do seu servidor enquanto sua aplicação Node.js está..."
 pubDate: 2026-03-15
 tags: ["webdev","programming","javascript","node"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fer6noef11598f7odgs3z.png"
+cover: "../../assets/capas/nodejs-cluster-mode-maximizando-a-sua-cpu-para-performance-de-elite.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/nodejs-cluster-mode-maximizando-a-sua-cpu-para-performance-de-elite-21ib"
 ---
 

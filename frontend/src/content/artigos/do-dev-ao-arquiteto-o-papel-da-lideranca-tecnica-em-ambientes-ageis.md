@@ -3,7 +3,7 @@ title: "Do Dev ao Arquiteto: O Papel da Liderança Técnica em Ambientes Ágeis"
 description: "Muitos desenvolvedores acreditam que a transição para a arquitetura significa \"parar de codar\" para..."
 pubDate: 2026-01-03
 tags: ["programming","architecture","spring","agile"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhmeqjopri5vn5j7r6ney.png"
+cover: "../../assets/capas/do-dev-ao-arquiteto-o-papel-da-lideranca-tecnica-em-ambientes-ageis.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/do-dev-ao-arquiteto-o-papel-da-lideranca-tecnica-em-ambientes-ageis-2bdl"
 ---
 

@@ -4,7 +4,7 @@ description: "Muitos desenvolvedores acreditam que os princípios SOLID são rel
 pubDate: 2026-01-25
 updatedDate: 2026-01-25
 tags: ["webdev","programming","node","typescript"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwoh75mvjc6zds8ygurei.png"
+cover: "../../assets/capas/solid-com-nodejs-e-typescript-escrevendo-codigo-de-gente-grande.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/solid-com-nodejs-e-typescript-escrevendo-codigo-de-gente-grande-32nj"
 ---
 

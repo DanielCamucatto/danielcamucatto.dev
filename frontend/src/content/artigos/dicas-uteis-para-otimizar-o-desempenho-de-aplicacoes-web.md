@@ -3,7 +3,7 @@ title: "Dicas úteis para otimizar o desempenho de aplicações web"
 description: "As aplicações web são incríveis, não é mesmo? Mas sabia que é possível deixá-las ainda melhores? Vou..."
 pubDate: 2023-06-15
 tags: ["beginners","webdev","frontend","web"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhsaa39y3bn3o9vhparj7.jpg"
+cover: "../../assets/capas/dicas-uteis-para-otimizar-o-desempenho-de-aplicacoes-web.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/dicas-uteis-para-otimizar-o-desempenho-de-aplicacoes-web-1c8a"
 ---
 

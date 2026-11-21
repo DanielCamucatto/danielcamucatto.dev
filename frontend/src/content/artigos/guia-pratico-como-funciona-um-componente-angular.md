@@ -3,7 +3,7 @@ title: "GUIA PRÁTICO - COMO FUNCIONA UM COMPONENTE ANGULAR"
 description: "INTRODUÇÃ0   O Angular é um framework popular para o desenvolvimento de aplicativos web e..."
 pubDate: 2023-06-19
 tags: ["webdev","javascript","angular","beginners"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc79jia79b2fr00yt4rez.png"
+cover: "../../assets/capas/guia-pratico-como-funciona-um-componente-angular.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/guia-pratico-como-funciona-um-componente-angular-12l5"
 ---
 

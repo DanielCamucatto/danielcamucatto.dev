@@ -3,7 +3,7 @@ title: "PARE DE TESTAR SEU CÓDIGO DE FORMA BURRA"
 description: "Por Que o Seu Teste Unitário Quebra o Encapsulamento   Se você já se viu usando Reflection..."
 pubDate: 2025-10-22
 tags: ["programming","test","code"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fzbqs3l2q2rsadryfj51w.png"
+cover: "../../assets/capas/pare-de-testar-seu-codigo-de-forma-burra.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/pare-de-testar-seu-codigo-de-forma-burra-46i9"
 ---
 

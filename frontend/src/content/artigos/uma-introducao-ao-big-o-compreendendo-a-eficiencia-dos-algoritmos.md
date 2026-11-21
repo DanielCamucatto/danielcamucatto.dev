@@ -4,7 +4,7 @@ description: "Antes de começarmos realmente a falar sobre Big O gostaria de fal
 pubDate: 2023-07-02
 updatedDate: 2023-07-02
 tags: ["webdev","beginners","programming","development"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3dlpfkwcxmb8wzn0bh3o.png"
+cover: "../../assets/capas/uma-introducao-ao-big-o-compreendendo-a-eficiencia-dos-algoritmos.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/uma-introducao-ao-big-o-compreendendo-a-eficiencia-dos-algoritmos-34gc"
 ---
 

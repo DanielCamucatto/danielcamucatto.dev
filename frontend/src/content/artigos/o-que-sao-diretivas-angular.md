@@ -3,7 +3,7 @@ title: "O QUE SÃO DIRETIVAS ANGULAR?"
 description: "Introdução   O Angular é um dos frameworks mais populares para o desenvolvimento de..."
 pubDate: 2023-07-20
 tags: ["programming","tutorial","angular","frontend"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2or6qskzeyqgvo2947gt.png"
+cover: "../../assets/capas/o-que-sao-diretivas-angular.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/o-que-sao-diretivas-angular-58d4"
 ---
 

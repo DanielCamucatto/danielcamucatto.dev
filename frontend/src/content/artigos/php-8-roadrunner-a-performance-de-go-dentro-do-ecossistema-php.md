@@ -3,7 +3,7 @@ title: "PHP 8 + RoadRunner: A Performance de Go dentro do ecossistema PHP"
 description: "Por muito tempo, o PHP foi rotulado como uma linguagem \"lenta\" ou inadequada para sistemas de..."
 pubDate: 2026-03-24
 tags: ["webdev","programming","php","laravel"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fybs5pc2cy7csrjsq3oyd.png"
+cover: "../../assets/capas/php-8-roadrunner-a-performance-de-go-dentro-do-ecossistema-php.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/php-8-roadrunner-a-performance-de-go-dentro-do-ecossistema-php-234f"
 ---
 

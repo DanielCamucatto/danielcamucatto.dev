@@ -3,7 +3,7 @@ title: "O QUE É ANGULAR"
 description: "Sempre que começamos a pesquisar uma nova tecnologia, ou qualquer assunto relacionado a qualquer área..."
 pubDate: 2023-06-11
 tags: ["beginners","programming","javascript","angular"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fyoww2zy9f82s5mf9a8pb.png"
+cover: "../../assets/capas/o-que-e-angular.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/o-que-e-angular-2agd"
 ---
 

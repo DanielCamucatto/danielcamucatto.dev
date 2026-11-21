@@ -3,7 +3,7 @@ title: "GUIA ANGULAR - ENTENDENDO DATA BINDING"
 description: "Introdução   Suponha que você esteja desenvolvendo um aplicativo de lista de tarefas onde o..."
 pubDate: 2023-07-10
 tags: ["webdev","angular","frontend","javascript"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fp96yrsbvvrn67aue05y5.png"
+cover: "../../assets/capas/guia-angular-entendendo-data-binding.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/guia-angular-entendendo-data-binding-16jj"
 ---
 

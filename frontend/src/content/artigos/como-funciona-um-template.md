@@ -4,7 +4,7 @@ description: "Introdução:   O Angular é um framework de desenvolvimento web a
 pubDate: 2023-07-02
 updatedDate: 2023-07-02
 tags: ["webdev","beginners","angular","programming"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fewwjdcx8t1yg1kaycm3x.png"
+cover: "../../assets/capas/como-funciona-um-template.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/como-funciona-um-template-6h2"
 ---
 
