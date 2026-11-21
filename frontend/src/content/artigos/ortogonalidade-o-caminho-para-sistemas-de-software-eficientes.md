@@ -4,7 +4,7 @@ description: "O Pesadelo do Desenvolvedor Júnior   Imagine o seguinte: Você ac
 pubDate: 2025-11-15
 updatedDate: 2025-11-15
 tags: ["architecture","beginners","cleancode"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdygdba2u434w6kckmkjs.png"
+cover: "../../assets/capas/ortogonalidade-o-caminho-para-sistemas-de-software-eficientes.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/ortogonalidade-o-caminho-para-sistemas-de-software-eficientes-38jd"
 ---
 

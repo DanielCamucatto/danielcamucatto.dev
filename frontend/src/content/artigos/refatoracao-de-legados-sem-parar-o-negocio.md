@@ -3,7 +3,7 @@ title: "Refatoração de Legados sem parar o negócio"
 description: "Lidar com a refatoração de sistemas legados é como trocar o pneu de um carro a 100 km/h: exige..."
 pubDate: 2026-01-26
 tags: ["programming","refactorit","productivity","discuss"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8vqu2c36apb81q6st03a.png"
+cover: "../../assets/capas/refatoracao-de-legados-sem-parar-o-negocio.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/refatoracao-de-legados-sem-parar-o-negocio-3d3a"
 ---
 

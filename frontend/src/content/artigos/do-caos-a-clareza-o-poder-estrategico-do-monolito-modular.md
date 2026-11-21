@@ -3,7 +3,7 @@ title: "Do Caos à Clareza: o poder estratégico do monolito modular"
 description: "Você já se sentiu preso em um labirinto de código? Um projeto que começou simples e elegante, mas que..."
 pubDate: 2025-10-07
 tags: ["programming","architecture","webdev","design"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Faq0kyip7jhve08nra32x.png"
+cover: "../../assets/capas/do-caos-a-clareza-o-poder-estrategico-do-monolito-modular.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/do-caos-a-clareza-o-poder-estrategico-do-monolito-modular-319o"
 ---
 

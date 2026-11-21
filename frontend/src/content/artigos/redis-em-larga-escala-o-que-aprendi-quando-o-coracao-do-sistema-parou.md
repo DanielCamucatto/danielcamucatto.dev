@@ -3,7 +3,7 @@ title: "Redis em Larga Escala: O que aprendi quando o \"Coração\" do Sistema p
 description: "Era uma segunda-feira comum até que, em questão de minutos, a latência do nosso principal serviço de..."
 pubDate: 2026-03-28
 tags: ["systemdesign","redis","backend","scala"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fj2e8rpm84ud2p0a56ofy.png"
+cover: "../../assets/capas/redis-em-larga-escala-o-que-aprendi-quando-o-coracao-do-sistema-parou.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/redis-em-larga-escala-o-que-aprendi-quando-o-coracao-do-sistema-parou-54kl"
 ---
 

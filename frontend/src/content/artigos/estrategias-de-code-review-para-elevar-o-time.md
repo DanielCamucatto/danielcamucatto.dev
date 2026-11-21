@@ -4,7 +4,7 @@ description: "O Code Review é o momento em que o código deixa de ser proprieda
 pubDate: 2026-02-09
 updatedDate: 2026-02-09
 tags: ["webdev","programming","codereview"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fbios04ew2c6t6llk3ezy.png"
+cover: "../../assets/capas/estrategias-de-code-review-para-elevar-o-time.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/estrategias-de-code-review-para-elevar-o-time-2i6p"
 ---
 

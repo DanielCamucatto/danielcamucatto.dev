@@ -3,7 +3,7 @@ title: "Seu sistema é um castelo de cartas? Resolva com RabbitMQ"
 description: "Você já sentiu que o seu sistema é um castelo de cartas? Onde a queda de um serviço de e-mail ou uma..."
 pubDate: 2026-04-18
 tags: ["programming","backend","architecture","designsystem"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwf47jvaczb9kedkx6yl6.png"
+cover: "../../assets/capas/seu-sistema-e-um-castelo-de-cartas-resolva-com-rabbitmq.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/seu-sistema-e-um-castelo-de-cartas-resolva-com-rabbitmq-3lc9"
 ---
 

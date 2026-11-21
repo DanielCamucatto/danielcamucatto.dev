@@ -3,7 +3,7 @@ title: "Clean Code em PHP moderno."
 description: "O PHP não é mais a linguagem \"bagunçada\" de dez anos atrás. Com a chegada das versões 8.x, ganhamos..."
 pubDate: 2026-01-11
 tags: ["backend","codequality","php"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Frjjeuzccs2mj9t5688rl.png"
+cover: "../../assets/capas/clean-code-em-php-moderno.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/clean-code-em-php-moderno-a72"
 ---
 

@@ -4,7 +4,7 @@ description: "Se você é desenvolvedor, certamente já cruzou com o livro do Ga
 pubDate: 2026-02-05
 updatedDate: 2026-02-05
 tags: ["programming","architecture","designpatterns","software"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fjmy2f8a3w2ve9ynx2yrn.png"
+cover: "../../assets/capas/design-patterns-o-que-o-tempo-me-ensinou-sobre-arquitetura.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/design-patterns-o-que-o-tempo-me-ensinou-sobre-arquitetura-50l3"
 ---
 

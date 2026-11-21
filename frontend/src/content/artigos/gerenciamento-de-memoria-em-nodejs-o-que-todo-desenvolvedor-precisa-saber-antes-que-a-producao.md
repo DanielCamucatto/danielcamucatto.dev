@@ -4,7 +4,7 @@ description: "\"A aplicação caiu de madrugada. O heap estava em 3 GB. Ninguém
 pubDate: 2026-05-02
 updatedDate: 2026-05-02
 tags: ["node","programming"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0s2966iq2wia69y44aae.png"
+cover: "../../assets/capas/gerenciamento-de-memoria-em-nodejs-o-que-todo-desenvolvedor-precisa-saber-antes-que-a-producao.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/gerenciamento-de-memoria-em-nodejs-o-que-todo-desenvolvedor-precisa-saber-antes-que-a-producao-4khk"
 ---
 

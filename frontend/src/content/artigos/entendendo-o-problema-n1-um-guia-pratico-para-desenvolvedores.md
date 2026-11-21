@@ -3,7 +3,7 @@ title: "Entendendo o Problema N+1: Um Guia Prático para Desenvolvedores"
 description: "Sua aplicação já ficou misteriosamente lenta em produção? Você olha o código e vê um loop que parece..."
 pubDate: 2025-09-25
 tags: ["programming","architecture","performance","designpatterns"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgqdprehhszaap9o5vbz8.png"
+cover: "../../assets/capas/entendendo-o-problema-n1-um-guia-pratico-para-desenvolvedores.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/entendendo-o-problema-n1-um-guia-pratico-para-desenvolvedores-4ocb"
 ---
 

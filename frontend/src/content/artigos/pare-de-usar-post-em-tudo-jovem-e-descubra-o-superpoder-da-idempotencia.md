@@ -3,7 +3,7 @@ title: "PARE DE USAR POST EM TUDO, JOVEM! (E Descubra o Superpoder da Idempotên
 description: "Introdução: O Guardião dos Dedos Nervosos    Você já tentou fazer uma compra online e a..."
 pubDate: 2025-10-28
 tags: ["programming","webdev","backend","beginners"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fd59dlxuffrc9xngjf8z9.png"
+cover: "../../assets/capas/pare-de-usar-post-em-tudo-jovem-e-descubra-o-superpoder-da-idempotencia.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/pare-de-usar-post-em-tudo-jovem-e-descubra-o-superpoder-da-idempotencia-2g90"
 ---
 

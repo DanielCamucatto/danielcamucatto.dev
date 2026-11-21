@@ -3,7 +3,7 @@ title: "Dominando o MCP Server no Angular v21 - Configuração e Melhores Práti
 description: "O Angular v21 não é apenas sobre Signals e performance Zoneless; ele marca o início de uma nova era..."
 pubDate: 2025-11-23
 tags: ["webdev","ai","programming","angular"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6ab41fr67xd9no18f12d.png"
+cover: "../../assets/capas/dominando-o-mcp-server-no-angular-v21-configuracao-e-melhores-praticas-para-fluxos-de-trabalho.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/dominando-o-mcp-server-no-angular-v21-configuracao-e-melhores-praticas-para-fluxos-de-trabalho-1m4c"
 ---
 

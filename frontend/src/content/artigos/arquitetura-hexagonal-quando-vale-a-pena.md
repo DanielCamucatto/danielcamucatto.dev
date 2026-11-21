@@ -3,7 +3,7 @@ title: "Arquitetura Hexagonal: Quando vale a pena?"
 description: "Como desenvolvedores Fullstack, somos constantemente pressionados a entregar funcionalidades..."
 pubDate: 2026-02-03
 tags: ["architecture","webdev","programming","performance"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8f97d02qs8i2b53t3mzq.png"
+cover: "../../assets/capas/arquitetura-hexagonal-quando-vale-a-pena.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/arquitetura-hexagonal-quando-vale-a-pena-4am8"
 ---
 

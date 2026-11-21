@@ -4,7 +4,7 @@ description: "Se você é desenvolvedor e ainda sente um \"frio na barriga\" ao 
 pubDate: 2026-02-22
 updatedDate: 2026-02-22
 tags: ["webdev","ai","programming","tutorial"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fti5babzlkmyszznph3u7.png"
+cover: "../../assets/capas/do-medo-a-maestria-guia-pratico-para-o-desenvolvedores-na-era-da-ia.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/do-medo-a-maestria-guia-pratico-para-o-desenvolvedores-na-era-da-ia-14cf"
 ---
 

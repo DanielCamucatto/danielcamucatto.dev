@@ -4,7 +4,7 @@ description: "## 4 Pilares Essenciais para Eliminar Conflitos e Acelerar o Desen
 pubDate: 2025-10-02
 updatedDate: 2025-10-02
 tags: ["webdev","frontend","backend","programming"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fn0h3d9p7aqz8nouq3ipo.png"
+cover: "../../assets/capas/o-minimo-que-um-frontend-precisa-saber-para-ter-paz-com-um-backend.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/o-minimo-que-um-frontend-precisa-saber-para-ter-paz-com-um-backend-1gih"
 ---
 

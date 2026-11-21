@@ -3,7 +3,7 @@ title: "Chega de diagramas inúteis: O combo C4 Model + ADRs na documentação d
 description: "Você já entrou num projeto onde o único diagrama disponível era um \"emaranhado de caixas e setas\" sem..."
 pubDate: 2026-02-12
 tags: ["architecture","productivity","softwareengineering","systemdesign"]
-cover: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F36yxbz9zct7zl3g8cbeu.png"
+cover: "../../assets/capas/chega-de-diagramas-inuteis-o-combo-c4-model-adrs-na-documentacao-de-software.jpg"
 devtoUrl: "https://dev.to/danielcamucatto/chega-de-diagramas-inuteis-o-combo-c4-model-adrs-na-documentacao-de-software-575l"
 ---
 
