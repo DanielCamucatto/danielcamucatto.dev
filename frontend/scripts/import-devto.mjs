@@ -2,11 +2,14 @@
 // Uso: node scripts/import-devto.mjs [--force]
 // Sem --force, artigos que já existem localmente não são sobrescritos
 // (assim edições feitas aqui não se perdem).
+// A capa é baixada para src/assets/capas, para passar pelo pipeline de imagens
+// do Astro (WebP em vários tamanhos) em vez de depender do CDN do dev.to.
 import { mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 
 const USERNAME = 'danielcamucatto';
 const OUT_DIR = path.resolve(import.meta.dirname, '../src/content/artigos');
+const COVERS_DIR = path.resolve(import.meta.dirname, '../src/assets/capas');
 const force = process.argv.includes('--force');
 
 const api = async (url) => {
@@ -36,6 +39,29 @@ const convertLiquid = (md) =>
 
 const yaml = (s) => JSON.stringify(s ?? '');
 
+const EXT_BY_TYPE = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif' };
+
+// Baixa a capa para src/assets/capas e devolve o caminho relativo ao arquivo do artigo.
+// O CDN do dev.to recorta na URL (width/height); pedimos 1,6x o tamanho padrão em JPG
+// para telas retina. Se algo falhar, devolve null e o artigo mantém a URL remota.
+const downloadCover = async (slug, coverUrl) => {
+  try {
+    const url = coverUrl
+      .replace('width=1000,height=420', 'width=1600,height=672')
+      .replace('format=auto', 'format=jpg');
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`${res.status}`);
+    const ext = EXT_BY_TYPE[res.headers.get('content-type')?.split(';')[0]];
+    if (!ext) throw new Error(`tipo inesperado: ${res.headers.get('content-type')}`);
+    await mkdir(COVERS_DIR, { recursive: true });
+    await writeFile(path.join(COVERS_DIR, `${slug}.${ext}`), Buffer.from(await res.arrayBuffer()));
+    return `../../assets/capas/${slug}.${ext}`;
+  } catch (err) {
+    console.warn(`⚠ capa de ${slug} não baixada (${err.message}); mantendo URL remota`);
+    return null;
+  }
+};
+
 const exists = (p) => access(p).then(() => true, () => false);
 
 await mkdir(OUT_DIR, { recursive: true });
@@ -49,6 +75,7 @@ for (const item of list) {
   if (!force && (await exists(file))) continue;
 
   const full = await api(`https://dev.to/api/articles/${item.id}`);
+  const cover = full.cover_image ? ((await downloadCover(slug, full.cover_image)) ?? full.cover_image) : null;
   const frontmatter = [
     '---',
     `title: ${yaml(full.title)}`,
@@ -56,7 +83,7 @@ for (const item of list) {
     `pubDate: ${full.published_at.slice(0, 10)}`,
     full.edited_at ? `updatedDate: ${full.edited_at.slice(0, 10)}` : null,
     `tags: ${JSON.stringify(full.tags)}`,
-    full.cover_image ? `cover: ${yaml(full.cover_image)}` : null,
+    cover ? `cover: ${yaml(cover)}` : null,
     `devtoUrl: ${yaml(full.url)}`,
     '---',
   ].filter(Boolean).join('\n');
