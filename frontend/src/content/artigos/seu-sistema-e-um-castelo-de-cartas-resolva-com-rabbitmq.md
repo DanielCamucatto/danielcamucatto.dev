@@ -30,7 +30,7 @@ O RabbitMQ atua como um Message Broker (um intermediário de mensagens). Em vez 
 Como a mágica acontece (Arquitetura):
 
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9eiaa93geamuo1zntm2k.png)
+![Diagrama do desacoplamento com RabbitMQ: o sistema de pedidos publica "pedido criado" num exchange, que roteia para as filas de e-mail e de logística, lidas por consumidores independentes](../../assets/artigos/rabbitmq-desacoplamento.png)
 
 
 

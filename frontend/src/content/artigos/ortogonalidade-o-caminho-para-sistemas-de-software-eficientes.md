@@ -171,4 +171,4 @@ A busca por um design **Ortogonal** é o que separa um programador comum de um p
 Aderir à ortogonalidade (Alta Coesão e Baixo Acoplamento) tem um impacto direto e mensurável na qualidade e no custo de manutenção do seu software. Este gráfico compara os atributos de um sistema ortogonal versus um não-ortogonal.
 como mostra o grafico 
 
-![Tabela de comparação com sistemas ortogonais e não ortogonais](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t5zi95lua63fxmfuqq6h.png)
+![Tabela de comparação com sistemas ortogonais e não ortogonais](../../assets/artigos/ortogonalidade-comparacao.png)
