@@ -8,7 +8,9 @@ cover: "../../assets/capas/o-minimo-que-um-frontend-precisa-saber-para-ter-paz-c
 devtoUrl: "https://dev.to/danielcamucatto/o-minimo-que-um-frontend-precisa-saber-para-ter-paz-com-um-backend-1gih"
 ---
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tnabqxy55kryiq6rultr.png)## 4 Pilares Essenciais para Eliminar Conflitos e Acelerar o Desenvolvimento Fullstack
+![Ilustração com frontend em azul à esquerda e backend em vermelho à direita, ligados por um arco entre pilares, sob o título "4 pilares essenciais para eliminar conflitos"](../../assets/artigos/frontend-backend-4-pilares.png)
+
+## 4 Pilares Essenciais para Eliminar Conflitos e Acelerar o Desenvolvimento Fullstack
 
 Como desenvolvedor fullstack, já vi a frustração de ambos os lados. Um desenvolvedor frontend gasta horas debugando um `500 Internal Server Error`, e um backend fica louco porque o frontend está pedindo todos os dados da aplicação em uma única chamada.
 

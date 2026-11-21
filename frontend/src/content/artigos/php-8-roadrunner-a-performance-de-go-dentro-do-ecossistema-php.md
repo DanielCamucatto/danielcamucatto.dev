@@ -41,7 +41,7 @@ Ele inicia a sua aplicação uma única vez e a mantém viva na memória. Quando
 
 Se compararmos as requisições por segundo (RPS) em uma API simples:
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7uoxlewj9r6wn5vrz8tc.png)
+![Tabela comparativa: PHP-FPM com cerca de 400 req/s e 150 ms de latência média, contra RoadRunner com PHP 8 com cerca de 2.800 req/s e 12 ms](../../assets/artigos/roadrunner-benchmark.png)
 
 ## Laravel Octane: A Experiência de Primeiro Nível
 

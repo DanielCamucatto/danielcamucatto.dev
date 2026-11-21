@@ -16,7 +16,7 @@ Se já passou por isso, sabe que documentação má-feita custa caro. Mas não p
 O C4 Model resolve o problema dos diagramas ambíguos através de níveis de abstração. O nível mais amado pelos desenvolvedores é o Nível 2 (Containers), que mostra a tecnologia e as responsabilidades.
 
 Exemplo: Sistema de Agendamento (Nível 2)
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/swvl059jn9dzwv441p01.png)
+![Tabela de containers: Web App em React, API Application em Go/Gin, Database em PostgreSQL e Message Broker em RabbitMQ, cada um com sua responsabilidade](../../assets/artigos/c4-containers-tabela.png)
 
 ## 📜 2. ADRs (Architecture Decision Records): A Memória do Time
 
@@ -40,7 +40,7 @@ Exemplo Prático de ADR:
 ```
 Resumo do Histórico de Decisões:
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7n6boytc9rgrl7gydozv.png)
+![Tabela de ADRs com ID, decisão, status e motivo: arquitetura hexagonal aceita, gRPC aceito e MongoDB para logs rejeitado](../../assets/artigos/adrs-tabela.png)
 
 ## 🧠 3. Por que essa combinação é o "suplemento" ideal?
 
