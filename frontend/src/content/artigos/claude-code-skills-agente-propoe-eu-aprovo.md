@@ -57,7 +57,7 @@ Ao ler, vale prestar atenção em alguns pontos (esta lista é recomendação ge
 
 ## O caso em que eu recusei uma skill
 
-Numa dessas buscas apareceu uma skill para **ler um documento do Google Docs**. À primeira vista, resolvia o meu problema.
+Numa dessas buscas, a `find-skills` trouxe uma skill para **ler um documento do Google Docs**. À primeira vista, resolvia o meu problema.
 
 Ao ler o `SKILL.md`, percebi que ela lia **apenas o texto do documento**. Eu também precisava dos **comentários**, onde fica boa parte da discussão. Sem eles, o agente leria o documento e perderia o contexto.
 
