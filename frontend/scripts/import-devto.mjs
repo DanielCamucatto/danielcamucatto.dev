@@ -1,10 +1,12 @@
 // Importa os artigos publicados no dev.to para src/content/artigos.
 // Uso: node scripts/import-devto.mjs [--force]
 // Sem --force, artigos que já existem localmente não são sobrescritos
-// (assim edições feitas aqui não se perdem).
+// (assim edições feitas aqui não se perdem). "Já existe" significa: algum .md local
+// tem o mesmo devtoUrl, ou o canonical do artigo aponta para um slug que existe aqui
+// (foi escrito no site e só espelhado no dev.to). O slug local pode diferir do do dev.to.
 // A capa é baixada para src/assets/capas, para passar pelo pipeline de imagens
 // do Astro (WebP em vários tamanhos) em vez de depender do CDN do dev.to.
-import { mkdir, writeFile, access } from 'node:fs/promises';
+import { mkdir, writeFile, access, readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const USERNAME = 'danielcamucatto';
@@ -64,15 +66,41 @@ const downloadCover = async (slug, coverUrl) => {
 
 const exists = (p) => access(p).then(() => true, () => false);
 
+const SITE_HOST = 'danielcamucatto.dev.br';
+
+// devtoUrl de todos os artigos locais, para reconhecer artigos já importados com outro slug.
+const localDevtoUrls = async () => {
+  const urls = new Set();
+  for (const name of await readdir(OUT_DIR)) {
+    if (!name.endsWith('.md')) continue;
+    const match = (await readFile(path.join(OUT_DIR, name), 'utf8')).match(/^devtoUrl:\s*"(.+)"\s*$/m);
+    if (match) urls.add(match[1]);
+  }
+  return urls;
+};
+
+// O canonical aponta para /artigos/<slug>/ deste site e esse arquivo existe localmente.
+const hasLocalCanonical = async (item) => {
+  try {
+    const url = new URL(item.canonical_url ?? '');
+    if (url.hostname.replace(/^www\./, '') !== SITE_HOST) return false;
+    const slug = url.pathname.split('/').filter(Boolean).pop();
+    return Boolean(slug) && (await exists(path.join(OUT_DIR, `${slug}.md`)));
+  } catch {
+    return false;
+  }
+};
+
 await mkdir(OUT_DIR, { recursive: true });
 
 const list = await api(`https://dev.to/api/articles?username=${USERNAME}&per_page=1000`);
+const knownUrls = await localDevtoUrls();
 let written = 0;
 
 for (const item of list) {
   const slug = cleanSlug(item.slug);
   const file = path.join(OUT_DIR, `${slug}.md`);
-  if (!force && (await exists(file))) continue;
+  if (!force && ((await exists(file)) || knownUrls.has(item.url) || (await hasLocalCanonical(item)))) continue;
 
   const full = await api(`https://dev.to/api/articles/${item.id}`);
   const cover = full.cover_image ? ((await downloadCover(slug, full.cover_image)) ?? full.cover_image) : null;
