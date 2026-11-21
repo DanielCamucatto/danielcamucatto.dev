@@ -67,14 +67,14 @@ Eu recusei. E o motivo importa: **foi a leitura do `SKILL.md` que mostrou a lacu
 
 Fiz a minha própria ferramenta. Tecnicamente, é um **servidor MCP**, e ele roda como um **container Docker** na minha máquina. Algumas decisões que acertei nela:
 
-- **Container efêmero, sem porta aberta.** Ele fala com o agente por entrada e saída padrão (`docker run --rm -i`). Sobe quando a sessão precisa e some quando ela termina.
-- **Acesso pela conta de serviço.** Ela só enxerga os documentos que foram compartilhados com ela. Para consultar, basta o papel de Leitor.
+- **Container efêmero, sem porta aberta.** Ele conversa com o agente por entrada e saída padrão, sobe quando a sessão precisa e some quando ela termina.
+- **Acesso restrito ao que foi compartilhado.** A ferramenta usa uma credencial própria, que só enxerga os documentos compartilhados com ela. Para consultar, o menor papel já basta.
 - **Credencial fora da imagem.** A chave fica num arquivo fora do projeto e fora do git, e é montada no container como **somente leitura**. Quem a usa é a ferramenta: o que entra no contexto do agente é o resultado, não a chave.
-- **Os comentários, que eram o motivo de tudo.** A ferramenta lista threads e respostas, e também cria comentários e responde. Os comentários vêm da API do Drive, que é separada da API do Docs.
-- **Teste sem depender do agente.** Eu falo com o container direto, mandando as mensagens do protocolo MCP, para saber se a ferramenta funciona antes de registrá-la.
-- **Versão do pacote fixada.** A versão 2.x do pacote `mcp` mudou a API e quebrava a ferramenta já na inicialização. Fixei a versão abaixo da 2.0 e anotei o motivo no README.
+- **Os comentários, que eram o motivo de tudo.** Eles ficam numa API separada da que entrega o texto do documento, e a ferramenta lê as duas.
+- **Teste sem depender do agente.** Eu converso com o container direto, na linguagem do protocolo MCP, para saber se a ferramenta funciona antes de registrá-la.
+- **Dependência fixada.** Uma versão nova da biblioteca de MCP mudou a API e quebrava a ferramenta já na inicialização. Fixei a versão e anotei o motivo no README.
 
-E uma lição que ficou no README: o texto **dentro de tabelas** sumia da leitura, **sem nenhum erro**. A resposta voltava completa na aparência, só sem o conteúdo. Hoje o extrator desce nas tabelas, e a regra ficou anotada: se uma leitura parecer incompleta, confira por outro caminho.
+E uma lição que ficou no README: o texto **dentro de tabelas** sumia da leitura, **sem nenhum erro**. A resposta voltava completa na aparência, só sem o conteúdo. Hoje a ferramenta lê as tabelas, e a regra ficou anotada: se uma leitura parecer incompleta, confira por outro caminho.
 
 ### O que o container protege
 
@@ -97,7 +97,7 @@ Ele protege a **credencial** e a **minha máquina**. O texto que a ferramenta de
 - [ ] Teste num projeto descartável antes de usar de verdade.
 - [ ] Se nenhuma serve, escreva a sua e documente o motivo.
 - [ ] Mantenha credenciais fora do alcance do agente (montadas como somente leitura, fora do git).
-- [ ] Dê o menor acesso que resolve (Leitor, e não Editor).
+- [ ] Dê o menor acesso que resolve (leitura, e não edição).
 - [ ] Lembre que o que a ferramenta devolve vai para o modelo.
 
 ## Conclusão
