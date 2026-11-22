@@ -193,6 +193,65 @@
         "Scrum"
       ],
       "link": "https://arizona.com.br"
+    },
+    {
+      "period": "Dezembro de 2020 — Fevereiro de 2021",
+      "ariaLabel": "Dezembro de 2020 até Fevereiro de 2021",
+      "role": "Desenvolvedor Web (freelance)",
+      "company": "Live Promo e Incentive",
+      "description": [
+        "Desenvolvi um algoritmo que permitiu aos usuários interagirem dinamicamente com as campanhas, gerando aumento significativo no rendimento da empresa.",
+        "Desenvolvi e entreguei sites para marcas como Bauducco, Hydra e Coral, criando experiências interativas e aprimoradas para os usuários."
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "PHP",
+        "Angular",
+        "MySQL"
+      ]
+    },
+    {
+      "period": "Março de 2020 — Dezembro de 2020",
+      "ariaLabel": "Março de 2020 até Dezembro de 2020",
+      "role": "Desenvolvedor Full Stack (freelance)",
+      "company": "R-consulters",
+      "description": [
+        "Desenvolvi sites e soluções web personalizadas para pequenas e médias empresas, colaborando com os clientes para traduzir as necessidades de cada negócio em soluções dinâmicas e sustentáveis.",
+        "Utilizei React, Node.js, MongoDB e Docker, com Redux para o gerenciamento de estado e SASS e Tailwind CSS na estilização, elevando a presença online dos clientes."
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Docker",
+        "Redux",
+        "SASS",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "period": "Fevereiro de 2019 — Fevereiro de 2020",
+      "ariaLabel": "Fevereiro de 2019 até Fevereiro de 2020",
+      "role": "Desenvolvedor Web",
+      "company": "CEMU (Centro de Missões Urbanas)",
+      "description": [
+        "Fui responsável pelo desenvolvimento e pela manutenção do site da organização, garantindo funcionalidade, responsividade e velocidade em diferentes dispositivos.",
+        "Apliquei técnicas de SEO para aumentar a presença online e desenvolvi plugins personalizados, além de cuidar da manutenção do banco de dados."
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "PHP",
+        "WordPress",
+        "MySQL",
+        "Elementor",
+        "SEO"
+      ]
     }
   ],
   "technologiesLabel": "Tecnologias usadas"

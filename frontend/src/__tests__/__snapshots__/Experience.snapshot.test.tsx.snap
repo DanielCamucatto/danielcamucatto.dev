@@ -1382,6 +1382,354 @@ exports[`Experience snapshot deve bater o snapshot 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Dezembro de 2020 até Fevereiro de 2021"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Dezembro de 2020 — Fevereiro de 2021
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <span
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 dark:text-slate-200 text-base"
+                  >
+                    Desenvolvedor Web (freelance) · Live Promo e Incentive
+                  </span>
+                </div>
+              </h3>
+              <ul
+                class="mt-2 list-disc space-y-1 pl-4 text-sm leading-normal text-slate-400 marker:text-teal-500/70"
+              >
+                <li>
+                  Desenvolvi um algoritmo que permitiu aos usuários interagirem dinamicamente com as campanhas, gerando aumento significativo no rendimento da empresa.
+                </li>
+                <li>
+                  Desenvolvi e entreguei sites para marcas como Bauducco, Hydra e Coral, criando experiências interativas e aprimoradas para os usuários.
+                </li>
+              </ul>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    HTML
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    jQuery
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    PHP
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Angular
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    MySQL
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Março de 2020 até Dezembro de 2020"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Março de 2020 — Dezembro de 2020
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <span
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 dark:text-slate-200 text-base"
+                  >
+                    Desenvolvedor Full Stack (freelance) · R-consulters
+                  </span>
+                </div>
+              </h3>
+              <ul
+                class="mt-2 list-disc space-y-1 pl-4 text-sm leading-normal text-slate-400 marker:text-teal-500/70"
+              >
+                <li>
+                  Desenvolvi sites e soluções web personalizadas para pequenas e médias empresas, colaborando com os clientes para traduzir as necessidades de cada negócio em soluções dinâmicas e sustentáveis.
+                </li>
+                <li>
+                  Utilizei React, Node.js, MongoDB e Docker, com Redux para o gerenciamento de estado e SASS e Tailwind CSS na estilização, elevando a presença online dos clientes.
+                </li>
+              </ul>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    React
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Node.js
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    MongoDB
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Docker
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Redux
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    SASS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Tailwind CSS
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li
+          class="mb-12"
+        >
+          <div
+            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          >
+            <div
+              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/40 lg:group-hover:shadow-md lg:group-hover:drop-shadow-sm dark:lg:group-hover:bg-slate-800/50 dark:lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:group-hover:drop-shadow-lg"
+            />
+            <header
+              aria-label="Fevereiro de 2019 até Fevereiro de 2020"
+              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            >
+              Fevereiro de 2019 — Fevereiro de 2020
+            </header>
+            <div
+              class="z-10 sm:col-span-6"
+            >
+              <h3
+                class="font-medium leading-snug text-slate-200"
+              >
+                <div>
+                  <span
+                    class="inline-flex items-baseline font-semibold leading-tight text-teal-300 dark:text-slate-200 text-base"
+                  >
+                    Desenvolvedor Web · CEMU (Centro de Missões Urbanas)
+                  </span>
+                </div>
+              </h3>
+              <ul
+                class="mt-2 list-disc space-y-1 pl-4 text-sm leading-normal text-slate-400 marker:text-teal-500/70"
+              >
+                <li>
+                  Fui responsável pelo desenvolvimento e pela manutenção do site da organização, garantindo funcionalidade, responsividade e velocidade em diferentes dispositivos.
+                </li>
+                <li>
+                  Apliquei técnicas de SEO para aumentar a presença online e desenvolvi plugins personalizados, além de cuidar da manutenção do banco de dados.
+                </li>
+              </ul>
+              <ul
+                aria-label="Tecnologias usadas"
+                class="mt-2 flex flex-wrap"
+              >
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    HTML
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    JavaScript
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    jQuery
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    PHP
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    WordPress
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    MySQL
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    Elementor
+                  </div>
+                </li>
+                <li
+                  class="mr-1.5 mt-2"
+                >
+                  <div
+                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                  >
+                    SEO
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </section>
