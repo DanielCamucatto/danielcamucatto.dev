@@ -193,6 +193,65 @@
         "Scrum"
       ],
       "link": "https://arizona.com.br"
+    },
+    {
+      "period": "December 2020 — February 2021",
+      "ariaLabel": "December 2020 to February 2021",
+      "role": "Web Developer (freelance)",
+      "company": "Live Promo e Incentive",
+      "description": [
+        "I developed an algorithm that let users interact dynamically with campaigns, significantly increasing the company's revenue.",
+        "I built and delivered websites for brands such as Bauducco, Hydra and Coral, creating interactive and improved user experiences."
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "PHP",
+        "Angular",
+        "MySQL"
+      ]
+    },
+    {
+      "period": "March 2020 — December 2020",
+      "ariaLabel": "March 2020 to December 2020",
+      "role": "Full Stack Developer (freelance)",
+      "company": "R-consulters",
+      "description": [
+        "I built custom websites and web solutions for small and medium-sized businesses, working with clients to turn each business's needs into dynamic and sustainable solutions.",
+        "I used React, Node.js, MongoDB and Docker, with Redux for state management and SASS and Tailwind CSS for styling, strengthening clients' online presence."
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Docker",
+        "Redux",
+        "SASS",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "period": "February 2019 — February 2020",
+      "ariaLabel": "February 2019 to February 2020",
+      "role": "Web Developer",
+      "company": "CEMU (Centro de Missões Urbanas)",
+      "description": [
+        "I was responsible for developing and maintaining the organization's website, ensuring functionality, responsiveness and speed across devices.",
+        "I applied SEO techniques to grow its online presence and developed custom plugins, as well as maintaining the database."
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "PHP",
+        "WordPress",
+        "MySQL",
+        "Elementor",
+        "SEO"
+      ]
     }
   ],
   "technologiesLabel": "Technologies used"
