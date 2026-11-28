@@ -9,6 +9,7 @@ import { Numeros, InteligenciaArtificial, Seguranca, Ajuda, Casos, ChamadaArtigo
 import Projetos from './components/home/Projetos';
 import Experiencia from './components/home/Experiencia';
 import Contato from './components/home/Contato';
+import Depoimentos from './components/home/Depoimentos';
 
 function Pagina() {
   const raiz = useRef<HTMLDivElement>(null);
@@ -48,6 +49,7 @@ function Pagina() {
         <Projetos />
         <div className="wrap" id="depois-projetos">
           <ChamadaArtigos />
+          <Depoimentos />
           <Experiencia />
           <Contato />
         </div>

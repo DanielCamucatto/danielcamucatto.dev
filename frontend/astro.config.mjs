@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://danielcamucatto.dev.br',
-  integrations: [react(), mdx(), sitemap()],
+  integrations: [react(), mdx(), sitemap({ filter: (pagina) => !pagina.includes('/admin/') })],
   markdown: {
     shikiConfig: {
       themes: { light: 'github-light', dark: 'github-dark' },

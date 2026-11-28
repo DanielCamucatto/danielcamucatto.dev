@@ -158,5 +158,40 @@
       "Job opportunity",
       "Something else"
     ]
+  },
+  "depoimentos": {
+    "titulo": "People who worked with me",
+    "intro": "Words from people who shared projects, deadlines and problems with me.",
+    "convite": "Have we worked together?",
+    "conviteTexto": "Share a moment or a project. It takes two minutes, and I read everything before publishing.",
+    "abrir": "Leave my testimonial",
+    "nome": "Name",
+    "cargo": "Role",
+    "opcional": "optional",
+    "empresa": "Where we worked together",
+    "linkedin": "Your LinkedIn",
+    "email": "Email",
+    "emailNota": "not shown on the site",
+    "github": "GitHub username",
+    "githubNota": "optional, to use that photo",
+    "foto": "Or upload a photo",
+    "fotoNota": "optional, JPG, PNG or WebP up to 5 MB",
+    "previa": "Preview of your photo",
+    "texto": "What you would like to say",
+    "autorizo": "I authorize publishing my name, role, company, LinkedIn, photo (uploaded or copied from my GitHub) and this text on this site. I can request removal at any time through the contact form. My email is only used to reach me about this testimonial.",
+    "enviar": "Send for review",
+    "enviando": "Sending...",
+    "mensagens": {
+      "enviado": "Thank you! Your testimonial will be reviewed before it appears.",
+      "campos": "Fill in the fields marked with * and check the authorization.",
+      "autorizacao": "Check the authorization.",
+      "email": "Check the email address.",
+      "linkedin": "Use your LinkedIn profile address, starting with https://",
+      "github": "I could not find that GitHub user. Check it or leave the field empty.",
+      "foto": "The photo must be JPG, PNG or WebP, up to 5 MB.",
+      "verificacao": "The anti-robot check failed. Please try again.",
+      "limite": "Too many submissions. Please try again later.",
+      "geral": "Could not send. Please try again later."
+    }
   }
 }

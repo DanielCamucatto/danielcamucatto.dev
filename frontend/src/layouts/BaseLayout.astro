@@ -8,9 +8,10 @@ interface Props {
   image?: string;
   type?: 'website' | 'article';
   publishedTime?: Date;
+  noindex?: boolean;
 }
 
-const { title, description, image, type = 'website', publishedTime } = Astro.props;
+const { title, description, image, type = 'website', publishedTime, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 // Sem imagem própria (ex.: capa do artigo), usa a imagem padrão 1200x630 do site
 const ogImage = image ?? new URL('/og.jpg', Astro.site).href;
@@ -23,6 +24,7 @@ const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/png" href="/favicon.png" />
