@@ -16,6 +16,8 @@ const artigos = defineCollection({
     // Link do artigo original no dev.to, quando foi importado de lá
     devtoUrl: z.string().url().optional(),
     draft: z.boolean().default(false),
+    // Slugs a mostrar em "Continue lendo"; o que faltar é completado por tags e temas
+    related: z.array(z.string()).optional(),
   }),
 });
 

@@ -1,0 +1,111 @@
+/* Identidade das páginas de artigos (paleta cobre). Os seletores partem de .tema-cobre
+   para vencer os estilos globais de App.css e index.css, que ainda valem na home. */
+.tema-cobre {
+  --bg: #fbf6f1; --card: #ffffff; --line: #e8dbd0; --text: #221812;
+  --muted: #5e4f45; --accent: #9d4420; --accent-ink: #ffffff;
+  width: 100%; min-height: 100vh; background: var(--bg); color: var(--text);
+}
+.dark .tema-cobre {
+  --bg: #171311; --card: #221c19; --line: #3d322c; --text: #f4ede6;
+  --muted: #bfb2a8; --accent: #e8895a; --accent-ink: #1f0d04;
+}
+body:has(.tema-cobre), .dark body:has(.tema-cobre) { display: block; background: #171311; }
+html:not(.dark) body:has(.tema-cobre) { background: #fbf6f1; }
+
+.tema-cobre .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+.tema-cobre a { color: var(--accent); }
+.tema-cobre h1, .tema-cobre h2, .tema-cobre h3, .tema-cobre section h2 { color: var(--text); line-height: 1.2; }
+.tema-cobre .muted { color: var(--muted); }
+.tema-cobre .rotulo { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.tema-cobre :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.tema-cobre .topo { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; font-weight: 600; font-size: .95rem; }
+.tema-cobre .topo a { color: var(--muted); font-weight: 600; }
+.tema-cobre .topo a:hover { color: var(--accent); }
+.tema-cobre .topo button { background: var(--card); border-color: var(--line); color: var(--muted); padding: 0; }
+.tema-cobre footer.rodape { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 48px; font-size: .9rem; color: var(--muted); }
+
+.tema-cobre .botao { display: inline-block; font: inherit; font-weight: 600; font-size: .92rem; line-height: 1.4; padding: 9px 16px; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: var(--text); cursor: pointer; }
+.tema-cobre a.botao { color: var(--text); }
+.tema-cobre .botao:hover { border-color: var(--accent); }
+.tema-cobre .botao.principal { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.tema-cobre .oculto { display: none; }
+
+/* Cartões */
+.tema-cobre .cartao { display: block; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; color: var(--text); transition: transform .2s, border-color .2s; }
+.tema-cobre .cartao:hover { transform: translateY(-4px); border-color: var(--accent); }
+.tema-cobre .cartao img, .tema-cobre .sem-capa { display: block; width: 100%; height: auto; aspect-ratio: 1000 / 420; object-fit: cover; }
+.tema-cobre .sem-capa { background: var(--line); }
+.tema-cobre .cartao .corpo { padding: 18px 20px; }
+.tema-cobre .cartao h3 { font-size: 1.05rem; font-weight: 700; margin: 8px 0 0; }
+.tema-cobre .cartao p { margin: 0; }
+.tema-cobre .cartao .resumo { margin-top: 10px; font-weight: 400; line-height: 1.6; }
+
+/* Lista */
+.tema-cobre .abertura h1 { font-size: clamp(2.6rem, 7vw, 5rem); font-weight: 800; letter-spacing: -.03em; margin: 24px 0 12px; }
+.tema-cobre .abertura p { max-width: 620px; font-size: 1.15rem; margin-bottom: 48px; }
+.tema-cobre h2.secao { font-size: 1.6rem; font-weight: 700; margin-bottom: 18px; }
+.tema-cobre .destaques { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.tema-cobre .destaques > :first-child { grid-column: 1 / -1; }
+.tema-cobre .destaques > :first-child .cartao { display: grid; grid-template-columns: 3fr 2fr; align-items: center; }
+.tema-cobre .destaques > :first-child h3 { font-size: clamp(1.4rem, 3vw, 2.1rem); }
+.tema-cobre .busca { width: 100%; max-width: 420px; font: inherit; color: var(--text); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.tema-cobre .temas { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 22px; }
+.tema-cobre .temas .botao { border-radius: 99px; font-size: .85rem; padding: 6px 14px; }
+.tema-cobre .temas .botao[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.tema-cobre .temas small { opacity: .75; }
+.tema-cobre .grade { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 16px 0 24px; }
+.tema-cobre .convite { display: flex; gap: 24px; align-items: center; justify-content: space-between; padding: 28px 32px; border-radius: 18px; background: var(--card); border: 1px solid var(--accent); }
+.tema-cobre .convite h2 { font-size: 1.4rem; font-weight: 700; margin: 0 0 4px; }
+.tema-cobre .convite p { margin: 0; }
+.tema-cobre .convite .botao { flex: none; }
+
+/* Leitura */
+.barra-leitura { position: fixed; left: 0; top: 0; height: 4px; width: 0; background: var(--accent); z-index: 20; }
+.tema-cobre .cabecalho, .tema-cobre .depois { max-width: 820px; margin: 0 auto; }
+.tema-cobre .cabecalho h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 800; letter-spacing: -.025em; margin: 8px 0 18px; }
+.tema-cobre .cabecalho .resumo { font-size: 1.2rem; line-height: 1.6; }
+.tema-cobre .etiquetas { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
+.tema-cobre .etiquetas li { font-size: .78rem; border: 1px solid var(--line); border-radius: 99px; padding: 3px 10px; color: var(--muted); }
+.tema-cobre .capa { display: block; width: 100%; height: auto; border-radius: 18px; margin: 28px 0 40px; }
+.tema-cobre .leitura { display: grid; grid-template-columns: 230px minmax(0, 720px); gap: 56px; justify-content: center; align-items: start; }
+.tema-cobre .leitura.sem-indice { grid-template-columns: minmax(0, 720px); }
+.tema-cobre .indice { position: sticky; top: 24px; max-height: calc(100vh - 48px); overflow-y: auto; font-size: .88rem; border-left: 2px solid var(--line); }
+.tema-cobre .indice summary { list-style: none; font-weight: 700; padding-left: 14px; }
+.tema-cobre .indice a { font-weight: 400; display: block; padding: 6px 0 6px 14px; color: var(--muted); border-left: 3px solid transparent; margin-left: -2px; line-height: 1.4; }
+.tema-cobre .indice a[aria-current='true'] { color: var(--accent); border-left-color: var(--accent); }
+
+.tema-cobre .prose {
+  --tw-prose-body: var(--text); --tw-prose-headings: var(--text); --tw-prose-links: var(--accent);
+  --tw-prose-bold: var(--text); --tw-prose-bullets: var(--muted); --tw-prose-counters: var(--muted);
+  --tw-prose-quotes: var(--muted); --tw-prose-quote-borders: var(--accent); --tw-prose-code: var(--text);
+  --tw-prose-hr: var(--line); --tw-prose-th-borders: var(--line); --tw-prose-td-borders: var(--line);
+  --tw-prose-captions: var(--muted);
+  max-width: none; min-width: 0; font-size: 1.1rem; line-height: 1.8; overflow-wrap: break-word;
+}
+.tema-cobre .prose h2 { scroll-margin-top: 24px; font-weight: 700; }
+.tema-cobre .prose table { display: block; overflow-x: auto; }
+.tema-cobre .prose img { border-radius: 12px; }
+.tema-cobre .prose pre { border: 1px solid var(--line); }
+.tema-cobre .prose :not(pre) > code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-weight: 400; }
+.tema-cobre .prose :not(pre) > code::before, .tema-cobre .prose :not(pre) > code::after { content: none; }
+
+.tema-cobre .autor { display: flex; gap: 20px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; margin: 32px 0; }
+.tema-cobre .autor img { width: 96px; height: 96px; border-radius: 50%; border: 2px solid var(--accent); flex: none; }
+.tema-cobre .autor p { margin: 0 0 8px; }
+
+@media (max-width: 900px) {
+  .tema-cobre .leitura { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .tema-cobre .indice { position: static; max-height: none; }
+  .tema-cobre .indice summary { list-style: revert; cursor: pointer; }
+  .tema-cobre .grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .tema-cobre .grade, .tema-cobre .destaques, .tema-cobre .destaques > :first-child .cartao { grid-template-columns: minmax(0, 1fr); }
+  .tema-cobre .convite, .tema-cobre .autor { flex-direction: column; align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tema-cobre .cartao { transition: none; }
+  .tema-cobre .cartao:hover { transform: none; }
+}
+
+.tema-cobre .botao.hidden { display: none; }
