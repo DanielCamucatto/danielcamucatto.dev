@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '../hooks/useLanguage';
 import { getTranslations } from '../utils/translations';
+import { registrar } from '../utils/analytics-eventos';
 
 interface Props {
   onClose?: () => void;
@@ -9,6 +10,7 @@ interface Props {
 export default function ContactForm({ onClose }: Props) {
   const { language } = useLanguage();
   const translations = getTranslations(language).contactForm;
+  const { assuntos } = getTranslations(language).home.contato;
   
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -57,6 +59,7 @@ export default function ContactForm({ onClose }: Props) {
           throw new Error(data.error || 'Falha no envio');
         }
         
+        registrar('contato_enviado', { assunto: subject });
         setSent(true);
         setTimeout(() => onClose?.(), 2000);
       } catch {
@@ -69,7 +72,7 @@ export default function ContactForm({ onClose }: Props) {
 
   if (sent) {
     return (
-      <div className="rounded border border-slate-200 bg-slate-50 p-4 text-center text-slate-800 dark:bg-slate-900 dark:text-slate-100">
+      <div className="p-4 text-center" role="status">
         {translations.successMessage}
       </div>
     );
@@ -78,21 +81,20 @@ export default function ContactForm({ onClose }: Props) {
   return (
     <form onSubmit={onSubmit} className="space-y-3">
       <div>
-        <label htmlFor="contact-name" className="text-sm text-slate-700 dark:text-slate-200">
+        <label htmlFor="contact-name" className="text-sm">
           {translations.nameLabel} <span className="text-red-500">*</span>
         </label>
         <input
           id="contact-name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="mt-1 w-full rounded border px-3 py-2 text-sm text-slate-900 dark:bg-slate-800 dark:text-slate-100"
           placeholder={translations.namePlaceholder}
           required
         />
       </div>
 
       <div>
-        <label htmlFor="contact-email" className="text-sm text-slate-700 dark:text-slate-200">
+        <label htmlFor="contact-email" className="text-sm">
           {translations.emailLabel} <span className="text-red-500">*</span>
         </label>
         <input
@@ -100,35 +102,36 @@ export default function ContactForm({ onClose }: Props) {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="mt-1 w-full rounded border px-3 py-2 text-sm text-slate-900 dark:bg-slate-800 dark:text-slate-100"
           placeholder={translations.emailPlaceholder}
           required
         />
       </div>
 
       <div>
-        <label htmlFor="contact-subject" className="text-sm text-slate-700 dark:text-slate-200">
+        <label htmlFor="contact-subject" className="text-sm">
           {translations.subjectLabel} <span className="text-red-500">*</span>
         </label>
-        <input
+        <select
           id="contact-subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
-          className="mt-1 w-full rounded border px-3 py-2 text-sm text-slate-900 dark:bg-slate-800 dark:text-slate-100"
-          placeholder={translations.subjectPlaceholder}
           required
-        />
+        >
+          <option value="">{translations.subjectPlaceholder}</option>
+          {assuntos.map((assunto) => (
+            <option key={assunto} value={assunto}>{assunto}</option>
+          ))}
+        </select>
       </div>
 
       <div>
-        <label htmlFor="contact-message" className="text-sm text-slate-700 dark:text-slate-200">
+        <label htmlFor="contact-message" className="text-sm">
           {translations.messageLabel} <span className="text-red-500">*</span>
         </label>
         <textarea
           id="contact-message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="mt-1 w-full rounded border px-3 py-2 text-sm text-slate-900 dark:bg-slate-800 dark:text-slate-100"
           rows={5}
           placeholder={translations.messagePlaceholder}
           required
@@ -141,7 +144,7 @@ export default function ContactForm({ onClose }: Props) {
         <button
           type="submit"
           disabled={loading}
-          className="inline-flex items-center rounded-md bg-teal-500 px-3 py-1 text-white text-sm font-medium hover:bg-teal-400 disabled:opacity-60"
+          className="inline-flex items-center rounded-md px-4 py-2 text-sm font-semibold disabled:opacity-60"
         >
           {loading ? translations.sending : translations.send}
         </button>

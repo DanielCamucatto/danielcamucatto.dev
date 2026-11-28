@@ -24,7 +24,7 @@ export default function ContactModal({ open, onClose, title, children }: Props) 
       role="dialog"
       aria-modal="true"
       className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
-      style={{ backgroundColor: '#0f172a' }}
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}
     >
       <div
         className="absolute inset-0"
@@ -32,13 +32,13 @@ export default function ContactModal({ open, onClose, title, children }: Props) 
         aria-hidden
       />
 
-      <div className="relative z-10 w-full max-w-xl rounded bg-white p-6 shadow-lg dark:bg-slate-900">
+      <div className="modal-contato relative z-10 w-full max-w-xl p-6 shadow-lg">
         <div className="flex items-start justify-between">
-          <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">{title}</h2>
+          <h2 className="text-lg font-semibold">{title}</h2>
           <button
             onClick={onClose}
             aria-label="Fechar"
-            className="ml-4 rounded p-1 text-slate-600 hover:text-slate-900 dark:text-slate-300"
+            className="ml-4 rounded p-1"
           >
             ✕
           </button>

@@ -1,0 +1,95 @@
+/* Página inicial. Reaproveita as cores e os botões definidos em artigos.css. */
+.tema-cobre.inicio .menu { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 14px; padding: 18px 0; font-size: .87rem; }
+.tema-cobre.inicio .menu a { color: var(--muted); font-weight: 600; margin: 0; }
+.tema-cobre.inicio .menu a:hover { color: var(--accent); }
+.tema-cobre.inicio .menu a.menu-artigos { background: var(--accent); color: var(--accent-ink); padding: 6px 14px; border-radius: 99px; margin-right: auto; }
+.tema-cobre .idiomas { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.tema-cobre .idiomas button { border: 0; border-radius: 0; background: transparent; color: var(--text); padding: 6px 10px; font-size: .78rem; }
+.tema-cobre .idiomas button[aria-pressed='true'] { background: var(--accent); color: var(--accent-ink); }
+
+.tema-cobre.inicio section { padding: 44px 0; margin: 0; border-top: 1px solid var(--line); }
+.tema-cobre.inicio h2 { font-size: 1.6rem; font-weight: 700; margin: 0 0 .6em; }
+.tema-cobre.inicio h2.grande { font-size: clamp(1.8rem, 4.5vw, 2.8rem); letter-spacing: -.02em; }
+.tema-cobre.inicio h3 { font-size: 1.15rem; font-weight: 700; margin: 0 0 .5em; }
+.tema-cobre.inicio p { margin: .5em 0; }
+.tema-cobre .intro { max-width: 640px; margin-bottom: 24px; }
+
+.tema-cobre .abre { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 48px; align-items: center; padding: 40px 0 60px; }
+.tema-cobre .abre .nome { font-size: clamp(3.2rem, 10.5vw, 7rem); line-height: .95; letter-spacing: -.04em; font-weight: 800; margin: 0 0 24px; }
+.tema-cobre.inicio .frase { font-size: clamp(1.3rem, 2.6vw, 1.9rem); line-height: 1.35; font-weight: 600; max-width: 600px; }
+.tema-cobre .frase span { color: var(--accent); }
+.tema-cobre .foto { width: 320px; height: 320px; border-radius: 50%; border: 3px solid var(--accent); object-fit: cover; }
+.tema-cobre .acoes, .tema-cobre .redes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.tema-cobre .redes { margin-top: 14px; }
+.tema-cobre .redes .botao { display: inline-flex; align-items: center; gap: 8px; }
+.tema-cobre a.botao.contorno { border: 2px solid var(--accent); color: var(--accent); }
+.tema-cobre a.botao.principal { color: var(--accent-ink); }
+
+.tema-cobre .colunas { display: grid; gap: 16px; margin: 16px 0; }
+.tema-cobre .colunas.tres { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tema-cobre .colunas.duas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tema-cobre .bloco { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+.tema-cobre .bloco.marcado { border-top: 3px solid var(--accent); }
+.tema-cobre .bloco a { text-decoration: underline; }
+.tema-cobre .numero { font-size: 2.2rem; font-weight: 800; line-height: 1.1; color: var(--accent); }
+
+/* Projetos: empilhados por padrão; em tela fixa quando .viva */
+.tema-cobre.inicio .vitrine { padding: 0; border: 0; }
+.tema-cobre.inicio .vitrine-titulo { max-width: 1180px; margin: 0 auto; padding: 48px 20px 0; }
+.tema-cobre .proj { display: grid; gap: 28px; padding: 40px 20px; max-width: 1080px; margin: 0 auto; }
+.tema-cobre .proj .info { max-width: 520px; }
+.tema-cobre.inicio .proj h3 { font: 800 clamp(2.4rem, 6vw, 5rem)/1 Georgia, 'Times New Roman', serif; color: var(--accent); margin: 0 0 18px; overflow-wrap: anywhere; }
+.tema-cobre .proj ul { list-style: disc; padding-left: 18px; }
+.tema-cobre .proj a { font-weight: 700; text-decoration: underline; }
+.tema-cobre .tela img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 30px 70px #0005; }
+.tema-cobre.inicio .viva .palco { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.tema-cobre.inicio .viva .vitrine-titulo { position: absolute; top: 24px; left: max(24px, calc(50% - 590px)); margin: 0; padding: 0; font-size: .85rem; text-transform: uppercase; letter-spacing: .16em; z-index: 3; }
+.tema-cobre .viva .proj { position: absolute; inset: 0; max-width: none; margin: 0; padding: 0 56px 0 max(24px, calc(50% - 590px)); grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: center; pointer-events: none; }
+.tema-cobre .viva .proj.ativo { pointer-events: auto; z-index: 2; }
+.tema-cobre .viva .info { opacity: var(--vis, 1); transform: translateY(calc(var(--o, 0) * 60px)); }
+.tema-cobre.inicio .viva .proj.longo h3 { font-size: clamp(1.8rem, 3.2vw, 2.8rem); }
+.tema-cobre .viva .descricao { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; overflow: hidden; }
+.tema-cobre .viva .tela { transform: perspective(1600px) translateY(calc(var(--o, 0) * 78vh)) rotateY(-16deg) skewY(2deg); filter: grayscale(var(--g, 0)); opacity: calc(1 - var(--g, 0) * .45); }
+.tema-cobre .viva .tela img { max-height: 70vh; object-fit: cover; object-position: top; }
+.tema-cobre .marcas { display: flex; flex-direction: column; gap: 10px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%); z-index: 3; }
+.tema-cobre .marcas button { width: 10px; height: 24px; padding: 0; border: 0; border-radius: 6px; background: var(--accent); opacity: .3; }
+.tema-cobre .marcas button[aria-current='true'] { opacity: 1; }
+.tema-cobre.inicio .pular { position: absolute; right: 24px; top: 20px; z-index: 3; color: var(--text); font-size: .85rem; }
+
+.tema-cobre .xp { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 24px; align-items: start; margin-top: 20px; }
+.tema-cobre .xp-lista { display: flex; flex-direction: column; border-left: 2px solid var(--line); }
+.tema-cobre .xp-lista button { text-align: left; background: transparent; color: var(--text); border: 0; border-left: 3px solid transparent; border-radius: 0 10px 10px 0; margin-left: -2px; padding: 9px 14px; line-height: 1.35; font-size: .95rem; }
+.tema-cobre .xp-lista span { display: block; font-size: .72rem; font-weight: 400; color: var(--muted); }
+.tema-cobre .xp-lista button[aria-pressed='true'] { border-left-color: var(--accent); background: var(--card); color: var(--accent); }
+.tema-cobre.inicio .xp-painel h3 { font-size: 1.5rem; }
+.tema-cobre .xp-painel h4 { margin: 20px 0 8px; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
+.tema-cobre .feito { list-style: disc; padding-left: 18px; }
+.tema-cobre .feito li { margin-bottom: 8px; }
+.tema-cobre .tecnologias { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 18px 0; }
+.tema-cobre .tecnologias li { font-size: .78rem; border: 1px solid var(--line); border-radius: 99px; padding: 3px 10px; color: var(--muted); }
+.tema-cobre.inicio footer.rodape { margin-top: 0; }
+
+/* Formulário de contato (o modal é montado direto no body) */
+.modal-contato { background: #171311; color: #f4ede6; border: 1px solid #3d322c; border-radius: 16px; max-height: calc(100vh - 32px); overflow-y: auto; }
+html:not(.dark) .modal-contato { background: #fff; color: #221812; border-color: #e8dbd0; }
+.modal-contato h2 { color: inherit; margin: 0; }
+.modal-contato label { color: inherit; display: block; font-size: .9rem; font-weight: 600; }
+.modal-contato input, .modal-contato textarea, .modal-contato select { margin-top: 4px; width: 100%; font: inherit; font-weight: 400; color: inherit; background: transparent; border: 1px solid #8a766a; border-radius: 8px; padding: 9px 12px; }
+.modal-contato option { color: #221812; }
+.modal-contato button { background: transparent; color: inherit; }
+.modal-contato button[type='submit'] { background: #e8895a; color: #1f0d04; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .tema-cobre.animar .revela { opacity: 0; transform: translateY(24px); transition: opacity .6s, transform .6s; }
+  .tema-cobre.animar .revela.visivel { opacity: 1; transform: none; }
+}
+.tema-cobre .bloco { transition: border-color .2s; }
+.tema-cobre .bloco:hover { border-color: var(--accent); }
+@media (max-width: 760px) {
+  .tema-cobre .abre { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 16px 0 36px; }
+  .tema-cobre .foto { order: -1; width: 170px; height: 170px; }
+  .tema-cobre .colunas.tres, .tema-cobre .colunas.duas, .tema-cobre .xp { grid-template-columns: minmax(0, 1fr); }
+  .tema-cobre .xp-lista { flex-direction: row; overflow-x: auto; border-left: 0; }
+  .tema-cobre .xp-lista button { flex: none; margin: 0; border-left: 0; border-bottom: 3px solid transparent; border-radius: 10px 10px 0 0; }
+  .tema-cobre .xp-lista button[aria-pressed='true'] { border-bottom-color: var(--accent); }
+}

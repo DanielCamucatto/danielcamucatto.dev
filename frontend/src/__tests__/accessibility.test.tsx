@@ -1,24 +1,17 @@
 import { render, screen } from '../utils/test/render-utils';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Navigation from '../components/Navigation';
-import Projects from '../components/Projects';
-import Experience from '../components/Experience';
+import Topo, { Menu } from '../components/home/Topo';
+import Projetos from '../components/home/Projetos';
+import Experiencia from '../components/home/Experiencia';
 import { ThemeToggle } from '../components/ThemeToggle';
 
 describe('Acessibilidade dos componentes principais', () => {
-  it('Header tem role="banner"', () => {
-    render(<Header />);
-    expect(screen.getByRole('banner')).toBeInTheDocument();
+  it('o topo tem um título com o nome', () => {
+    render(<Topo />);
+    expect(screen.getByRole('heading', { level: 1, name: /daniel\s+camuçatto/i })).toBeInTheDocument();
   });
 
-  it('Footer tem role="contentinfo"', () => {
-    render(<Footer />);
-    expect(screen.getByRole('contentinfo')).toBeInTheDocument();
-  });
-
-  it('Navigation tem role="navigation"', () => {
-    render(<Navigation />);
+  it('o menu é uma navegação', () => {
+    render(<Menu />);
     expect(screen.getByRole('navigation')).toBeInTheDocument();
   });
 
@@ -27,13 +20,13 @@ describe('Acessibilidade dos componentes principais', () => {
     expect(screen.getByLabelText(/ativar modo (escuro|claro)/i)).toBeInTheDocument();
   });
 
-  it('Projects tem heading acessível', () => {
-    render(<Projects />);
+  it('Projetos tem heading acessível', () => {
+    render(<Projetos />);
     expect(screen.getByRole('heading', { name: /projeto/i })).toBeInTheDocument();
   });
 
-  it('Experience tem heading acessível', () => {
-    render(<Experience />);
+  it('Experiência tem heading acessível', () => {
+    render(<Experiencia />);
     expect(screen.getByRole('heading', { name: /experi/i })).toBeInTheDocument();
   });
 });
