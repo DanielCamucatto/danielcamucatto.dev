@@ -9,8 +9,7 @@ Configurar em **Production**. O preview não deve usar o banco de produção.
 
 | Item | Nome | Observação |
 |---|---|---|
-| Banco D1 | binding `DB` | aplicar `migrations/0001_depoimentos.sql` |
-| Bucket R2 | binding `FOTOS` | privado, sem acesso público |
+| Banco D1 | binding `DB` | aplicar os arquivos de `migrations/`; as fotos também ficam nele |
 | Turnstile | `TURNSTILE_SITE_KEY` e `TURNSTILE_SECRET` | o segredo como variável criptografada |
 | Sal do IP | `IP_SALT` | texto aleatório longo, criptografado |
 | Access | `ACCESS_TEAM_DOMAIN`, `ACCESS_AUD`, `ADMIN_EMAIL` | aplicativo cobrindo `/admin/*` e `/api/admin/*` |

@@ -8,17 +8,26 @@ import type { Ambiente, Banco, Consulta } from '../../server/tipos';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const { DatabaseSync } = require('node:sqlite');
-const MIGRACAO = readFileSync(join(__dirname, '../../migrations/0001_depoimentos.sql'), 'utf8');
+const MIGRACOES = ['0001_depoimentos.sql', '0002_fotos.sql']
+  .map((nome) => readFileSync(join(__dirname, '../../migrations', nome), 'utf8'))
+  .join('\n');
 const ORIGEM = 'https://exemplo.test';
 const JPEG = new Uint8Array([0xff, 0xd8, 0xff, 0xe0, 1, 2, 3]).buffer;
 
 // D1 de mentira sobre SQLite de verdade, para o SQL e as restrições serem testados
 function banco(): Banco {
   const db = new DatabaseSync(':memory:');
-  db.exec(MIGRACAO);
+  db.exec(MIGRACOES);
   const consulta = (sql: string, valores: unknown[] = []): Consulta => ({
     bind: (...novos) => consulta(sql, novos),
-    first: async <T>() => (db.prepare(sql).get(...valores) as T) ?? null,
+    // Como o D1, devolve BLOB em lista de números
+    first: async <T>() => {
+      const linha = db.prepare(sql).get(...valores) as Record<string, unknown> | undefined;
+      if (!linha) return null;
+      return Object.fromEntries(
+        Object.entries(linha).map(([k, v]) => [k, ArrayBuffer.isView(v) ? Array.from(v as Uint8Array) : v])
+      ) as T;
+    },
     all: async <T>() => ({ results: db.prepare(sql).all(...valores) as T[] }),
     run: async () => db.prepare(sql).run(...valores),
   });
@@ -26,22 +35,14 @@ function banco(): Banco {
 }
 
 function ambiente() {
-  const arquivos = new Map<string, { dados: ArrayBuffer; tipo?: string }>();
   const env: Ambiente = {
     DB: banco(),
-    FOTOS: {
-      put: async (chave, dados, opcoes) => void arquivos.set(chave, { dados, tipo: opcoes?.httpMetadata?.contentType }),
-      get: async (chave) => {
-        const a = arquivos.get(chave);
-        return a ? { body: a.dados, httpMetadata: { contentType: a.tipo } } : null;
-      },
-      delete: async (chave) => void arquivos.delete(chave),
-    },
     TURNSTILE_SITE_KEY: 'chave-publica',
     TURNSTILE_SECRET: 'segredo-de-teste',
     IP_SALT: 'sal',
   };
-  return { env, arquivos };
+  const totalDeFotos = async () => (await env.DB!.prepare('SELECT COUNT(*) AS n FROM fotos').first<{ n: number }>())!.n;
+  return { env, totalDeFotos };
 }
 
 const rede = (humano = true) =>
@@ -101,12 +102,13 @@ describe('depoimentos', () => {
     ['sem autorização', { autorizo: '' }, ORIGEM, 400],
     ['texto longo demais', { texto: 'a'.repeat(501) }, ORIGEM, 400],
     ['usuário do GitHub inexistente', { github: 'inexistente' }, ORIGEM, 400],
+    ['foto grande demais', { foto: new Blob([new Uint8Array(301 * 1024)], { type: 'image/jpeg' }) }, ORIGEM, 400],
     ['arquivo que não é imagem', { foto: new Blob(['<svg onload=alert(1)>'], { type: 'image/jpeg' }) }, ORIGEM, 400],
   ])('recusa %s', async (_nome, campos, origem, status) => {
-    const { env, arquivos } = ambiente();
+    const { env, totalDeFotos } = ambiente();
     expect((await receber(pedido(campos as Record<string, string | Blob>, origem), env, rede())).status).toBe(status);
     expect(await todos(env)).toHaveLength(0);
-    expect(arquivos.size).toBe(0);
+    expect(await totalDeFotos()).toBe(0);
   });
 
   it('recusa quem não passa na verificação e ignora robô que preenche a armadilha', async () => {
@@ -125,7 +127,7 @@ describe('depoimentos', () => {
   });
 
   it('só mostra a foto ao público depois de aprovada e a remove ao apagar', async () => {
-    const { env, arquivos } = ambiente();
+    const { env, totalDeFotos } = ambiente();
     await receber(pedido({ github: '@octocat' }), env, rede());
     const [{ id, temFoto }] = await todos(env);
     expect(temFoto).toBe(true);
@@ -133,10 +135,12 @@ describe('depoimentos', () => {
     expect((await foto(env, id, false)).status).toBe(200);
 
     await moderar(acao(id, 'aprovar'), env);
-    expect((await foto(env, id, true)).headers.get('Content-Type')).toBe('image/jpeg');
+    const publica = await foto(env, id, true);
+    expect(publica.headers.get('Content-Type')).toBe('image/jpeg');
+    expect(new Uint8Array(await publica.arrayBuffer())).toEqual(new Uint8Array(JPEG));
 
     await moderar(acao(id, 'apagar'), env);
-    expect(arquivos.size).toBe(0);
+    expect(await totalDeFotos()).toBe(0);
     expect(await todos(env)).toHaveLength(0);
   });
 
