@@ -1,18 +1,19 @@
-import type { Ambiente, Arquivos, Banco } from './tipos';
+import { fotos } from './fotos';
+import type { Ambiente, Banco } from './tipos';
 
 // A seção só aparece na página com pelo menos esta quantidade de aprovados
 export const MINIMO_PARA_PUBLICAR = 3;
 const ENVIOS_POR_HORA = 3;
 const MAXIMO_PENDENTES = 50;
-const FOTO_ENVIADA_MAX = 300 * 1024;
-const FOTO_GITHUB_MAX = 1024 * 1024;
+// Vale para a foto enviada e para a copiada do GitHub: ela é gravada no banco
+const FOTO_MAX = 300 * 1024;
 const USUARIO_GITHUB = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
 
-type Pronto = Ambiente & Required<Pick<Ambiente, 'DB' | 'FOTOS' | 'TURNSTILE_SITE_KEY' | 'TURNSTILE_SECRET' | 'IP_SALT'>>;
+type Pronto = Ambiente & Required<Pick<Ambiente, 'DB' | 'TURNSTILE_SITE_KEY' | 'TURNSTILE_SECRET' | 'IP_SALT'>>;
 
 // Sem tudo configurado, o recurso fica desligado: a página nem mostra a seção
 export const configurado = (env: Ambiente): env is Pronto =>
-  Boolean(env.DB && env.FOTOS && env.TURNSTILE_SITE_KEY && env.TURNSTILE_SECRET && env.IP_SALT);
+  Boolean(env.DB && env.TURNSTILE_SITE_KEY && env.TURNSTILE_SECRET && env.IP_SALT);
 
 export const json = (corpo: unknown, status = 200) =>
   new Response(JSON.stringify(corpo), {
@@ -123,7 +124,7 @@ export async function receber(request: Request, env: Ambiente, buscar: typeof fe
   const arquivo = form.get('foto');
   let dados: ArrayBuffer | null = null;
   if (arquivo && typeof arquivo !== 'string' && arquivo.size > 0) {
-    if (arquivo.size > FOTO_ENVIADA_MAX) return erro('foto');
+    if (arquivo.size > FOTO_MAX) return erro('foto');
     dados = await arquivo.arrayBuffer();
   } else if (d.github) {
     try {
@@ -133,7 +134,7 @@ export async function receber(request: Request, env: Ambiente, buscar: typeof fe
     } catch {
       return erro('github');
     }
-    if (dados.byteLength > FOTO_GITHUB_MAX) return erro('foto');
+    if (dados.byteLength > FOTO_MAX) return erro('foto');
   }
 
   const id = crypto.randomUUID();
@@ -142,7 +143,7 @@ export async function receber(request: Request, env: Ambiente, buscar: typeof fe
     const tipo = tipoDaImagem(dados);
     if (!tipo) return erro('foto');
     foto = `depoimentos/${id}`;
-    await env.FOTOS.put(foto, dados, { httpMetadata: { contentType: tipo } });
+    await fotos(env.DB).guardar(foto, tipo, dados);
   }
 
   await env.DB.prepare(
@@ -156,15 +157,15 @@ export async function receber(request: Request, env: Ambiente, buscar: typeof fe
 // Sem somenteAprovados (painel), mostra também fotos pendentes
 export async function foto(env: Ambiente, id: string, somenteAprovados: boolean): Promise<Response> {
   const ausente = new Response('Não encontrado', { status: 404 });
-  if (!env.DB || !env.FOTOS) return ausente;
+  if (!env.DB) return ausente;
   const filtro = somenteAprovados ? " AND status = 'aprovado'" : '';
   const linha = await env.DB.prepare(`SELECT foto FROM depoimentos WHERE id = ?${filtro}`).bind(id).first<{ foto: string }>();
   if (!linha?.foto) return ausente;
-  const objeto = await env.FOTOS.get(linha.foto);
+  const objeto = await fotos(env.DB).ler(linha.foto);
   if (!objeto) return ausente;
-  return new Response(objeto.body, {
+  return new Response(objeto.dados, {
     headers: {
-      'Content-Type': objeto.httpMetadata?.contentType ?? 'application/octet-stream',
+      'Content-Type': objeto.tipo,
       // Cache curto, para uma retirada valer logo
       'Cache-Control': somenteAprovados ? 'public, max-age=300' : 'private, no-store',
       'X-Content-Type-Options': 'nosniff',
@@ -173,9 +174,9 @@ export async function foto(env: Ambiente, id: string, somenteAprovados: boolean)
   });
 }
 
-async function apagar(banco: Banco, arquivos: Arquivos, id: string): Promise<void> {
+async function apagar(banco: Banco, id: string): Promise<void> {
   const linha = await banco.prepare('SELECT foto FROM depoimentos WHERE id = ?').bind(id).first<{ foto: string }>();
-  if (linha?.foto) await arquivos.delete(linha.foto);
+  if (linha?.foto) await fotos(banco).apagar(linha.foto);
   await banco.prepare('DELETE FROM depoimentos WHERE id = ?').bind(id).run();
 }
 
@@ -189,7 +190,7 @@ export async function listarTodos(env: Ambiente): Promise<Response> {
 }
 
 export async function moderar(request: Request, env: Ambiente): Promise<Response> {
-  if (!env.DB || !env.FOTOS) return erro('indisponivel', 503);
+  if (!env.DB) return erro('indisponivel', 503);
   // Origem própria e JSON: outro site não consegue disparar a ação usando o seu login
   if (!mesmaOrigem(request) || !request.headers.get('Content-Type')?.startsWith('application/json')) return erro('origem', 403);
   const corpo = (await request.json().catch(() => null)) as { id?: unknown; acao?: unknown } | null;
@@ -200,7 +201,7 @@ export async function moderar(request: Request, env: Ambiente): Promise<Response
   } else if (corpo.acao === 'retirar') {
     await env.DB.prepare("UPDATE depoimentos SET status = 'pendente', aprovado_em = NULL WHERE id = ?").bind(corpo.id).run();
   } else if (corpo.acao === 'apagar') {
-    await apagar(env.DB, env.FOTOS, corpo.id);
+    await apagar(env.DB, corpo.id);
   } else {
     return erro('campos');
   }
