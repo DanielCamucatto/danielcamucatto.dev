@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "rotulo": "Idioma / Language",
+    "artigos": "Artículos",
+    "ia": "IA",
+    "ajuda": "Cómo ayudo",
+    "casos": "Casos",
+    "projetos": "Proyectos",
+    "experiencia": "Experiencia",
+    "tema": "Tema"
+  },
+  "topo": {
+    "frase": "Integro IA en tu negocio, con software seguro que quita de en medio el trabajo lento.",
+    "complemento": "Y escribo sobre lo que aprendo haciendo.",
+    "resumo": "Desarrollador Full Stack hace más de 7 años · LLMs, RAG, MCP, datos y seguridad",
+    "falar": "Hablar conmigo",
+    "ler": "Leer mis artículos (en portugués) →",
+    "cv": "Descargar CV",
+    "foto": "Foto de Daniel Camuçatto"
+  },
+  "numeros": {
+    "rotulo": "Resultados",
+    "itens": [
+      {
+        "numero": "7h → 4h",
+        "texto": "Tiempo de ejecución de una campaña de SMS, en la migración de n8n a una plataforma propia, que lideré."
+      },
+      {
+        "numero": "2h → 30min",
+        "texto": "Revisión de hojas de cálculo con automatización por IA, liderada junto al equipo."
+      },
+      {
+        "numero": "+30%",
+        "texto": "Aumento de ingresos de la empresa con una solución de informes cuya arquitectura lideré."
+      }
+    ]
+  },
+  "ia": {
+    "rotulo": "Inteligencia artificial aplicada",
+    "titulo": "IA integrada a tu negocio",
+    "intro": "No es solo poner un chat en pantalla. Es conectar el modelo a tus datos y procesos, con control sobre lo que puede ver y hacer.",
+    "itens": [
+      {
+        "titulo": "LLMs en tu producto",
+        "texto": "Integración con Claude, Gemini y GPT para leer, resumir, clasificar y responder dentro del flujo que tu equipo ya usa."
+      },
+      {
+        "titulo": "RAG: respuestas con tus documentos",
+        "texto": "La IA consulta tu base antes de responder, en lugar de depender solo de lo que el modelo aprendió."
+      },
+      {
+        "titulo": "Servidores MCP",
+        "texto": "Un puente estándar para que la IA acceda a tus dashboards, sistemas y datos."
+      },
+      {
+        "titulo": "Agentes e ingeniería de prompts",
+        "texto": "Automatización de tareas en varias etapas, con límites, revisión humana y verificación del resultado. Trabajo con ingeniería de prompts desde 2021."
+      }
+    ],
+    "pratica": "En la práctica: una automatización con IA, liderada junto al equipo, redujo una revisión de hojas de cálculo de 2 horas a 30 minutos."
+  },
+  "seguranca": {
+    "rotulo": "Seguridad",
+    "titulo": "Seguridad desde el principio, no al final",
+    "itens": [
+      {
+        "titulo": "Autenticación y acceso",
+        "texto": "Rehíce un inicio de sesión y lideré la adopción de OAuth con JWT en una plataforma."
+      },
+      {
+        "titulo": "APIs bajo ataque",
+        "texto": "Rate limiting y protección contra abusos.",
+        "leia": "Lee (en portugués): Tumbaron nuestro login →",
+        "artigo": "rate-limiting-em-apis-de-missao-critica-quando-o-ataque-esgota-a-cota-de-outro"
+      },
+      {
+        "titulo": "IA con límites",
+        "texto": "Idempotencia y defensa contra la manipulación del modelo.",
+        "leia": "Lee (en portugués): Tu LLM va a fallar →",
+        "artigo": "seu-llm-vai-falhar-e-vai-ser-enganado-idempotencia-e-seguranca-em-fluxos-de-e-commerce"
+      }
+    ]
+  },
+  "ajuda": {
+    "titulo": "Cómo puedo ayudar",
+    "itens": [
+      {
+        "titulo": "IA y automatización",
+        "texto": "Poner LLMs, RAG y agentes a quitar el trabajo repetitivo de las manos del equipo.",
+        "acao": "Quiero usar IA →"
+      },
+      {
+        "titulo": "Seguridad de aplicaciones",
+        "texto": "Reforzar el login, el control de acceso y la protección de tus APIs.",
+        "acao": "Quiero proteger →"
+      },
+      {
+        "titulo": "Dashboards y datos",
+        "texto": "Convertir datos dispersos en informes que ayudan a decidir: React, Python, SQL y Trino.",
+        "acao": "Quiero ver mis datos →"
+      },
+      {
+        "titulo": "Pagos y mensajería",
+        "texto": "Integrar Stripe, Twilio y colas con RabbitMQ en tu producto.",
+        "acao": "Quiero integrar →"
+      }
+    ]
+  },
+  "casos": {
+    "titulo": "Casos",
+    "problema": "Problema",
+    "decisao": "Decisión",
+    "resultado": "Resultado",
+    "itens": [
+      {
+        "titulo": "Campañas de SMS",
+        "problema": "Una campaña tardaba 7 horas.",
+        "decisao": "Migrar de n8n a una plataforma propia.",
+        "resultado": "4 horas, cerca de un 43% más rápido."
+      },
+      {
+        "titulo": "Revisión de hojas de cálculo",
+        "problema": "La revisión tardaba 2 horas.",
+        "decisao": "Automatizar con IA.",
+        "resultado": "30 minutos, un 75% más rápido."
+      },
+      {
+        "titulo": "Informes sobre Big Data",
+        "decisao": "Solución de generación y versionado de informes.",
+        "resultado": "Aumento del 30% en los ingresos de la empresa."
+      }
+    ]
+  },
+  "projetos": {
+    "visitar": "Visitar proyecto →",
+    "descontinuado": "Sitio descontinuado por la empresa.",
+    "pular": "Saltar proyectos ↓",
+    "tela": "Pantalla inicial del proyecto"
+  },
+  "artigos": {
+    "titulo": "Escribo sobre lo que aprendo en producción",
+    "texto": "Historias reales: el problema, la decisión y lo que cambió. Los artículos están en portugués.",
+    "acao": "Ver los artículos →"
+  },
+  "experiencia": {
+    "titulo": "Experiencia",
+    "instrucao": "Elige una empresa para ver lo que aporté.",
+    "empresas": "Empresas",
+    "entregas": "Lo que entregué",
+    "site": "Sitio de la empresa →"
+  },
+  "contato": {
+    "titulo": "¿Hablamos?",
+    "texto": "Cuéntame qué está lento, es manual o cuesta ver por ahí.",
+    "acao": "Enviar mensaje",
+    "assuntos": [
+      "Proyecto freelance",
+      "Oferta de trabajo",
+      "Otro asunto"
+    ]
+  }
+}

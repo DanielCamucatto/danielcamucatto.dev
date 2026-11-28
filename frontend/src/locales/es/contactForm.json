@@ -4,7 +4,7 @@
   "emailLabel": "Email",
   "emailPlaceholder": "tu@ejemplo.com",
   "subjectLabel": "Asunto",
-  "subjectPlaceholder": "Asunto del mensaje",
+  "subjectPlaceholder": "Elige un asunto",
   "messageLabel": "Mensaje",
   "messagePlaceholder": "Escribe tu mensaje aquí",
   "send": "Enviar",

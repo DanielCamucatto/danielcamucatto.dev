@@ -1,11 +1,24 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import App from '../App';
+
+// Dados estruturados: ajudam o Google a ligar o nome ao site e aos perfis
+const pessoa = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Daniel Camuçatto',
+  alternateName: 'Daniel Santana Camuçatto',
+  jobTitle: 'Desenvolvedor Full Stack',
+  url: 'https://danielcamucatto.dev.br/',
+  image: 'https://danielcamucatto.dev.br/avatar.webp',
+  sameAs: ['https://github.com/danielcamucatto', 'https://linkedin.com/in/danielcamucatto', 'https://dev.to/danielcamucatto'],
+};
 ---
 
 <BaseLayout
-  title="Daniel Camuçatto | FullStack Engineer"
-  description="Desenvolvedor Full Stack. Experiência, projetos e artigos técnicos sobre arquitetura, backend e frontend."
+  title="Daniel Camuçatto | Desenvolvedor Full Stack, IA e segurança"
+  description="Daniel Camuçatto integra IA a negócios, com LLMs, RAG e MCP, e software seguro. Casos, projetos, experiência e artigos."
 >
   <App client:load />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(pessoa)} />
 </BaseLayout>

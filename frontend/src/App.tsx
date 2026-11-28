@@ -1,60 +1,58 @@
 import './App.css';
+import './styles/artigos.css';
+import './styles/home.css';
 import { useEffect, useRef } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
-import { Header, Navigation, Footer, About, Skills, Experience, Projects, Education, ThemeToggle, LanguageToggle } from './components';
+import Topo, { Menu } from './components/home/Topo';
+import { Numeros, InteligenciaArtificial, Seguranca, Ajuda, Casos, ChamadaArtigos } from './components/home/Secoes';
+import Projetos from './components/home/Projetos';
+import Experiencia from './components/home/Experiencia';
+import Contato from './components/home/Contato';
 
-function AppContent() {
-  const highlightRef = useRef<HTMLDivElement>(null);
+function Pagina() {
+  const raiz = useRef<HTMLDivElement>(null);
 
+  // Seções surgem na rolagem. A classe só entra com JavaScript, então sem ele tudo aparece.
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const x = e.clientX;
-      const y = e.clientY;
-      if (highlightRef.current) {
-        highlightRef.current.style.background = `
-          radial-gradient(600px at ${x}px ${y}px, rgba(255, 255, 255, 0.1), transparent 80%)
-        `;
-      }
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
-  useEffect(() => {
-    // Garante que o background inicial está correto
-    if (document.body.classList.contains('dark')) {
-      highlightRef.current?.classList.add('dark');
-    }
+    if (!('IntersectionObserver' in window)) return;
+    const elemento = raiz.current!;
+    elemento.classList.add('animar');
+    const observador = new IntersectionObserver(
+      (entradas) =>
+        entradas.forEach((entrada) => {
+          if (!entrada.isIntersecting) return;
+          entrada.target.classList.add('visivel');
+          observador.unobserve(entrada.target);
+        }),
+      { threshold: 0.05 }
+    );
+    elemento.querySelectorAll('.revela').forEach((secao) => observador.observe(secao));
+    return () => observador.disconnect();
   }, []);
 
   return (
-    <div className="relative z-10 min-h-screen text-slate-900 dark:text-slate-100 transition-colors duration-300">
-      <div
-        ref={highlightRef}
-        className="fixed inset-0 pointer-events-none z-0 transition-all duration-200"
-        aria-hidden
-      />
-      <div className="fixed top-4 right-4 flex items-center space-x-2">
-        <LanguageToggle />
-        <ThemeToggle />
+    <div className="tema-cobre inicio" ref={raiz}>
+      <div className="wrap">
+        <Menu />
+        <Topo />
       </div>
-      <div className="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
-        <div className="lg:flex lg:justify-between lg:gap-4">
-          <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
-            <Header />
-            <Navigation />
-            <Footer />
-          </div>
-          <div className="pt-24 lg:w-1/2 lg:py-24">
-            <About />
-            <Skills />
-            <Experience />
-            <Projects />
-            <Education />
-          </div>
+      <main>
+        <div className="wrap">
+          <Numeros />
+          <InteligenciaArtificial />
+          <Seguranca />
+          <Ajuda />
+          <Casos />
         </div>
-      </div>
+        <Projetos />
+        <div className="wrap" id="depois-projetos">
+          <ChamadaArtigos />
+          <Experiencia />
+          <Contato />
+        </div>
+      </main>
+      <footer className="wrap rodape">© {new Date().getFullYear()}</footer>
     </div>
   );
 }
@@ -63,7 +61,7 @@ function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <AppContent />
+        <Pagina />
       </LanguageProvider>
     </ThemeProvider>
   );

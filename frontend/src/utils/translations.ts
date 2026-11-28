@@ -1,3 +1,6 @@
+import ptHome from '../locales/pt/home.json';
+import enHome from '../locales/en/home.json';
+import esHome from '../locales/es/home.json';
 import ptExperience from '../locales/pt/experience.json';
 import enExperience from '../locales/en/experience.json';
 import esExperience from '../locales/es/experience.json';
@@ -28,6 +31,7 @@ import esSkills from '../locales/es/skills.json';
 
 const translations = {
   pt: {
+    home: ptHome,
     experience: ptExperience,
     projects: ptProjects,
     header: ptHeader,
@@ -39,6 +43,7 @@ const translations = {
     skills: ptSkills
   },
   en: {
+    home: enHome,
     experience: enExperience,
     projects: enProjects,
     header: enHeader,
@@ -50,6 +55,7 @@ const translations = {
     skills: enSkills
   },
   es: {
+    home: esHome,
     experience: esExperience,
     projects: esProjects,
     header: esHeader,

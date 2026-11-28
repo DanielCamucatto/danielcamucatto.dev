@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "rotulo": "Idioma / Language",
+    "artigos": "Articles",
+    "ia": "AI",
+    "ajuda": "How I help",
+    "casos": "Case studies",
+    "projetos": "Projects",
+    "experiencia": "Experience",
+    "tema": "Theme"
+  },
+  "topo": {
+    "frase": "I bring AI into your business, with secure software that clears slow work out of the way.",
+    "complemento": "And I write about what I learn by doing.",
+    "resumo": "Full Stack Developer for 7+ years · LLMs, RAG, MCP, data and security",
+    "falar": "Talk to me",
+    "ler": "Read my articles (in Portuguese) →",
+    "cv": "Download CV",
+    "foto": "Photo of Daniel Camuçatto"
+  },
+  "numeros": {
+    "rotulo": "Results",
+    "itens": [
+      {
+        "numero": "7h → 4h",
+        "texto": "Run time of an SMS campaign, in the migration from n8n to our own platform, which I led."
+      },
+      {
+        "numero": "2h → 30min",
+        "texto": "Spreadsheet review with AI automation, led together with the team."
+      },
+      {
+        "numero": "+30%",
+        "texto": "Company revenue growth from a reporting solution whose architecture I led."
+      }
+    ]
+  },
+  "ia": {
+    "rotulo": "Applied artificial intelligence",
+    "titulo": "AI built into your business",
+    "intro": "It is more than putting a chat on screen. It means connecting the model to your data and processes, with control over what it can see and do.",
+    "itens": [
+      {
+        "titulo": "LLMs in your product",
+        "texto": "Integration with Claude, Gemini and GPT to read, summarize, classify and reply inside the workflow your team already uses."
+      },
+      {
+        "titulo": "RAG: answers from your documents",
+        "texto": "The AI searches your knowledge base before answering, instead of relying only on what the model learned."
+      },
+      {
+        "titulo": "MCP servers",
+        "texto": "A standard bridge for AI to reach your dashboards, systems and data."
+      },
+      {
+        "titulo": "Agents and prompt engineering",
+        "texto": "Multi-step task automation, with limits, human review and result checks. I have worked with prompt engineering since 2021."
+      }
+    ],
+    "pratica": "In practice: an AI automation, led together with the team, took a spreadsheet review from 2 hours to 30 minutes."
+  },
+  "seguranca": {
+    "rotulo": "Security",
+    "titulo": "Security from the start, not at the end",
+    "itens": [
+      {
+        "titulo": "Authentication and access",
+        "texto": "I rebuilt a login and led the adoption of OAuth with JWT on a platform."
+      },
+      {
+        "titulo": "APIs under attack",
+        "texto": "Rate limiting and abuse protection.",
+        "leia": "Read (in Portuguese): They took our login down →",
+        "artigo": "rate-limiting-em-apis-de-missao-critica-quando-o-ataque-esgota-a-cota-de-outro"
+      },
+      {
+        "titulo": "AI with guardrails",
+        "texto": "Idempotency and defense against model manipulation.",
+        "leia": "Read (in Portuguese): Your LLM will fail →",
+        "artigo": "seu-llm-vai-falhar-e-vai-ser-enganado-idempotencia-e-seguranca-em-fluxos-de-e-commerce"
+      }
+    ]
+  },
+  "ajuda": {
+    "titulo": "How I can help",
+    "itens": [
+      {
+        "titulo": "AI and automation",
+        "texto": "Put LLMs, RAG and agents to work so your team drops repetitive tasks.",
+        "acao": "I want to use AI →"
+      },
+      {
+        "titulo": "Application security",
+        "texto": "Strengthen login, access control and the protection of your APIs.",
+        "acao": "I want protection →"
+      },
+      {
+        "titulo": "Dashboards and data",
+        "texto": "Turn scattered data into reports that support decisions: React, Python, SQL and Trino.",
+        "acao": "I want to see my data →"
+      },
+      {
+        "titulo": "Payments and messaging",
+        "texto": "Integrate Stripe, Twilio and RabbitMQ queues into your product.",
+        "acao": "I want to integrate →"
+      }
+    ]
+  },
+  "casos": {
+    "titulo": "Case studies",
+    "problema": "Problem",
+    "decisao": "Decision",
+    "resultado": "Result",
+    "itens": [
+      {
+        "titulo": "SMS campaigns",
+        "problema": "A campaign took 7 hours.",
+        "decisao": "Migrate from n8n to our own platform.",
+        "resultado": "4 hours, about 43% faster."
+      },
+      {
+        "titulo": "Spreadsheet review",
+        "problema": "A review took 2 hours.",
+        "decisao": "Automate with AI.",
+        "resultado": "30 minutes, 75% faster."
+      },
+      {
+        "titulo": "Big Data reporting",
+        "decisao": "A solution to generate and version reports.",
+        "resultado": "30% increase in company revenue."
+      }
+    ]
+  },
+  "projetos": {
+    "visitar": "Visit project →",
+    "descontinuado": "Site discontinued by the company.",
+    "pular": "Skip projects ↓",
+    "tela": "Home screen of the project"
+  },
+  "artigos": {
+    "titulo": "I write about what I learn in production",
+    "texto": "Real stories: the problem, the decision and what changed. Articles are in Portuguese.",
+    "acao": "See the articles →"
+  },
+  "experiencia": {
+    "titulo": "Experience",
+    "instrucao": "Pick a company to see what I contributed.",
+    "empresas": "Companies",
+    "entregas": "What I delivered",
+    "site": "Company website →"
+  },
+  "contato": {
+    "titulo": "Shall we talk?",
+    "texto": "Tell me what is slow, manual or hard to see on your side.",
+    "acao": "Send a message",
+    "assuntos": [
+      "Freelance project",
+      "Job opportunity",
+      "Something else"
+    ]
+  }
+}

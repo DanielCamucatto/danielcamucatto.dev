@@ -30,7 +30,7 @@ describe('ContactForm', () => {
     
     fireEvent.change(screen.getByLabelText(/nome/i), { target: { value: 'João Silva' } });
     fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'joao@example.com' } });
-    fireEvent.change(screen.getByLabelText(/assunto/i), { target: { value: 'Teste' } });
+    fireEvent.change(screen.getByLabelText(/assunto/i), { target: { value: 'Projeto freelance' } });
     fireEvent.change(screen.getByLabelText(/mensagem/i), { target: { value: 'Mensagem de teste' } });
     
     const submitButton = screen.getByRole('button', { name: /enviar/i });
@@ -51,7 +51,7 @@ describe('ContactForm', () => {
     
     fireEvent.change(screen.getByLabelText(/nome/i), { target: { value: 'João Silva' } });
     fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'joao@example.com' } });
-    fireEvent.change(screen.getByLabelText(/assunto/i), { target: { value: 'Teste' } });
+    fireEvent.change(screen.getByLabelText(/assunto/i), { target: { value: 'Projeto freelance' } });
     fireEvent.change(screen.getByLabelText(/mensagem/i), { target: { value: 'Mensagem de teste' } });
     
     const submitButton = screen.getByRole('button', { name: /enviar/i });
@@ -75,7 +75,7 @@ describe('ContactForm', () => {
     
     fireEvent.change(screen.getByLabelText(/nome/i), { target: { value: 'João Silva' } });
     fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'joao@example.com' } });
-    fireEvent.change(screen.getByLabelText(/assunto/i), { target: { value: 'Teste' } });
+    fireEvent.change(screen.getByLabelText(/assunto/i), { target: { value: 'Projeto freelance' } });
     fireEvent.change(screen.getByLabelText(/mensagem/i), { target: { value: 'Mensagem de teste' } });
     
     const submitButton = screen.getByRole('button', { name: /enviar/i });
@@ -105,7 +105,7 @@ describe('ContactForm', () => {
     
     fireEvent.change(screen.getByLabelText(/nome/i), { target: { value: 'João Silva' } });
     fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'joao@example.com' } });
-    fireEvent.change(screen.getByLabelText(/assunto/i), { target: { value: 'Teste' } });
+    fireEvent.change(screen.getByLabelText(/assunto/i), { target: { value: 'Projeto freelance' } });
     fireEvent.change(screen.getByLabelText(/mensagem/i), { target: { value: 'Mensagem de teste' } });
     
     const submitButton = screen.getByRole('button', { name: /enviar/i });
