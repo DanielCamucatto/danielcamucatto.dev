@@ -98,3 +98,28 @@ html:not(.dark) .modal-contato select, html:not(.dark) .modal-contato option { b
   .tema-cobre .xp-lista button { flex: none; margin: 0; border-left: 0; border-bottom: 3px solid transparent; border-radius: 10px 10px 0 0; }
   .tema-cobre .xp-lista button[aria-pressed='true'] { border-bottom-color: var(--accent); }
 }
+
+/* Depoimentos */
+.tema-cobre .dep-topo { text-align: center; }
+.tema-cobre .citacoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 32px 0 24px; }
+.tema-cobre .citacao { margin: 0; position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 52px 24px 24px; }
+.tema-cobre .citacao::before { content: '\201C'; position: absolute; top: 2px; left: 20px; font: 800 5rem/1 Georgia, serif; color: var(--accent); }
+.tema-cobre .citacao blockquote { margin: 0; font-size: 1.05rem; line-height: 1.6; overflow-wrap: anywhere; white-space: pre-line; }
+.tema-cobre .citacao figcaption { display: flex; gap: 12px; align-items: center; font-size: .92rem; }
+.tema-cobre .citacao figcaption div { min-width: 0; }
+.tema-cobre .citacao img, .tema-cobre .inicial { width: 56px; height: 56px; flex: none; border-radius: 50%; border: 2px solid var(--accent); object-fit: cover; }
+.tema-cobre .inicial { display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font-weight: 800; }
+.tema-cobre .form-depoimento { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 760px; margin: 20px auto 0; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+.tema-cobre .form-depoimento label { display: grid; gap: 5px; align-content: start; font-size: .9rem; font-weight: 600; }
+.tema-cobre .form-depoimento small { font-weight: 400; color: var(--muted); }
+.tema-cobre .form-depoimento input, .tema-cobre .form-depoimento textarea { width: 100%; font: inherit; font-weight: 400; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
+.tema-cobre .form-depoimento .largo { grid-column: 1 / -1; }
+.tema-cobre .form-depoimento label.aceite { display: flex; gap: 10px; font-weight: 400; }
+.tema-cobre .form-depoimento label.aceite input { width: auto; margin-top: 5px; }
+.tema-cobre .form-depoimento .previa { width: 72px; height: 72px; border-radius: 50%; border: 2px solid var(--accent); object-fit: cover; }
+.tema-cobre .form-depoimento .armadilha { position: absolute; left: -9999px; width: 1px; }
+.tema-cobre .form-depoimento .aviso { margin: 0; min-height: 1.2em; color: var(--accent); }
+.tema-cobre .form-depoimento .aviso.erro { font-weight: 600; }
+@media (max-width: 760px) {
+  .tema-cobre .citacoes, .tema-cobre .form-depoimento { grid-template-columns: minmax(0, 1fr); }
+}

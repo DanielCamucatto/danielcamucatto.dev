@@ -1,0 +1,99 @@
+---
+// Painel de aprovação. A página em si não tem dados: tudo vem de /api/admin,
+// que só responde com um login válido do Cloudflare Access.
+import ArtigosLayout from '../../layouts/ArtigosLayout.astro';
+---
+
+<ArtigosLayout title="Depoimentos | Painel" description="Painel de aprovação de depoimentos." noindex>
+  <h1 class="!text-3xl !mb-3">Depoimentos</h1>
+  <p class="muted mb-8" role="status" data-estado>Carregando…</p>
+  <div class="grade" data-lista></div>
+</ArtigosLayout>
+
+<script>
+  interface Item {
+    id: string; nome: string; cargo: string; empresa: string; linkedin: string;
+    email: string; texto: string; github: string; temFoto: boolean; status: string; criado_em: number;
+  }
+
+  const lista = document.querySelector<HTMLElement>('[data-lista]')!;
+  const estado = document.querySelector<HTMLElement>('[data-estado]')!;
+
+  // Tudo entra como texto (textContent), porque o conteúdo vem de desconhecidos
+  const criar = <K extends keyof HTMLElementTagNameMap>(tag: K, texto = '', classe = '') => {
+    const el = document.createElement(tag);
+    el.textContent = texto;
+    el.className = classe;
+    return el;
+  };
+
+  async function agir(id: string, acao: string) {
+    const resposta = await fetch('/api/admin/depoimentos', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, acao }),
+    });
+    if (!resposta.ok) estado.textContent = 'Não foi possível concluir. Recarregue a página.';
+    else await carregar();
+  }
+
+  function cartao(item: Item) {
+    const caixa = criar('article', '', 'cartao');
+    const corpo = criar('div', '', 'corpo');
+    corpo.append(
+      criar('p', `${item.status} · ${new Date(item.criado_em).toLocaleString('pt-BR')}`, 'rotulo'),
+      criar('h3', item.nome),
+      criar('p', [item.cargo, item.empresa].filter(Boolean).join(' · '), 'muted'),
+    );
+    if (item.temFoto) {
+      const img = criar('img');
+      img.src = `/api/admin/foto/${item.id}`;
+      img.alt = '';
+      img.style.cssText = 'width:72px;height:72px;aspect-ratio:1;border-radius:50%;margin:10px 0';
+      corpo.append(img);
+    }
+    const link = criar('a', item.linkedin);
+    link.href = item.linkedin.startsWith('https://') ? item.linkedin : '#';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.style.overflowWrap = 'anywhere';
+    corpo.append(criar('p', item.texto, 'resumo'), criar('p', item.email), link);
+    if (item.github) corpo.append(criar('p', `GitHub: @${item.github}`, 'muted'));
+
+    const acoes = criar('div', '', 'mt-4 flex flex-wrap gap-2');
+    const botoes: [string, string, string][] = item.status === 'aprovado'
+      ? [['Retirar do site', 'retirar', ''], ['Apagar', 'apagar', '']]
+      : [['Aprovar', 'aprovar', 'principal'], ['Recusar e apagar', 'apagar', '']];
+    botoes.forEach(([nome, acao, classe]) => {
+      const botao = criar('button', nome, `botao ${classe}`);
+      botao.type = 'button';
+      botao.addEventListener('click', () => {
+        // Apagar não tem volta: o segundo clique confirma
+        if (acao === 'apagar' && !botao.dataset.confirmar) {
+          botao.dataset.confirmar = 'sim';
+          botao.textContent = 'Clique de novo para apagar';
+          return;
+        }
+        agir(item.id, acao);
+      });
+      acoes.append(botao);
+    });
+    corpo.append(acoes);
+    caixa.append(corpo);
+    return caixa;
+  }
+
+  async function carregar() {
+    try {
+      const resposta = await fetch('/api/admin/depoimentos');
+      if (!resposta.ok) throw new Error(String(resposta.status));
+      const { lista: itens } = (await resposta.json()) as { lista: Item[] };
+      lista.replaceChildren(...itens.map(cartao));
+      const aprovados = itens.filter((i) => i.status === 'aprovado').length;
+      estado.textContent = `${itens.length - aprovados} pendente(s), ${aprovados} aprovado(s). A seção aparece no site a partir de 3 aprovados.`;
+    } catch {
+      estado.textContent = 'Sem acesso. Entre pelo login da Cloudflare neste domínio.';
+    }
+  }
+  carregar();
+</script>

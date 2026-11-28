@@ -158,5 +158,40 @@
       "Vaga de trabalho",
       "Outro assunto"
     ]
+  },
+  "depoimentos": {
+    "titulo": "Quem já trabalhou comigo",
+    "intro": "Relatos de quem dividiu projetos, prazos e problemas comigo.",
+    "convite": "Já trabalhamos juntos?",
+    "conviteTexto": "Conte um momento ou um projeto. Leva dois minutos, e eu leio tudo antes de publicar.",
+    "abrir": "Deixar meu depoimento",
+    "nome": "Nome",
+    "cargo": "Cargo",
+    "opcional": "opcional",
+    "empresa": "Onde trabalhamos juntos",
+    "linkedin": "Seu LinkedIn",
+    "email": "E-mail",
+    "emailNota": "não aparece no site",
+    "github": "Usuário do GitHub",
+    "githubNota": "opcional, para usar a foto de lá",
+    "foto": "Ou envie uma foto",
+    "fotoNota": "opcional, JPG, PNG ou WebP até 5 MB",
+    "previa": "Prévia da sua foto",
+    "texto": "O que você tem a dizer",
+    "autorizo": "Autorizo publicar neste site meu nome, cargo, empresa, LinkedIn, foto (enviada ou copiada do meu GitHub) e este texto. Posso pedir a remoção a qualquer momento pelo formulário de contato. Meu e-mail serve só para falar comigo sobre este depoimento.",
+    "enviar": "Enviar para revisão",
+    "enviando": "Enviando...",
+    "mensagens": {
+      "enviado": "Obrigado! Seu depoimento será revisado antes de aparecer.",
+      "campos": "Preencha os campos com * e marque a autorização.",
+      "autorizacao": "Marque a autorização.",
+      "email": "Confira o e-mail.",
+      "linkedin": "Use o endereço do seu perfil no LinkedIn, começando com https://",
+      "github": "Não encontrei esse usuário no GitHub. Confira ou deixe o campo vazio.",
+      "foto": "A foto precisa ser JPG, PNG ou WebP, com até 5 MB.",
+      "verificacao": "A verificação contra robôs falhou. Tente de novo.",
+      "limite": "Muitos envios em pouco tempo. Tente mais tarde.",
+      "geral": "Não foi possível enviar. Tente mais tarde."
+    }
   }
 }
