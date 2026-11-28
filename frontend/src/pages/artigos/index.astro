@@ -1,40 +1,112 @@
 ---
 import ArtigosLayout from '../../layouts/ArtigosLayout.astro';
-import { getArtigos, formatDate, readingTime } from '../../utils/artigos';
+import Cartao from '../../components/artigos/Cartao.astro';
+import { getArtigos } from '../../utils/artigos';
+import { TEMAS, temasDe } from '../../utils/temas';
 
 const artigos = await getArtigos();
+// Destaques: sempre os três publicados por último (a lista vem ordenada por data)
+const destaques = artigos.slice(0, 3);
+const itens = artigos.map((artigo) => ({
+  artigo,
+  temas: temasDe(artigo.id, artigo.data.tags),
+  busca: `${artigo.data.title} ${artigo.data.description} ${artigo.data.tags.join(' ')}`,
+}));
+const filtros = TEMAS.map(({ nome }) => ({ nome, total: itens.filter((i) => i.temas.includes(nome)).length }))
+  .filter(({ total }) => total > 0);
 ---
 
 <ArtigosLayout
   title="Artigos | Daniel Camuçatto"
-  description="Artigos técnicos sobre arquitetura de software, backend, frontend e liderança técnica."
+  description="Artigos sobre IA, segurança, backend, frontend e arquitetura de software: o problema, a decisão e o que aprendi."
 >
-  <h1 class="!text-3xl sm:!text-4xl !mb-3">Artigos</h1>
-  <p class="text-slate-600 dark:text-slate-400 mb-12">
-    O que venho aprendendo sobre arquitetura, backend, frontend e liderança técnica.
-  </p>
+  <div class="abertura">
+    <h1>Artigos</h1>
+    <p class="muted">Histórias de produção sobre IA, segurança, backend e arquitetura: o problema, a decisão e o que eu aprendi.</p>
+  </div>
 
-  <ul class="space-y-10">
-    {artigos.map((artigo) => (
-      <li>
-        <a href={`/artigos/${artigo.id}/`} class="group block">
-          <p class="text-xs uppercase tracking-wider text-slate-500">
-            {formatDate(artigo.data.pubDate)} · {readingTime(artigo.body)} min de leitura
-            {artigo.data.draft && <span class="ml-2 text-amber-500">rascunho</span>}
-          </p>
-          <h2 class="!mb-2 mt-1 !text-xl font-semibold !text-slate-800 dark:!text-slate-200 group-hover:!text-teal-600 dark:group-hover:!text-teal-300 transition-colors">
-            {artigo.data.title}
-          </h2>
-          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">{artigo.data.description}</p>
-          {artigo.data.tags.length > 0 && (
-            <ul class="mt-3 flex flex-wrap gap-2">
-              {artigo.data.tags.map((tag) => (
-                <li class="rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium text-teal-700 dark:text-teal-300">{tag}</li>
-              ))}
-            </ul>
-          )}
-        </a>
-      </li>
-    ))}
-  </ul>
+  <section>
+    <h2 class="secao">Em destaque</h2>
+    <div class="destaques">
+      {destaques.map((artigo, i) => (
+        <div><Cartao artigo={artigo} grande={i === 0} resumo={i === 0} /></div>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="todos" data-lista>
+    <h2 class="secao" id="todos">Todos os artigos</h2>
+    <input class="busca oculto" type="search" placeholder="Buscar por assunto, ex.: Redis" aria-label="Buscar artigos" />
+    <div class="temas oculto" role="group" aria-label="Temas">
+      <button type="button" class="botao" data-tema="" aria-pressed="true">Todos <small>{itens.length}</small></button>
+      {filtros.map(({ nome, total }) => (
+        <button type="button" class="botao" data-tema={nome} aria-pressed="false">{nome} <small>{total}</small></button>
+      ))}
+    </div>
+    <p class="muted" role="status" data-total></p>
+    {/* Todos os cartões saem no HTML, para busca do Google e para quem está sem JavaScript */}
+    <div class="grade">
+      {itens.map(({ artigo, temas, busca }) => (
+        <div data-item data-temas={temas.join('|')} data-busca={busca}><Cartao artigo={artigo} /></div>
+      ))}
+    </div>
+    <button type="button" class="botao oculto" data-mais>Mostrar mais</button>
+  </section>
+
+  <section>
+    <div class="convite">
+      <div>
+        <h2>Algum desses problemas é o seu?</h2>
+        <p class="muted">Posso ajudar com IA, segurança, dados e integrações.</p>
+      </div>
+      <a class="botao principal" href="https://www.linkedin.com/in/danielcamucatto/" target="_blank" rel="noopener" data-contato="lista">Falar comigo</a>
+    </div>
+  </section>
 </ArtigosLayout>
+
+<script>
+  const PASSO = 9;
+  const lista = document.querySelector<HTMLElement>('[data-lista]');
+  if (lista) {
+    const itens = [...lista.querySelectorAll<HTMLElement>('[data-item]')];
+    const temas = [...lista.querySelectorAll<HTMLButtonElement>('[data-tema]')];
+    const busca = lista.querySelector<HTMLInputElement>('.busca')!;
+    const mais = lista.querySelector<HTMLButtonElement>('[data-mais]')!;
+    const total = lista.querySelector<HTMLElement>('[data-total]')!;
+    let tema = '';
+    let limite = PASSO;
+
+    const semAcento = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+    const desenhar = () => {
+      const termo = semAcento(busca.value.trim());
+      let achados = 0;
+      itens.forEach((item) => {
+        const ok =
+          (!tema || item.dataset.temas!.split('|').includes(tema)) &&
+          (!termo || semAcento(item.dataset.busca!).includes(termo));
+        if (ok) achados++;
+        item.classList.toggle('oculto', !ok || achados > limite);
+      });
+      total.textContent = achados
+        ? `${achados} artigo${achados > 1 ? 's' : ''}`
+        : 'Nenhum artigo encontrado. Tente outro assunto.';
+      mais.classList.toggle('oculto', achados <= limite);
+    };
+
+    busca.classList.remove('oculto');
+    lista.querySelector('.temas')!.classList.remove('oculto');
+    busca.addEventListener('input', () => { limite = PASSO; desenhar(); });
+    mais.addEventListener('click', () => { limite += PASSO; desenhar(); });
+    temas.forEach((botao) =>
+      botao.addEventListener('click', () => {
+        tema = botao.dataset.tema!;
+        limite = PASSO;
+        temas.forEach((b) => b.setAttribute('aria-pressed', String(b === botao)));
+        desenhar();
+      })
+    );
+    desenhar();
+  }
+</script>
+<script src="../../scripts/contato.ts"></script>

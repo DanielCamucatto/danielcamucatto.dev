@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets';
+import { formatDate, readingTime, type Artigo } from '../../utils/artigos';
+
+interface Props {
+  artigo: Artigo;
+  resumo?: boolean;
+  grande?: boolean;
+}
+
+const { artigo, resumo = false, grande = false } = Astro.props;
+const { title, description, pubDate, cover, draft } = artigo.data;
+const larguras = grande ? [480, 800, 1200] : [320, 480, 800];
+const tamanhos = grande
+  ? '(min-width: 640px) 624px, calc(100vw - 40px)'
+  : '(min-width: 900px) 336px, (min-width: 640px) 50vw, calc(100vw - 40px)';
+---
+
+<a class="cartao" href={`/artigos/${artigo.id}/`}>
+  {typeof cover === 'object' && (
+    <Image src={cover} alt="" widths={larguras} sizes={tamanhos} loading={grande ? 'eager' : 'lazy'} />
+  )}
+  {typeof cover === 'string' && <img src={cover} alt="" width="1000" height="420" loading="lazy" />}
+  {!cover && <span class="sem-capa" />}
+  <div class="corpo">
+    <p class="rotulo">
+      {formatDate(pubDate)} · {readingTime(artigo.body)} min{draft && ' · rascunho'}
+    </p>
+    <h3>{title}</h3>
+    {resumo && <p class="resumo muted">{description}</p>}
+  </div>
+</a>
